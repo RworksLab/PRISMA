@@ -544,9 +544,23 @@ const packHTML=()=>`<div class="pack"><div class="irid"></div><div class="shine"
 
 /* ================= サウンド（WebAudio合成） ================= */
 const AU={ctx:null,
- init(){if(this.ctx){this.ctx.resume&&this.ctx.resume();return}const C=window.AudioContext||window.webkitAudioContext;if(!C)return;
+ init(){if(!this.ctx){const C=window.AudioContext||window.webkitAudioContext;if(!C)return;
+  // iPhoneのマナーモードでも鳴るように「再生」扱いにする（Safari 16.4以降）
+  try{if(navigator.audioSession)navigator.audioSession.type='playback'}catch(e){}
   try{this.ctx=new C()}catch(e){return}const x=this.ctx;
-  this.bg=x.createGain();this.se=x.createGain();this.bg.connect(x.destination);this.se.connect(x.destination);this.vol();this.startBgm()},
+  this.bg=x.createGain();this.se=x.createGain();this.bg.connect(x.destination);this.se.connect(x.destination);this.vol();this.startBgm()}
+  this.unlock()},
+ // ユーザー操作のたびに呼ぶ：止まった音声を再開する
+ unlock(){const x=this.ctx;if(!x||document.hidden)return;
+  if(x.state!=='running'){const r=x.resume();r&&r.catch&&r.catch(()=>{})}
+  if(!this.kick){try{const b=x.createBuffer(1,1,22050),src=x.createBufferSource();src.buffer=b;src.connect(x.destination);src.start(0)}catch(e){}this.kick=1}
+  // 古いiPhone向け：無音のaudio要素を流してマナーモードの影響を外す
+  if(!navigator.audioSession&&/iPhone|iPad|iPod/.test(navigator.userAgent)||(!navigator.audioSession&&/Macintosh/.test(navigator.userAgent)&&'ontouchend' in document)){
+   if(!this.tag){const n=8000,buf=new ArrayBuffer(44+n),v=new DataView(buf),w=(o,t)=>{for(let i=0;i<t.length;i++)v.setUint8(o+i,t.charCodeAt(i))};
+    w(0,'RIFF');v.setUint32(4,36+n,true);w(8,'WAVEfmt ');v.setUint32(16,16,true);v.setUint16(20,1,true);v.setUint16(22,1,true);v.setUint32(24,8000,true);v.setUint32(28,8000,true);v.setUint16(32,1,true);v.setUint16(34,8,true);w(36,'data');v.setUint32(40,n,true);
+    for(let i=0;i<n;i++)v.setUint8(44+i,128);
+    const a=document.createElement('audio');a.setAttribute('playsinline','');a.setAttribute('x-webkit-airplay','deny');a.loop=true;a.preload='auto';a.src=URL.createObjectURL(new Blob([buf],{type:'audio/wav'}));this.tag=a}
+   if(this.tag.paused){const r=this.tag.play();r&&r.catch&&r.catch(()=>{})}}},
  vol(){if(!this.ctx)return;this.bg.gain.value=Math.pow(S.bgm/100,2)*.55;this.se.gain.value=Math.pow(S.se/100,2)*.9},
  tone(fr,t,d,type='sine',g=.2,dest=this.se,a=.005){const x=this.ctx,o=x.createOscillator(),v=x.createGain();o.type=type;o.frequency.setValueAtTime(fr,t);
   v.gain.setValueAtTime(0,t);v.gain.linearRampToValueAtTime(g,t+a);v.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(v);v.connect(dest);o.start(t);o.stop(t+d+.05);return o},
@@ -565,13 +579,17 @@ const AU={ctx:null,
   if(name==='ur'){[72,76,79,84].forEach(n=>{this.tone(m(n),t,1.8,'triangle',.1);this.tone(m(n+12),t,1.4,'sine',.06)})}
   if(name==='result'){[76,79,84].forEach((n,i)=>this.tone(m(n),t+i*.05,.35,'sine',.1))}},
  startBgm(){const x=this.ctx,m=this.m,CH=[[48,60,64,67,71],[45,57,60,64,67],[41,57,60,65,69],[43,55,59,62,67]],bar=2.4;let next=x.currentTime+.1,bi=0;
-  const sched=()=>{if(!this.ctx)return;while(next<x.currentTime+.8){const ch=CH[bi%4];
+  const sched=()=>{if(!this.ctx||x.state!=='running')return;if(next<x.currentTime)next=x.currentTime+.05;while(next<x.currentTime+.8){const ch=CH[bi%4];
     this.tone(m(ch[0]),next,bar*.95,'sine',.12,this.bg,.05);
     ch.slice(1).forEach(n=>this.tone(m(n),next,bar,'triangle',.022,this.bg,.6));
     const arp=[1,2,3,4,3,2,4,3];arp.forEach((ix,i)=>this.tone(m(ch[ix]+12),next+i*bar/8,.5,'sine',.035,this.bg));
     next+=bar;bi++}};
   sched();this.timer=setInterval(sched,300)}};
-document.addEventListener('visibilitychange',()=>{if(!AU.ctx)return;document.hidden?AU.ctx.suspend():AU.ctx.resume()});
+document.addEventListener('visibilitychange',()=>{if(!AU.ctx)return;
+  if(document.hidden){AU.ctx.suspend().catch(()=>{});AU.tag&&AU.tag.pause()}else{AU.ctx.resume().catch(()=>{})}});
+// 画面に触れるたびに音声を再開（アプリ切替・着信・イヤホン抜き差しなどで止まった場合の復帰）
+['pointerdown','touchend','keydown'].forEach(t=>document.addEventListener(t,()=>AU.unlock(),{capture:true,passive:true}));
+window.addEventListener('pageshow',()=>AU.unlock());
 
 /* ================= 画面制御 ================= */
 const $=id=>document.getElementById(id);
@@ -784,7 +802,7 @@ $('resetBtn').onclick=async()=>{AU.play('tap');
   const keep={bgm:S.bgm,se:S.se};S=DEF();S.bgm=keep.bgm;S.se=keep.se;
   try{localStorage.removeItem(KEY)}catch(e){}save();syncSet();toast('データを初期化しました')};
 
-window.__prisma={drawOne,RAR,CARDS,artTpl,ELEM,CRE};
+window.__prisma={drawOne,RAR,CARDS,artTpl,ELEM,CRE,AU};
 }
 </script>
 </body>
