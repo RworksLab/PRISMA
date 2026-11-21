@@ -1,0 +1,2952 @@
+[
+ {
+  "id": "N001",
+  "no": 1,
+  "name": "いわのユニコーン",
+  "rarity": "N",
+  "element": "岩",
+  "motif": "ユニコーン",
+  "theme": "岩属性 × ユニコーン",
+  "file": "illust/N001.webp"
+ },
+ {
+  "id": "N002",
+  "no": 2,
+  "name": "ほしのクラゲ",
+  "rarity": "N",
+  "element": "星",
+  "motif": "クラゲ",
+  "theme": "星属性 × クラゲ",
+  "file": "illust/N002.webp"
+ },
+ {
+  "id": "N003",
+  "no": 3,
+  "name": "いわのネコ",
+  "rarity": "N",
+  "element": "岩",
+  "motif": "ネコ",
+  "theme": "岩属性 × ネコ",
+  "file": "illust/N003.webp"
+ },
+ {
+  "id": "N004",
+  "no": 4,
+  "name": "ひかりのネコ",
+  "rarity": "N",
+  "element": "光",
+  "motif": "ネコ",
+  "theme": "光属性 × ネコ",
+  "file": "illust/N004.webp"
+ },
+ {
+  "id": "N005",
+  "no": 5,
+  "name": "かぜのオオカミ",
+  "rarity": "N",
+  "element": "風",
+  "motif": "オオカミ",
+  "theme": "風属性 × オオカミ",
+  "file": "illust/N005.webp"
+ },
+ {
+  "id": "N006",
+  "no": 6,
+  "name": "みずのウサギ",
+  "rarity": "N",
+  "element": "水",
+  "motif": "ウサギ",
+  "theme": "水属性 × ウサギ",
+  "file": "illust/N006.webp"
+ },
+ {
+  "id": "N007",
+  "no": 7,
+  "name": "ほしのライオン",
+  "rarity": "N",
+  "element": "星",
+  "motif": "ライオン",
+  "theme": "星属性 × ライオン",
+  "file": "illust/N007.webp"
+ },
+ {
+  "id": "N008",
+  "no": 8,
+  "name": "やみのライオン",
+  "rarity": "N",
+  "element": "闇",
+  "motif": "ライオン",
+  "theme": "闇属性 × ライオン",
+  "file": "illust/N008.webp"
+ },
+ {
+  "id": "N009",
+  "no": 9,
+  "name": "ひかりのドラゴン",
+  "rarity": "N",
+  "element": "光",
+  "motif": "ドラゴン",
+  "theme": "光属性 × ドラゴン",
+  "file": "illust/N009.webp"
+ },
+ {
+  "id": "N010",
+  "no": 10,
+  "name": "ほしのパンダ",
+  "rarity": "N",
+  "element": "星",
+  "motif": "パンダ",
+  "theme": "星属性 × パンダ",
+  "file": "illust/N010.webp"
+ },
+ {
+  "id": "N011",
+  "no": 11,
+  "name": "いわのタカ",
+  "rarity": "N",
+  "element": "岩",
+  "motif": "タカ",
+  "theme": "岩属性 × タカ",
+  "file": "illust/N011.webp"
+ },
+ {
+  "id": "N012",
+  "no": 12,
+  "name": "みずのオオカミ",
+  "rarity": "N",
+  "element": "水",
+  "motif": "オオカミ",
+  "theme": "水属性 × オオカミ",
+  "file": "illust/N012.webp"
+ },
+ {
+  "id": "N013",
+  "no": 13,
+  "name": "いかずちのユニコーン",
+  "rarity": "N",
+  "element": "雷",
+  "motif": "ユニコーン",
+  "theme": "雷属性 × ユニコーン",
+  "file": "illust/N013.webp"
+ },
+ {
+  "id": "N014",
+  "no": 14,
+  "name": "かぜのパンダ",
+  "rarity": "N",
+  "element": "風",
+  "motif": "パンダ",
+  "theme": "風属性 × パンダ",
+  "file": "illust/N014.webp"
+ },
+ {
+  "id": "N015",
+  "no": 15,
+  "name": "いわのモモンガ",
+  "rarity": "N",
+  "element": "岩",
+  "motif": "モモンガ",
+  "theme": "岩属性 × モモンガ",
+  "file": "illust/N015.webp"
+ },
+ {
+  "id": "N016",
+  "no": 16,
+  "name": "ほのおのウサギ",
+  "rarity": "N",
+  "element": "炎",
+  "motif": "ウサギ",
+  "theme": "炎属性 × ウサギ",
+  "file": "illust/N016.webp"
+ },
+ {
+  "id": "N017",
+  "no": 17,
+  "name": "いかずちのホタル",
+  "rarity": "N",
+  "element": "雷",
+  "motif": "ホタル",
+  "theme": "雷属性 × ホタル",
+  "file": "illust/N017.webp"
+ },
+ {
+  "id": "N018",
+  "no": 18,
+  "name": "いかずちのネコ",
+  "rarity": "N",
+  "element": "雷",
+  "motif": "ネコ",
+  "theme": "雷属性 × ネコ",
+  "file": "illust/N018.webp"
+ },
+ {
+  "id": "N019",
+  "no": 19,
+  "name": "みずのクジラ",
+  "rarity": "N",
+  "element": "水",
+  "motif": "クジラ",
+  "theme": "水属性 × クジラ",
+  "file": "illust/N019.webp"
+ },
+ {
+  "id": "N020",
+  "no": 20,
+  "name": "みずのキツネ",
+  "rarity": "N",
+  "element": "水",
+  "motif": "キツネ",
+  "theme": "水属性 × キツネ",
+  "file": "illust/N020.webp"
+ },
+ {
+  "id": "N021",
+  "no": 21,
+  "name": "みずのトラ",
+  "rarity": "N",
+  "element": "水",
+  "motif": "トラ",
+  "theme": "水属性 × トラ",
+  "file": "illust/N021.webp"
+ },
+ {
+  "id": "N022",
+  "no": 22,
+  "name": "いかずちのクラゲ",
+  "rarity": "N",
+  "element": "雷",
+  "motif": "クラゲ",
+  "theme": "雷属性 × クラゲ",
+  "file": "illust/N022.webp"
+ },
+ {
+  "id": "N023",
+  "no": 23,
+  "name": "いわのカエル",
+  "rarity": "N",
+  "element": "岩",
+  "motif": "カエル",
+  "theme": "岩属性 × カエル",
+  "file": "illust/N023.webp"
+ },
+ {
+  "id": "N024",
+  "no": 24,
+  "name": "いかずちのモモンガ",
+  "rarity": "N",
+  "element": "雷",
+  "motif": "モモンガ",
+  "theme": "雷属性 × モモンガ",
+  "file": "illust/N024.webp"
+ },
+ {
+  "id": "N025",
+  "no": 25,
+  "name": "もりのキツネ",
+  "rarity": "N",
+  "element": "森",
+  "motif": "キツネ",
+  "theme": "森属性 × キツネ",
+  "file": "illust/N025.webp"
+ },
+ {
+  "id": "N026",
+  "no": 26,
+  "name": "やみのトラ",
+  "rarity": "N",
+  "element": "闇",
+  "motif": "トラ",
+  "theme": "闇属性 × トラ",
+  "file": "illust/N026.webp"
+ },
+ {
+  "id": "N027",
+  "no": 27,
+  "name": "ほのおのペンギン",
+  "rarity": "N",
+  "element": "炎",
+  "motif": "ペンギン",
+  "theme": "炎属性 × ペンギン",
+  "file": "illust/N027.webp"
+ },
+ {
+  "id": "N028",
+  "no": 28,
+  "name": "ほしのヒツジ",
+  "rarity": "N",
+  "element": "星",
+  "motif": "ヒツジ",
+  "theme": "星属性 × ヒツジ",
+  "file": "illust/N028.webp"
+ },
+ {
+  "id": "N029",
+  "no": 29,
+  "name": "いかずちのイルカ",
+  "rarity": "N",
+  "element": "雷",
+  "motif": "イルカ",
+  "theme": "雷属性 × イルカ",
+  "file": "illust/N029.webp"
+ },
+ {
+  "id": "N030",
+  "no": 30,
+  "name": "もりのライオン",
+  "rarity": "N",
+  "element": "森",
+  "motif": "ライオン",
+  "theme": "森属性 × ライオン",
+  "file": "illust/N030.webp"
+ },
+ {
+  "id": "N031",
+  "no": 31,
+  "name": "ほのおのカエル",
+  "rarity": "N",
+  "element": "炎",
+  "motif": "カエル",
+  "theme": "炎属性 × カエル",
+  "file": "illust/N031.webp"
+ },
+ {
+  "id": "N032",
+  "no": 32,
+  "name": "ほのおのチョウ",
+  "rarity": "N",
+  "element": "炎",
+  "motif": "チョウ",
+  "theme": "炎属性 × チョウ",
+  "file": "illust/N032.webp"
+ },
+ {
+  "id": "N033",
+  "no": 33,
+  "name": "もりのユニコーン",
+  "rarity": "N",
+  "element": "森",
+  "motif": "ユニコーン",
+  "theme": "森属性 × ユニコーン",
+  "file": "illust/N033.webp"
+ },
+ {
+  "id": "N034",
+  "no": 34,
+  "name": "ほしのクマ",
+  "rarity": "N",
+  "element": "星",
+  "motif": "クマ",
+  "theme": "星属性 × クマ",
+  "file": "illust/N034.webp"
+ },
+ {
+  "id": "N035",
+  "no": 35,
+  "name": "いわのホタル",
+  "rarity": "N",
+  "element": "岩",
+  "motif": "ホタル",
+  "theme": "岩属性 × ホタル",
+  "file": "illust/N035.webp"
+ },
+ {
+  "id": "N036",
+  "no": 36,
+  "name": "やみのパンダ",
+  "rarity": "N",
+  "element": "闇",
+  "motif": "パンダ",
+  "theme": "闇属性 × パンダ",
+  "file": "illust/N036.webp"
+ },
+ {
+  "id": "N037",
+  "no": 37,
+  "name": "ほのおのネコ",
+  "rarity": "N",
+  "element": "炎",
+  "motif": "ネコ",
+  "theme": "炎属性 × ネコ",
+  "file": "illust/N037.webp"
+ },
+ {
+  "id": "N038",
+  "no": 38,
+  "name": "いかずちのパンダ",
+  "rarity": "N",
+  "element": "雷",
+  "motif": "パンダ",
+  "theme": "雷属性 × パンダ",
+  "file": "illust/N038.webp"
+ },
+ {
+  "id": "N039",
+  "no": 39,
+  "name": "もりのドラゴン",
+  "rarity": "N",
+  "element": "森",
+  "motif": "ドラゴン",
+  "theme": "森属性 × ドラゴン",
+  "file": "illust/N039.webp"
+ },
+ {
+  "id": "N040",
+  "no": 40,
+  "name": "ひかりのホタル",
+  "rarity": "N",
+  "element": "光",
+  "motif": "ホタル",
+  "theme": "光属性 × ホタル",
+  "file": "illust/N040.webp"
+ },
+ {
+  "id": "N041",
+  "no": 41,
+  "name": "みずのタカ",
+  "rarity": "N",
+  "element": "水",
+  "motif": "タカ",
+  "theme": "水属性 × タカ",
+  "file": "illust/N041.webp"
+ },
+ {
+  "id": "N042",
+  "no": 42,
+  "name": "かぜのフェニックス",
+  "rarity": "N",
+  "element": "風",
+  "motif": "フェニックス",
+  "theme": "風属性 × フェニックス",
+  "file": "illust/N042.webp"
+ },
+ {
+  "id": "N043",
+  "no": 43,
+  "name": "いかずちのクジラ",
+  "rarity": "N",
+  "element": "雷",
+  "motif": "クジラ",
+  "theme": "雷属性 × クジラ",
+  "file": "illust/N043.webp"
+ },
+ {
+  "id": "N044",
+  "no": 44,
+  "name": "もりのフェニックス",
+  "rarity": "N",
+  "element": "森",
+  "motif": "フェニックス",
+  "theme": "森属性 × フェニックス",
+  "file": "illust/N044.webp"
+ },
+ {
+  "id": "N045",
+  "no": 45,
+  "name": "ひかりのタカ",
+  "rarity": "N",
+  "element": "光",
+  "motif": "タカ",
+  "theme": "光属性 × タカ",
+  "file": "illust/N045.webp"
+ },
+ {
+  "id": "N046",
+  "no": 46,
+  "name": "ほしのイルカ",
+  "rarity": "N",
+  "element": "星",
+  "motif": "イルカ",
+  "theme": "星属性 × イルカ",
+  "file": "illust/N046.webp"
+ },
+ {
+  "id": "N047",
+  "no": 47,
+  "name": "もりのカエル",
+  "rarity": "N",
+  "element": "森",
+  "motif": "カエル",
+  "theme": "森属性 × カエル",
+  "file": "illust/N047.webp"
+ },
+ {
+  "id": "N048",
+  "no": 48,
+  "name": "いわのトラ",
+  "rarity": "N",
+  "element": "岩",
+  "motif": "トラ",
+  "theme": "岩属性 × トラ",
+  "file": "illust/N048.webp"
+ },
+ {
+  "id": "N049",
+  "no": 49,
+  "name": "いかずちのヘビ",
+  "rarity": "N",
+  "element": "雷",
+  "motif": "ヘビ",
+  "theme": "雷属性 × ヘビ",
+  "file": "illust/N049.webp"
+ },
+ {
+  "id": "N050",
+  "no": 50,
+  "name": "やみのウサギ",
+  "rarity": "N",
+  "element": "闇",
+  "motif": "ウサギ",
+  "theme": "闇属性 × ウサギ",
+  "file": "illust/N050.webp"
+ },
+ {
+  "id": "N051",
+  "no": 51,
+  "name": "ひかりのパンダ",
+  "rarity": "N",
+  "element": "光",
+  "motif": "パンダ",
+  "theme": "光属性 × パンダ",
+  "file": "illust/N051.webp"
+ },
+ {
+  "id": "N052",
+  "no": 52,
+  "name": "もりのスライム",
+  "rarity": "N",
+  "element": "森",
+  "motif": "スライム",
+  "theme": "森属性 × スライム",
+  "file": "illust/N052.webp"
+ },
+ {
+  "id": "N053",
+  "no": 53,
+  "name": "みずのコウモリ",
+  "rarity": "N",
+  "element": "水",
+  "motif": "コウモリ",
+  "theme": "水属性 × コウモリ",
+  "file": "illust/N053.webp"
+ },
+ {
+  "id": "N054",
+  "no": 54,
+  "name": "ひかりのモモンガ",
+  "rarity": "N",
+  "element": "光",
+  "motif": "モモンガ",
+  "theme": "光属性 × モモンガ",
+  "file": "illust/N054.webp"
+ },
+ {
+  "id": "N055",
+  "no": 55,
+  "name": "ほしのハリネズミ",
+  "rarity": "N",
+  "element": "星",
+  "motif": "ハリネズミ",
+  "theme": "星属性 × ハリネズミ",
+  "file": "illust/N055.webp"
+ },
+ {
+  "id": "N056",
+  "no": 56,
+  "name": "こおりのシカ",
+  "rarity": "N",
+  "element": "氷",
+  "motif": "シカ",
+  "theme": "氷属性 × シカ",
+  "file": "illust/N056.webp"
+ },
+ {
+  "id": "N057",
+  "no": 57,
+  "name": "ほしのウサギ",
+  "rarity": "N",
+  "element": "星",
+  "motif": "ウサギ",
+  "theme": "星属性 × ウサギ",
+  "file": "illust/N057.webp"
+ },
+ {
+  "id": "N058",
+  "no": 58,
+  "name": "かぜのスライム",
+  "rarity": "N",
+  "element": "風",
+  "motif": "スライム",
+  "theme": "風属性 × スライム",
+  "file": "illust/N058.webp"
+ },
+ {
+  "id": "N059",
+  "no": 59,
+  "name": "ほのおのコウモリ",
+  "rarity": "N",
+  "element": "炎",
+  "motif": "コウモリ",
+  "theme": "炎属性 × コウモリ",
+  "file": "illust/N059.webp"
+ },
+ {
+  "id": "N060",
+  "no": 60,
+  "name": "こおりのスライム",
+  "rarity": "N",
+  "element": "氷",
+  "motif": "スライム",
+  "theme": "氷属性 × スライム",
+  "file": "illust/N060.webp"
+ },
+ {
+  "id": "N061",
+  "no": 61,
+  "name": "みずのシカ",
+  "rarity": "N",
+  "element": "水",
+  "motif": "シカ",
+  "theme": "水属性 × シカ",
+  "file": "illust/N061.webp"
+ },
+ {
+  "id": "N062",
+  "no": 62,
+  "name": "ほしのチョウ",
+  "rarity": "N",
+  "element": "星",
+  "motif": "チョウ",
+  "theme": "星属性 × チョウ",
+  "file": "illust/N062.webp"
+ },
+ {
+  "id": "N063",
+  "no": 63,
+  "name": "かぜのドラゴン",
+  "rarity": "N",
+  "element": "風",
+  "motif": "ドラゴン",
+  "theme": "風属性 × ドラゴン",
+  "file": "illust/N063.webp"
+ },
+ {
+  "id": "N064",
+  "no": 64,
+  "name": "ほのおのフクロウ",
+  "rarity": "N",
+  "element": "炎",
+  "motif": "フクロウ",
+  "theme": "炎属性 × フクロウ",
+  "file": "illust/N064.webp"
+ },
+ {
+  "id": "N065",
+  "no": 65,
+  "name": "みずのヒツジ",
+  "rarity": "N",
+  "element": "水",
+  "motif": "ヒツジ",
+  "theme": "水属性 × ヒツジ",
+  "file": "illust/N065.webp"
+ },
+ {
+  "id": "N066",
+  "no": 66,
+  "name": "もりのウサギ",
+  "rarity": "N",
+  "element": "森",
+  "motif": "ウサギ",
+  "theme": "森属性 × ウサギ",
+  "file": "illust/N066.webp"
+ },
+ {
+  "id": "N067",
+  "no": 67,
+  "name": "やみのキツネ",
+  "rarity": "N",
+  "element": "闇",
+  "motif": "キツネ",
+  "theme": "闇属性 × キツネ",
+  "file": "illust/N067.webp"
+ },
+ {
+  "id": "N068",
+  "no": 68,
+  "name": "ひかりのハリネズミ",
+  "rarity": "N",
+  "element": "光",
+  "motif": "ハリネズミ",
+  "theme": "光属性 × ハリネズミ",
+  "file": "illust/N068.webp"
+ },
+ {
+  "id": "N069",
+  "no": 69,
+  "name": "いわのペンギン",
+  "rarity": "N",
+  "element": "岩",
+  "motif": "ペンギン",
+  "theme": "岩属性 × ペンギン",
+  "file": "illust/N069.webp"
+ },
+ {
+  "id": "N070",
+  "no": 70,
+  "name": "みずのカメ",
+  "rarity": "N",
+  "element": "水",
+  "motif": "カメ",
+  "theme": "水属性 × カメ",
+  "file": "illust/N070.webp"
+ },
+ {
+  "id": "N071",
+  "no": 71,
+  "name": "ほのおのクマ",
+  "rarity": "N",
+  "element": "炎",
+  "motif": "クマ",
+  "theme": "炎属性 × クマ",
+  "file": "illust/N071.webp"
+ },
+ {
+  "id": "N072",
+  "no": 72,
+  "name": "いわのヘビ",
+  "rarity": "N",
+  "element": "岩",
+  "motif": "ヘビ",
+  "theme": "岩属性 × ヘビ",
+  "file": "illust/N072.webp"
+ },
+ {
+  "id": "N073",
+  "no": 73,
+  "name": "ほのおのヘビ",
+  "rarity": "N",
+  "element": "炎",
+  "motif": "ヘビ",
+  "theme": "炎属性 × ヘビ",
+  "file": "illust/N073.webp"
+ },
+ {
+  "id": "N074",
+  "no": 74,
+  "name": "ほのおのモモンガ",
+  "rarity": "N",
+  "element": "炎",
+  "motif": "モモンガ",
+  "theme": "炎属性 × モモンガ",
+  "file": "illust/N074.webp"
+ },
+ {
+  "id": "N075",
+  "no": 75,
+  "name": "ほのおのドラゴン",
+  "rarity": "N",
+  "element": "炎",
+  "motif": "ドラゴン",
+  "theme": "炎属性 × ドラゴン",
+  "file": "illust/N075.webp"
+ },
+ {
+  "id": "N076",
+  "no": 76,
+  "name": "かぜのヒツジ",
+  "rarity": "N",
+  "element": "風",
+  "motif": "ヒツジ",
+  "theme": "風属性 × ヒツジ",
+  "file": "illust/N076.webp"
+ },
+ {
+  "id": "N077",
+  "no": 77,
+  "name": "かぜのカエル",
+  "rarity": "N",
+  "element": "風",
+  "motif": "カエル",
+  "theme": "風属性 × カエル",
+  "file": "illust/N077.webp"
+ },
+ {
+  "id": "N078",
+  "no": 78,
+  "name": "ほしのオオカミ",
+  "rarity": "N",
+  "element": "星",
+  "motif": "オオカミ",
+  "theme": "星属性 × オオカミ",
+  "file": "illust/N078.webp"
+ },
+ {
+  "id": "N079",
+  "no": 79,
+  "name": "いかずちのチョウ",
+  "rarity": "N",
+  "element": "雷",
+  "motif": "チョウ",
+  "theme": "雷属性 × チョウ",
+  "file": "illust/N079.webp"
+ },
+ {
+  "id": "N080",
+  "no": 80,
+  "name": "やみのスライム",
+  "rarity": "N",
+  "element": "闇",
+  "motif": "スライム",
+  "theme": "闇属性 × スライム",
+  "file": "illust/N080.webp"
+ },
+ {
+  "id": "N081",
+  "no": 81,
+  "name": "いわのウサギ",
+  "rarity": "N",
+  "element": "岩",
+  "motif": "ウサギ",
+  "theme": "岩属性 × ウサギ",
+  "file": "illust/N081.webp"
+ },
+ {
+  "id": "N082",
+  "no": 82,
+  "name": "ひかりのカエル",
+  "rarity": "N",
+  "element": "光",
+  "motif": "カエル",
+  "theme": "光属性 × カエル",
+  "file": "illust/N082.webp"
+ },
+ {
+  "id": "N083",
+  "no": 83,
+  "name": "いわのオオカミ",
+  "rarity": "N",
+  "element": "岩",
+  "motif": "オオカミ",
+  "theme": "岩属性 × オオカミ",
+  "file": "illust/N083.webp"
+ },
+ {
+  "id": "N084",
+  "no": 84,
+  "name": "いわのクジラ",
+  "rarity": "N",
+  "element": "岩",
+  "motif": "クジラ",
+  "theme": "岩属性 × クジラ",
+  "file": "illust/N084.webp"
+ },
+ {
+  "id": "N085",
+  "no": 85,
+  "name": "かぜのクジラ",
+  "rarity": "N",
+  "element": "風",
+  "motif": "クジラ",
+  "theme": "風属性 × クジラ",
+  "file": "illust/N085.webp"
+ },
+ {
+  "id": "N086",
+  "no": 86,
+  "name": "もりのハリネズミ",
+  "rarity": "N",
+  "element": "森",
+  "motif": "ハリネズミ",
+  "theme": "森属性 × ハリネズミ",
+  "file": "illust/N086.webp"
+ },
+ {
+  "id": "N087",
+  "no": 87,
+  "name": "ほしのユニコーン",
+  "rarity": "N",
+  "element": "星",
+  "motif": "ユニコーン",
+  "theme": "星属性 × ユニコーン",
+  "file": "illust/N087.webp"
+ },
+ {
+  "id": "N088",
+  "no": 88,
+  "name": "やみのカエル",
+  "rarity": "N",
+  "element": "闇",
+  "motif": "カエル",
+  "theme": "闇属性 × カエル",
+  "file": "illust/N088.webp"
+ },
+ {
+  "id": "N089",
+  "no": 89,
+  "name": "こおりのモモンガ",
+  "rarity": "N",
+  "element": "氷",
+  "motif": "モモンガ",
+  "theme": "氷属性 × モモンガ",
+  "file": "illust/N089.webp"
+ },
+ {
+  "id": "N090",
+  "no": 90,
+  "name": "ひかりのヒツジ",
+  "rarity": "N",
+  "element": "光",
+  "motif": "ヒツジ",
+  "theme": "光属性 × ヒツジ",
+  "file": "illust/N090.webp"
+ },
+ {
+  "id": "N091",
+  "no": 91,
+  "name": "ほのおのイルカ",
+  "rarity": "N",
+  "element": "炎",
+  "motif": "イルカ",
+  "theme": "炎属性 × イルカ",
+  "file": "illust/N091.webp"
+ },
+ {
+  "id": "N092",
+  "no": 92,
+  "name": "みずのドラゴン",
+  "rarity": "N",
+  "element": "水",
+  "motif": "ドラゴン",
+  "theme": "水属性 × ドラゴン",
+  "file": "illust/N092.webp"
+ },
+ {
+  "id": "N093",
+  "no": 93,
+  "name": "ほしのキツネ",
+  "rarity": "N",
+  "element": "星",
+  "motif": "キツネ",
+  "theme": "星属性 × キツネ",
+  "file": "illust/N093.webp"
+ },
+ {
+  "id": "N094",
+  "no": 94,
+  "name": "こおりのカエル",
+  "rarity": "N",
+  "element": "氷",
+  "motif": "カエル",
+  "theme": "氷属性 × カエル",
+  "file": "illust/N094.webp"
+ },
+ {
+  "id": "N095",
+  "no": 95,
+  "name": "ひかりのヘビ",
+  "rarity": "N",
+  "element": "光",
+  "motif": "ヘビ",
+  "theme": "光属性 × ヘビ",
+  "file": "illust/N095.webp"
+ },
+ {
+  "id": "N096",
+  "no": 96,
+  "name": "こおりのヒツジ",
+  "rarity": "N",
+  "element": "氷",
+  "motif": "ヒツジ",
+  "theme": "氷属性 × ヒツジ",
+  "file": "illust/N096.webp"
+ },
+ {
+  "id": "N097",
+  "no": 97,
+  "name": "ひかりのシカ",
+  "rarity": "N",
+  "element": "光",
+  "motif": "シカ",
+  "theme": "光属性 × シカ",
+  "file": "illust/N097.webp"
+ },
+ {
+  "id": "N098",
+  "no": 98,
+  "name": "ほのおのリス",
+  "rarity": "N",
+  "element": "炎",
+  "motif": "リス",
+  "theme": "炎属性 × リス",
+  "file": "illust/N098.webp"
+ },
+ {
+  "id": "N099",
+  "no": 99,
+  "name": "みずのイルカ",
+  "rarity": "N",
+  "element": "水",
+  "motif": "イルカ",
+  "theme": "水属性 × イルカ",
+  "file": "illust/N099.webp"
+ },
+ {
+  "id": "N100",
+  "no": 100,
+  "name": "ほしのクジラ",
+  "rarity": "N",
+  "element": "星",
+  "motif": "クジラ",
+  "theme": "星属性 × クジラ",
+  "file": "illust/N100.webp"
+ },
+ {
+  "id": "R001",
+  "no": 101,
+  "name": "小石のライオン",
+  "rarity": "R",
+  "element": "岩",
+  "motif": "ライオン",
+  "theme": "岩属性 × ライオン",
+  "file": "illust/R001.webp"
+ },
+ {
+  "id": "R002",
+  "no": 102,
+  "name": "小石のクマ",
+  "rarity": "R",
+  "element": "岩",
+  "motif": "クマ",
+  "theme": "岩属性 × クマ",
+  "file": "illust/R002.webp"
+ },
+ {
+  "id": "R003",
+  "no": 103,
+  "name": "霜のクラゲ",
+  "rarity": "R",
+  "element": "氷",
+  "motif": "クラゲ",
+  "theme": "氷属性 × クラゲ",
+  "file": "illust/R003.webp"
+ },
+ {
+  "id": "R004",
+  "no": 104,
+  "name": "若葉のパンダ",
+  "rarity": "R",
+  "element": "森",
+  "motif": "パンダ",
+  "theme": "森属性 × パンダ",
+  "file": "illust/R004.webp"
+ },
+ {
+  "id": "R005",
+  "no": 105,
+  "name": "火花のフェニックス",
+  "rarity": "R",
+  "element": "炎",
+  "motif": "フェニックス",
+  "theme": "炎属性 × フェニックス",
+  "file": "illust/R005.webp"
+ },
+ {
+  "id": "R006",
+  "no": 106,
+  "name": "陽だまりのゴーレム",
+  "rarity": "R",
+  "element": "光",
+  "motif": "ゴーレム",
+  "theme": "光属性 × ゴーレム",
+  "file": "illust/R006.webp"
+ },
+ {
+  "id": "R007",
+  "no": 107,
+  "name": "宵のペンギン",
+  "rarity": "R",
+  "element": "闇",
+  "motif": "ペンギン",
+  "theme": "闇属性 × ペンギン",
+  "file": "illust/R007.webp"
+ },
+ {
+  "id": "R008",
+  "no": 108,
+  "name": "流れ星のヘビ",
+  "rarity": "R",
+  "element": "星",
+  "motif": "ヘビ",
+  "theme": "星属性 × ヘビ",
+  "file": "illust/R008.webp"
+ },
+ {
+  "id": "R009",
+  "no": 109,
+  "name": "稲妻のキツネ",
+  "rarity": "R",
+  "element": "雷",
+  "motif": "キツネ",
+  "theme": "雷属性 × キツネ",
+  "file": "illust/R009.webp"
+ },
+ {
+  "id": "R010",
+  "no": 110,
+  "name": "火花のヒツジ",
+  "rarity": "R",
+  "element": "炎",
+  "motif": "ヒツジ",
+  "theme": "炎属性 × ヒツジ",
+  "file": "illust/R010.webp"
+ },
+ {
+  "id": "R011",
+  "no": 111,
+  "name": "そよ風のコウモリ",
+  "rarity": "R",
+  "element": "風",
+  "motif": "コウモリ",
+  "theme": "風属性 × コウモリ",
+  "file": "illust/R011.webp"
+ },
+ {
+  "id": "R012",
+  "no": 112,
+  "name": "稲妻のコウモリ",
+  "rarity": "R",
+  "element": "雷",
+  "motif": "コウモリ",
+  "theme": "雷属性 × コウモリ",
+  "file": "illust/R012.webp"
+ },
+ {
+  "id": "R013",
+  "no": 113,
+  "name": "稲妻のオオカミ",
+  "rarity": "R",
+  "element": "雷",
+  "motif": "オオカミ",
+  "theme": "雷属性 × オオカミ",
+  "file": "illust/R013.webp"
+ },
+ {
+  "id": "R014",
+  "no": 114,
+  "name": "稲妻のフクロウ",
+  "rarity": "R",
+  "element": "雷",
+  "motif": "フクロウ",
+  "theme": "雷属性 × フクロウ",
+  "file": "illust/R014.webp"
+ },
+ {
+  "id": "R015",
+  "no": 115,
+  "name": "小石のスライム",
+  "rarity": "R",
+  "element": "岩",
+  "motif": "スライム",
+  "theme": "岩属性 × スライム",
+  "file": "illust/R015.webp"
+ },
+ {
+  "id": "R016",
+  "no": 116,
+  "name": "小石のキツネ",
+  "rarity": "R",
+  "element": "岩",
+  "motif": "キツネ",
+  "theme": "岩属性 × キツネ",
+  "file": "illust/R016.webp"
+ },
+ {
+  "id": "R017",
+  "no": 117,
+  "name": "小石のカメ",
+  "rarity": "R",
+  "element": "岩",
+  "motif": "カメ",
+  "theme": "岩属性 × カメ",
+  "file": "illust/R017.webp"
+ },
+ {
+  "id": "R018",
+  "no": 118,
+  "name": "若葉のチョウ",
+  "rarity": "R",
+  "element": "森",
+  "motif": "チョウ",
+  "theme": "森属性 × チョウ",
+  "file": "illust/R018.webp"
+ },
+ {
+  "id": "R019",
+  "no": 119,
+  "name": "流れ星のタカ",
+  "rarity": "R",
+  "element": "星",
+  "motif": "タカ",
+  "theme": "星属性 × タカ",
+  "file": "illust/R019.webp"
+ },
+ {
+  "id": "R020",
+  "no": 120,
+  "name": "霜のユニコーン",
+  "rarity": "R",
+  "element": "氷",
+  "motif": "ユニコーン",
+  "theme": "氷属性 × ユニコーン",
+  "file": "illust/R020.webp"
+ },
+ {
+  "id": "R021",
+  "no": 121,
+  "name": "稲妻のクマ",
+  "rarity": "R",
+  "element": "雷",
+  "motif": "クマ",
+  "theme": "雷属性 × クマ",
+  "file": "illust/R021.webp"
+ },
+ {
+  "id": "R022",
+  "no": 122,
+  "name": "宵のカメ",
+  "rarity": "R",
+  "element": "闇",
+  "motif": "カメ",
+  "theme": "闇属性 × カメ",
+  "file": "illust/R022.webp"
+ },
+ {
+  "id": "R023",
+  "no": 123,
+  "name": "小石のパンダ",
+  "rarity": "R",
+  "element": "岩",
+  "motif": "パンダ",
+  "theme": "岩属性 × パンダ",
+  "file": "illust/R023.webp"
+ },
+ {
+  "id": "R024",
+  "no": 124,
+  "name": "若葉のゴーレム",
+  "rarity": "R",
+  "element": "森",
+  "motif": "ゴーレム",
+  "theme": "森属性 × ゴーレム",
+  "file": "illust/R024.webp"
+ },
+ {
+  "id": "R025",
+  "no": 125,
+  "name": "火花のホタル",
+  "rarity": "R",
+  "element": "炎",
+  "motif": "ホタル",
+  "theme": "炎属性 × ホタル",
+  "file": "illust/R025.webp"
+ },
+ {
+  "id": "R026",
+  "no": 126,
+  "name": "そよ風のヘビ",
+  "rarity": "R",
+  "element": "風",
+  "motif": "ヘビ",
+  "theme": "風属性 × ヘビ",
+  "file": "illust/R026.webp"
+ },
+ {
+  "id": "R027",
+  "no": 127,
+  "name": "火花のシカ",
+  "rarity": "R",
+  "element": "炎",
+  "motif": "シカ",
+  "theme": "炎属性 × シカ",
+  "file": "illust/R027.webp"
+ },
+ {
+  "id": "R028",
+  "no": 128,
+  "name": "そよ風のモモンガ",
+  "rarity": "R",
+  "element": "風",
+  "motif": "モモンガ",
+  "theme": "風属性 × モモンガ",
+  "file": "illust/R028.webp"
+ },
+ {
+  "id": "R029",
+  "no": 129,
+  "name": "火花のクジラ",
+  "rarity": "R",
+  "element": "炎",
+  "motif": "クジラ",
+  "theme": "炎属性 × クジラ",
+  "file": "illust/R029.webp"
+ },
+ {
+  "id": "R030",
+  "no": 130,
+  "name": "流れ星のペンギン",
+  "rarity": "R",
+  "element": "星",
+  "motif": "ペンギン",
+  "theme": "星属性 × ペンギン",
+  "file": "illust/R030.webp"
+ },
+ {
+  "id": "R031",
+  "no": 131,
+  "name": "流れ星のコウモリ",
+  "rarity": "R",
+  "element": "星",
+  "motif": "コウモリ",
+  "theme": "星属性 × コウモリ",
+  "file": "illust/R031.webp"
+ },
+ {
+  "id": "R032",
+  "no": 132,
+  "name": "火花のクラゲ",
+  "rarity": "R",
+  "element": "炎",
+  "motif": "クラゲ",
+  "theme": "炎属性 × クラゲ",
+  "file": "illust/R032.webp"
+ },
+ {
+  "id": "R033",
+  "no": 133,
+  "name": "若葉のヘビ",
+  "rarity": "R",
+  "element": "森",
+  "motif": "ヘビ",
+  "theme": "森属性 × ヘビ",
+  "file": "illust/R033.webp"
+ },
+ {
+  "id": "R034",
+  "no": 134,
+  "name": "宵のリス",
+  "rarity": "R",
+  "element": "闇",
+  "motif": "リス",
+  "theme": "闇属性 × リス",
+  "file": "illust/R034.webp"
+ },
+ {
+  "id": "R035",
+  "no": 135,
+  "name": "小石のシカ",
+  "rarity": "R",
+  "element": "岩",
+  "motif": "シカ",
+  "theme": "岩属性 × シカ",
+  "file": "illust/R035.webp"
+ },
+ {
+  "id": "R036",
+  "no": 136,
+  "name": "火花のパンダ",
+  "rarity": "R",
+  "element": "炎",
+  "motif": "パンダ",
+  "theme": "炎属性 × パンダ",
+  "file": "illust/R036.webp"
+ },
+ {
+  "id": "R037",
+  "no": 137,
+  "name": "若葉のシカ",
+  "rarity": "R",
+  "element": "森",
+  "motif": "シカ",
+  "theme": "森属性 × シカ",
+  "file": "illust/R037.webp"
+ },
+ {
+  "id": "R038",
+  "no": 138,
+  "name": "宵のドラゴン",
+  "rarity": "R",
+  "element": "闇",
+  "motif": "ドラゴン",
+  "theme": "闇属性 × ドラゴン",
+  "file": "illust/R038.webp"
+ },
+ {
+  "id": "R039",
+  "no": 139,
+  "name": "火花のカメ",
+  "rarity": "R",
+  "element": "炎",
+  "motif": "カメ",
+  "theme": "炎属性 × カメ",
+  "file": "illust/R039.webp"
+ },
+ {
+  "id": "R040",
+  "no": 140,
+  "name": "さざなみのライオン",
+  "rarity": "R",
+  "element": "水",
+  "motif": "ライオン",
+  "theme": "水属性 × ライオン",
+  "file": "illust/R040.webp"
+ },
+ {
+  "id": "R041",
+  "no": 141,
+  "name": "陽だまりのスライム",
+  "rarity": "R",
+  "element": "光",
+  "motif": "スライム",
+  "theme": "光属性 × スライム",
+  "file": "illust/R041.webp"
+ },
+ {
+  "id": "R042",
+  "no": 142,
+  "name": "宵のクラゲ",
+  "rarity": "R",
+  "element": "闇",
+  "motif": "クラゲ",
+  "theme": "闇属性 × クラゲ",
+  "file": "illust/R042.webp"
+ },
+ {
+  "id": "R043",
+  "no": 143,
+  "name": "さざなみのカエル",
+  "rarity": "R",
+  "element": "水",
+  "motif": "カエル",
+  "theme": "水属性 × カエル",
+  "file": "illust/R043.webp"
+ },
+ {
+  "id": "R044",
+  "no": 144,
+  "name": "そよ風のシカ",
+  "rarity": "R",
+  "element": "風",
+  "motif": "シカ",
+  "theme": "風属性 × シカ",
+  "file": "illust/R044.webp"
+ },
+ {
+  "id": "R045",
+  "no": 145,
+  "name": "さざなみのクラゲ",
+  "rarity": "R",
+  "element": "水",
+  "motif": "クラゲ",
+  "theme": "水属性 × クラゲ",
+  "file": "illust/R045.webp"
+ },
+ {
+  "id": "R046",
+  "no": 146,
+  "name": "霜のオオカミ",
+  "rarity": "R",
+  "element": "氷",
+  "motif": "オオカミ",
+  "theme": "氷属性 × オオカミ",
+  "file": "illust/R046.webp"
+ },
+ {
+  "id": "R047",
+  "no": 147,
+  "name": "若葉のイルカ",
+  "rarity": "R",
+  "element": "森",
+  "motif": "イルカ",
+  "theme": "森属性 × イルカ",
+  "file": "illust/R047.webp"
+ },
+ {
+  "id": "R048",
+  "no": 148,
+  "name": "火花のハリネズミ",
+  "rarity": "R",
+  "element": "炎",
+  "motif": "ハリネズミ",
+  "theme": "炎属性 × ハリネズミ",
+  "file": "illust/R048.webp"
+ },
+ {
+  "id": "R049",
+  "no": 149,
+  "name": "さざなみのリス",
+  "rarity": "R",
+  "element": "水",
+  "motif": "リス",
+  "theme": "水属性 × リス",
+  "file": "illust/R049.webp"
+ },
+ {
+  "id": "R050",
+  "no": 150,
+  "name": "さざなみのフクロウ",
+  "rarity": "R",
+  "element": "水",
+  "motif": "フクロウ",
+  "theme": "水属性 × フクロウ",
+  "file": "illust/R050.webp"
+ },
+ {
+  "id": "R051",
+  "no": 151,
+  "name": "流れ星のモモンガ",
+  "rarity": "R",
+  "element": "星",
+  "motif": "モモンガ",
+  "theme": "星属性 × モモンガ",
+  "file": "illust/R051.webp"
+ },
+ {
+  "id": "R052",
+  "no": 152,
+  "name": "若葉のネコ",
+  "rarity": "R",
+  "element": "森",
+  "motif": "ネコ",
+  "theme": "森属性 × ネコ",
+  "file": "illust/R052.webp"
+ },
+ {
+  "id": "R053",
+  "no": 153,
+  "name": "稲妻のシカ",
+  "rarity": "R",
+  "element": "雷",
+  "motif": "シカ",
+  "theme": "雷属性 × シカ",
+  "file": "illust/R053.webp"
+ },
+ {
+  "id": "R054",
+  "no": 154,
+  "name": "霜のリス",
+  "rarity": "R",
+  "element": "氷",
+  "motif": "リス",
+  "theme": "氷属性 × リス",
+  "file": "illust/R054.webp"
+ },
+ {
+  "id": "R055",
+  "no": 155,
+  "name": "霜のキツネ",
+  "rarity": "R",
+  "element": "氷",
+  "motif": "キツネ",
+  "theme": "氷属性 × キツネ",
+  "file": "illust/R055.webp"
+ },
+ {
+  "id": "R056",
+  "no": 156,
+  "name": "稲妻のリス",
+  "rarity": "R",
+  "element": "雷",
+  "motif": "リス",
+  "theme": "雷属性 × リス",
+  "file": "illust/R056.webp"
+ },
+ {
+  "id": "R057",
+  "no": 157,
+  "name": "そよ風のライオン",
+  "rarity": "R",
+  "element": "風",
+  "motif": "ライオン",
+  "theme": "風属性 × ライオン",
+  "file": "illust/R057.webp"
+ },
+ {
+  "id": "R058",
+  "no": 158,
+  "name": "火花のキツネ",
+  "rarity": "R",
+  "element": "炎",
+  "motif": "キツネ",
+  "theme": "炎属性 × キツネ",
+  "file": "illust/R058.webp"
+ },
+ {
+  "id": "R059",
+  "no": 159,
+  "name": "流れ星のフェニックス",
+  "rarity": "R",
+  "element": "星",
+  "motif": "フェニックス",
+  "theme": "星属性 × フェニックス",
+  "file": "illust/R059.webp"
+ },
+ {
+  "id": "R060",
+  "no": 160,
+  "name": "そよ風のイルカ",
+  "rarity": "R",
+  "element": "風",
+  "motif": "イルカ",
+  "theme": "風属性 × イルカ",
+  "file": "illust/R060.webp"
+ },
+ {
+  "id": "R061",
+  "no": 161,
+  "name": "霜のネコ",
+  "rarity": "R",
+  "element": "氷",
+  "motif": "ネコ",
+  "theme": "氷属性 × ネコ",
+  "file": "illust/R061.webp"
+ },
+ {
+  "id": "R062",
+  "no": 162,
+  "name": "陽だまりのクジラ",
+  "rarity": "R",
+  "element": "光",
+  "motif": "クジラ",
+  "theme": "光属性 × クジラ",
+  "file": "illust/R062.webp"
+ },
+ {
+  "id": "R063",
+  "no": 163,
+  "name": "小石のドラゴン",
+  "rarity": "R",
+  "element": "岩",
+  "motif": "ドラゴン",
+  "theme": "岩属性 × ドラゴン",
+  "file": "illust/R063.webp"
+ },
+ {
+  "id": "R064",
+  "no": 164,
+  "name": "流れ星のネコ",
+  "rarity": "R",
+  "element": "星",
+  "motif": "ネコ",
+  "theme": "星属性 × ネコ",
+  "file": "illust/R064.webp"
+ },
+ {
+  "id": "R065",
+  "no": 165,
+  "name": "そよ風のチョウ",
+  "rarity": "R",
+  "element": "風",
+  "motif": "チョウ",
+  "theme": "風属性 × チョウ",
+  "file": "illust/R065.webp"
+ },
+ {
+  "id": "R066",
+  "no": 166,
+  "name": "流れ星のカエル",
+  "rarity": "R",
+  "element": "星",
+  "motif": "カエル",
+  "theme": "星属性 × カエル",
+  "file": "illust/R066.webp"
+ },
+ {
+  "id": "R067",
+  "no": 167,
+  "name": "若葉のオオカミ",
+  "rarity": "R",
+  "element": "森",
+  "motif": "オオカミ",
+  "theme": "森属性 × オオカミ",
+  "file": "illust/R067.webp"
+ },
+ {
+  "id": "R068",
+  "no": 168,
+  "name": "霜のドラゴン",
+  "rarity": "R",
+  "element": "氷",
+  "motif": "ドラゴン",
+  "theme": "氷属性 × ドラゴン",
+  "file": "illust/R068.webp"
+ },
+ {
+  "id": "R069",
+  "no": 169,
+  "name": "流れ星のスライム",
+  "rarity": "R",
+  "element": "星",
+  "motif": "スライム",
+  "theme": "星属性 × スライム",
+  "file": "illust/R069.webp"
+ },
+ {
+  "id": "R070",
+  "no": 170,
+  "name": "霜のウサギ",
+  "rarity": "R",
+  "element": "氷",
+  "motif": "ウサギ",
+  "theme": "氷属性 × ウサギ",
+  "file": "illust/R070.webp"
+ },
+ {
+  "id": "R071",
+  "no": 171,
+  "name": "陽だまりのキツネ",
+  "rarity": "R",
+  "element": "光",
+  "motif": "キツネ",
+  "theme": "光属性 × キツネ",
+  "file": "illust/R071.webp"
+ },
+ {
+  "id": "R072",
+  "no": 172,
+  "name": "宵のタカ",
+  "rarity": "R",
+  "element": "闇",
+  "motif": "タカ",
+  "theme": "闇属性 × タカ",
+  "file": "illust/R072.webp"
+ },
+ {
+  "id": "R073",
+  "no": 173,
+  "name": "陽だまりのウサギ",
+  "rarity": "R",
+  "element": "光",
+  "motif": "ウサギ",
+  "theme": "光属性 × ウサギ",
+  "file": "illust/R073.webp"
+ },
+ {
+  "id": "R074",
+  "no": 174,
+  "name": "稲妻のゴーレム",
+  "rarity": "R",
+  "element": "雷",
+  "motif": "ゴーレム",
+  "theme": "雷属性 × ゴーレム",
+  "file": "illust/R074.webp"
+ },
+ {
+  "id": "R075",
+  "no": 175,
+  "name": "若葉のホタル",
+  "rarity": "R",
+  "element": "森",
+  "motif": "ホタル",
+  "theme": "森属性 × ホタル",
+  "file": "illust/R075.webp"
+ },
+ {
+  "id": "R076",
+  "no": 176,
+  "name": "若葉のカメ",
+  "rarity": "R",
+  "element": "森",
+  "motif": "カメ",
+  "theme": "森属性 × カメ",
+  "file": "illust/R076.webp"
+ },
+ {
+  "id": "R077",
+  "no": 177,
+  "name": "陽だまりのイルカ",
+  "rarity": "R",
+  "element": "光",
+  "motif": "イルカ",
+  "theme": "光属性 × イルカ",
+  "file": "illust/R077.webp"
+ },
+ {
+  "id": "R078",
+  "no": 178,
+  "name": "霜のハリネズミ",
+  "rarity": "R",
+  "element": "氷",
+  "motif": "ハリネズミ",
+  "theme": "氷属性 × ハリネズミ",
+  "file": "illust/R078.webp"
+ },
+ {
+  "id": "R079",
+  "no": 179,
+  "name": "霜のペンギン",
+  "rarity": "R",
+  "element": "氷",
+  "motif": "ペンギン",
+  "theme": "氷属性 × ペンギン",
+  "file": "illust/R079.webp"
+ },
+ {
+  "id": "R080",
+  "no": 180,
+  "name": "火花のユニコーン",
+  "rarity": "R",
+  "element": "炎",
+  "motif": "ユニコーン",
+  "theme": "炎属性 × ユニコーン",
+  "file": "illust/R080.webp"
+ },
+ {
+  "id": "SR001",
+  "no": 181,
+  "name": "剛岩のリス",
+  "rarity": "SR",
+  "element": "岩",
+  "motif": "リス",
+  "theme": "岩属性 × リス",
+  "file": "illust/SR001.webp"
+ },
+ {
+  "id": "SR002",
+  "no": 182,
+  "name": "氷晶のタカ",
+  "rarity": "SR",
+  "element": "氷",
+  "motif": "タカ",
+  "theme": "氷属性 × タカ",
+  "file": "illust/SR002.webp"
+ },
+ {
+  "id": "SR003",
+  "no": 183,
+  "name": "月影のハリネズミ",
+  "rarity": "SR",
+  "element": "闇",
+  "motif": "ハリネズミ",
+  "theme": "闇属性 × ハリネズミ",
+  "file": "illust/SR003.webp"
+ },
+ {
+  "id": "SR004",
+  "no": 184,
+  "name": "翠緑のクジラ",
+  "rarity": "SR",
+  "element": "森",
+  "motif": "クジラ",
+  "theme": "森属性 × クジラ",
+  "file": "illust/SR004.webp"
+ },
+ {
+  "id": "SR005",
+  "no": 185,
+  "name": "疾風のタカ",
+  "rarity": "SR",
+  "element": "風",
+  "motif": "タカ",
+  "theme": "風属性 × タカ",
+  "file": "illust/SR005.webp"
+ },
+ {
+  "id": "SR006",
+  "no": 186,
+  "name": "疾風のウサギ",
+  "rarity": "SR",
+  "element": "風",
+  "motif": "ウサギ",
+  "theme": "風属性 × ウサギ",
+  "file": "illust/SR006.webp"
+ },
+ {
+  "id": "SR007",
+  "no": 187,
+  "name": "雷鳴のタカ",
+  "rarity": "SR",
+  "element": "雷",
+  "motif": "タカ",
+  "theme": "雷属性 × タカ",
+  "file": "illust/SR007.webp"
+ },
+ {
+  "id": "SR008",
+  "no": 188,
+  "name": "翠緑のクラゲ",
+  "rarity": "SR",
+  "element": "森",
+  "motif": "クラゲ",
+  "theme": "森属性 × クラゲ",
+  "file": "illust/SR008.webp"
+ },
+ {
+  "id": "SR009",
+  "no": 189,
+  "name": "白光のフクロウ",
+  "rarity": "SR",
+  "element": "光",
+  "motif": "フクロウ",
+  "theme": "光属性 × フクロウ",
+  "file": "illust/SR009.webp"
+ },
+ {
+  "id": "SR010",
+  "no": 190,
+  "name": "白光のフェニックス",
+  "rarity": "SR",
+  "element": "光",
+  "motif": "フェニックス",
+  "theme": "光属性 × フェニックス",
+  "file": "illust/SR010.webp"
+ },
+ {
+  "id": "SR011",
+  "no": 191,
+  "name": "蒼海のネコ",
+  "rarity": "SR",
+  "element": "水",
+  "motif": "ネコ",
+  "theme": "水属性 × ネコ",
+  "file": "illust/SR011.webp"
+ },
+ {
+  "id": "SR012",
+  "no": 192,
+  "name": "剛岩のチョウ",
+  "rarity": "SR",
+  "element": "岩",
+  "motif": "チョウ",
+  "theme": "岩属性 × チョウ",
+  "file": "illust/SR012.webp"
+ },
+ {
+  "id": "SR013",
+  "no": 193,
+  "name": "翠緑のリス",
+  "rarity": "SR",
+  "element": "森",
+  "motif": "リス",
+  "theme": "森属性 × リス",
+  "file": "illust/SR013.webp"
+ },
+ {
+  "id": "SR014",
+  "no": 194,
+  "name": "蒼海のパンダ",
+  "rarity": "SR",
+  "element": "水",
+  "motif": "パンダ",
+  "theme": "水属性 × パンダ",
+  "file": "illust/SR014.webp"
+ },
+ {
+  "id": "SR015",
+  "no": 195,
+  "name": "剛岩のハリネズミ",
+  "rarity": "SR",
+  "element": "岩",
+  "motif": "ハリネズミ",
+  "theme": "岩属性 × ハリネズミ",
+  "file": "illust/SR015.webp"
+ },
+ {
+  "id": "SR016",
+  "no": 196,
+  "name": "疾風のペンギン",
+  "rarity": "SR",
+  "element": "風",
+  "motif": "ペンギン",
+  "theme": "風属性 × ペンギン",
+  "file": "illust/SR016.webp"
+ },
+ {
+  "id": "SR017",
+  "no": 197,
+  "name": "白光のペンギン",
+  "rarity": "SR",
+  "element": "光",
+  "motif": "ペンギン",
+  "theme": "光属性 × ペンギン",
+  "file": "illust/SR017.webp"
+ },
+ {
+  "id": "SR018",
+  "no": 198,
+  "name": "氷晶のコウモリ",
+  "rarity": "SR",
+  "element": "氷",
+  "motif": "コウモリ",
+  "theme": "氷属性 × コウモリ",
+  "file": "illust/SR018.webp"
+ },
+ {
+  "id": "SR019",
+  "no": 199,
+  "name": "雷鳴のフェニックス",
+  "rarity": "SR",
+  "element": "雷",
+  "motif": "フェニックス",
+  "theme": "雷属性 × フェニックス",
+  "file": "illust/SR019.webp"
+ },
+ {
+  "id": "SR020",
+  "no": 200,
+  "name": "氷晶のクマ",
+  "rarity": "SR",
+  "element": "氷",
+  "motif": "クマ",
+  "theme": "氷属性 × クマ",
+  "file": "illust/SR020.webp"
+ },
+ {
+  "id": "SR021",
+  "no": 201,
+  "name": "疾風のフクロウ",
+  "rarity": "SR",
+  "element": "風",
+  "motif": "フクロウ",
+  "theme": "風属性 × フクロウ",
+  "file": "illust/SR021.webp"
+ },
+ {
+  "id": "SR022",
+  "no": 202,
+  "name": "紅蓮のタカ",
+  "rarity": "SR",
+  "element": "炎",
+  "motif": "タカ",
+  "theme": "炎属性 × タカ",
+  "file": "illust/SR022.webp"
+ },
+ {
+  "id": "SR023",
+  "no": 203,
+  "name": "疾風のキツネ",
+  "rarity": "SR",
+  "element": "風",
+  "motif": "キツネ",
+  "theme": "風属性 × キツネ",
+  "file": "illust/SR023.webp"
+ },
+ {
+  "id": "SR024",
+  "no": 204,
+  "name": "星屑のカメ",
+  "rarity": "SR",
+  "element": "星",
+  "motif": "カメ",
+  "theme": "星属性 × カメ",
+  "file": "illust/SR024.webp"
+ },
+ {
+  "id": "SR025",
+  "no": 205,
+  "name": "星屑のドラゴン",
+  "rarity": "SR",
+  "element": "星",
+  "motif": "ドラゴン",
+  "theme": "星属性 × ドラゴン",
+  "file": "illust/SR025.webp"
+ },
+ {
+  "id": "SR026",
+  "no": 206,
+  "name": "月影のネコ",
+  "rarity": "SR",
+  "element": "闇",
+  "motif": "ネコ",
+  "theme": "闇属性 × ネコ",
+  "file": "illust/SR026.webp"
+ },
+ {
+  "id": "SR027",
+  "no": 207,
+  "name": "雷鳴のライオン",
+  "rarity": "SR",
+  "element": "雷",
+  "motif": "ライオン",
+  "theme": "雷属性 × ライオン",
+  "file": "illust/SR027.webp"
+ },
+ {
+  "id": "SR028",
+  "no": 208,
+  "name": "翠緑のフクロウ",
+  "rarity": "SR",
+  "element": "森",
+  "motif": "フクロウ",
+  "theme": "森属性 × フクロウ",
+  "file": "illust/SR028.webp"
+ },
+ {
+  "id": "SR029",
+  "no": 209,
+  "name": "翠緑のコウモリ",
+  "rarity": "SR",
+  "element": "森",
+  "motif": "コウモリ",
+  "theme": "森属性 × コウモリ",
+  "file": "illust/SR029.webp"
+ },
+ {
+  "id": "SR030",
+  "no": 210,
+  "name": "月影のヘビ",
+  "rarity": "SR",
+  "element": "闇",
+  "motif": "ヘビ",
+  "theme": "闇属性 × ヘビ",
+  "file": "illust/SR030.webp"
+ },
+ {
+  "id": "SR031",
+  "no": 211,
+  "name": "剛岩のヒツジ",
+  "rarity": "SR",
+  "element": "岩",
+  "motif": "ヒツジ",
+  "theme": "岩属性 × ヒツジ",
+  "file": "illust/SR031.webp"
+ },
+ {
+  "id": "SR032",
+  "no": 212,
+  "name": "月影のイルカ",
+  "rarity": "SR",
+  "element": "闇",
+  "motif": "イルカ",
+  "theme": "闇属性 × イルカ",
+  "file": "illust/SR032.webp"
+ },
+ {
+  "id": "SR033",
+  "no": 213,
+  "name": "紅蓮のゴーレム",
+  "rarity": "SR",
+  "element": "炎",
+  "motif": "ゴーレム",
+  "theme": "炎属性 × ゴーレム",
+  "file": "illust/SR033.webp"
+ },
+ {
+  "id": "SR034",
+  "no": 214,
+  "name": "疾風のゴーレム",
+  "rarity": "SR",
+  "element": "風",
+  "motif": "ゴーレム",
+  "theme": "風属性 × ゴーレム",
+  "file": "illust/SR034.webp"
+ },
+ {
+  "id": "SR035",
+  "no": 215,
+  "name": "疾風のトラ",
+  "rarity": "SR",
+  "element": "風",
+  "motif": "トラ",
+  "theme": "風属性 × トラ",
+  "file": "illust/SR035.webp"
+ },
+ {
+  "id": "SR036",
+  "no": 216,
+  "name": "白光のユニコーン",
+  "rarity": "SR",
+  "element": "光",
+  "motif": "ユニコーン",
+  "theme": "光属性 × ユニコーン",
+  "file": "illust/SR036.webp"
+ },
+ {
+  "id": "SR037",
+  "no": 217,
+  "name": "剛岩のゴーレム",
+  "rarity": "SR",
+  "element": "岩",
+  "motif": "ゴーレム",
+  "theme": "岩属性 × ゴーレム",
+  "file": "illust/SR037.webp"
+ },
+ {
+  "id": "SR038",
+  "no": 218,
+  "name": "蒼海のホタル",
+  "rarity": "SR",
+  "element": "水",
+  "motif": "ホタル",
+  "theme": "水属性 × ホタル",
+  "file": "illust/SR038.webp"
+ },
+ {
+  "id": "SR039",
+  "no": 219,
+  "name": "星屑のフクロウ",
+  "rarity": "SR",
+  "element": "星",
+  "motif": "フクロウ",
+  "theme": "星属性 × フクロウ",
+  "file": "illust/SR039.webp"
+ },
+ {
+  "id": "SR040",
+  "no": 220,
+  "name": "翠緑のヒツジ",
+  "rarity": "SR",
+  "element": "森",
+  "motif": "ヒツジ",
+  "theme": "森属性 × ヒツジ",
+  "file": "illust/SR040.webp"
+ },
+ {
+  "id": "SR041",
+  "no": 221,
+  "name": "白光のオオカミ",
+  "rarity": "SR",
+  "element": "光",
+  "motif": "オオカミ",
+  "theme": "光属性 × オオカミ",
+  "file": "illust/SR041.webp"
+ },
+ {
+  "id": "SR042",
+  "no": 222,
+  "name": "星屑のリス",
+  "rarity": "SR",
+  "element": "星",
+  "motif": "リス",
+  "theme": "星属性 × リス",
+  "file": "illust/SR042.webp"
+ },
+ {
+  "id": "SR043",
+  "no": 223,
+  "name": "月影のシカ",
+  "rarity": "SR",
+  "element": "闇",
+  "motif": "シカ",
+  "theme": "闇属性 × シカ",
+  "file": "illust/SR043.webp"
+ },
+ {
+  "id": "SR044",
+  "no": 224,
+  "name": "翠緑のモモンガ",
+  "rarity": "SR",
+  "element": "森",
+  "motif": "モモンガ",
+  "theme": "森属性 × モモンガ",
+  "file": "illust/SR044.webp"
+ },
+ {
+  "id": "SR045",
+  "no": 225,
+  "name": "剛岩のフクロウ",
+  "rarity": "SR",
+  "element": "岩",
+  "motif": "フクロウ",
+  "theme": "岩属性 × フクロウ",
+  "file": "illust/SR045.webp"
+ },
+ {
+  "id": "SR046",
+  "no": 226,
+  "name": "月影のオオカミ",
+  "rarity": "SR",
+  "element": "闇",
+  "motif": "オオカミ",
+  "theme": "闇属性 × オオカミ",
+  "file": "illust/SR046.webp"
+ },
+ {
+  "id": "SR047",
+  "no": 227,
+  "name": "紅蓮のオオカミ",
+  "rarity": "SR",
+  "element": "炎",
+  "motif": "オオカミ",
+  "theme": "炎属性 × オオカミ",
+  "file": "illust/SR047.webp"
+ },
+ {
+  "id": "SR048",
+  "no": 228,
+  "name": "雷鳴のペンギン",
+  "rarity": "SR",
+  "element": "雷",
+  "motif": "ペンギン",
+  "theme": "雷属性 × ペンギン",
+  "file": "illust/SR048.webp"
+ },
+ {
+  "id": "SR049",
+  "no": 229,
+  "name": "蒼海のフェニックス",
+  "rarity": "SR",
+  "element": "水",
+  "motif": "フェニックス",
+  "theme": "水属性 × フェニックス",
+  "file": "illust/SR049.webp"
+ },
+ {
+  "id": "SR050",
+  "no": 230,
+  "name": "月影のゴーレム",
+  "rarity": "SR",
+  "element": "闇",
+  "motif": "ゴーレム",
+  "theme": "闇属性 × ゴーレム",
+  "file": "illust/SR050.webp"
+ },
+ {
+  "id": "SR051",
+  "no": 231,
+  "name": "白光のカメ",
+  "rarity": "SR",
+  "element": "光",
+  "motif": "カメ",
+  "theme": "光属性 × カメ",
+  "file": "illust/SR051.webp"
+ },
+ {
+  "id": "SR052",
+  "no": 232,
+  "name": "疾風のリス",
+  "rarity": "SR",
+  "element": "風",
+  "motif": "リス",
+  "theme": "風属性 × リス",
+  "file": "illust/SR052.webp"
+ },
+ {
+  "id": "SR053",
+  "no": 233,
+  "name": "紅蓮のスライム",
+  "rarity": "SR",
+  "element": "炎",
+  "motif": "スライム",
+  "theme": "炎属性 × スライム",
+  "file": "illust/SR053.webp"
+ },
+ {
+  "id": "SR054",
+  "no": 234,
+  "name": "月影のユニコーン",
+  "rarity": "SR",
+  "element": "闇",
+  "motif": "ユニコーン",
+  "theme": "闇属性 × ユニコーン",
+  "file": "illust/SR054.webp"
+ },
+ {
+  "id": "SR055",
+  "no": 235,
+  "name": "月影のコウモリ",
+  "rarity": "SR",
+  "element": "闇",
+  "motif": "コウモリ",
+  "theme": "闇属性 × コウモリ",
+  "file": "illust/SR055.webp"
+ },
+ {
+  "id": "SR056",
+  "no": 236,
+  "name": "白光のクラゲ",
+  "rarity": "SR",
+  "element": "光",
+  "motif": "クラゲ",
+  "theme": "光属性 × クラゲ",
+  "file": "illust/SR056.webp"
+ },
+ {
+  "id": "SR057",
+  "no": 237,
+  "name": "氷晶のフクロウ",
+  "rarity": "SR",
+  "element": "氷",
+  "motif": "フクロウ",
+  "theme": "氷属性 × フクロウ",
+  "file": "illust/SR057.webp"
+ },
+ {
+  "id": "SR058",
+  "no": 238,
+  "name": "氷晶のパンダ",
+  "rarity": "SR",
+  "element": "氷",
+  "motif": "パンダ",
+  "theme": "氷属性 × パンダ",
+  "file": "illust/SR058.webp"
+ },
+ {
+  "id": "SR059",
+  "no": 239,
+  "name": "疾風のカメ",
+  "rarity": "SR",
+  "element": "風",
+  "motif": "カメ",
+  "theme": "風属性 × カメ",
+  "file": "illust/SR059.webp"
+ },
+ {
+  "id": "SR060",
+  "no": 240,
+  "name": "白光のチョウ",
+  "rarity": "SR",
+  "element": "光",
+  "motif": "チョウ",
+  "theme": "光属性 × チョウ",
+  "file": "illust/SR060.webp"
+ },
+ {
+  "id": "SSR001",
+  "no": 241,
+  "name": "絶氷のクジラ",
+  "rarity": "SSR",
+  "element": "氷",
+  "motif": "クジラ",
+  "theme": "氷属性 × クジラ",
+  "file": "illust/SSR001.webp"
+ },
+ {
+  "id": "SSR002",
+  "no": 242,
+  "name": "絶氷のイルカ",
+  "rarity": "SSR",
+  "element": "氷",
+  "motif": "イルカ",
+  "theme": "氷属性 × イルカ",
+  "file": "illust/SSR002.webp"
+ },
+ {
+  "id": "SSR003",
+  "no": 243,
+  "name": "深淵のモモンガ",
+  "rarity": "SSR",
+  "element": "水",
+  "motif": "モモンガ",
+  "theme": "水属性 × モモンガ",
+  "file": "illust/SSR003.webp"
+ },
+ {
+  "id": "SSR004",
+  "no": 244,
+  "name": "深淵のクマ",
+  "rarity": "SSR",
+  "element": "水",
+  "motif": "クマ",
+  "theme": "水属性 × クマ",
+  "file": "illust/SSR004.webp"
+ },
+ {
+  "id": "SSR005",
+  "no": 245,
+  "name": "聖光のトラ",
+  "rarity": "SSR",
+  "element": "光",
+  "motif": "トラ",
+  "theme": "光属性 × トラ",
+  "file": "illust/SSR005.webp"
+ },
+ {
+  "id": "SSR006",
+  "no": 246,
+  "name": "絶氷のトラ",
+  "rarity": "SSR",
+  "element": "氷",
+  "motif": "トラ",
+  "theme": "氷属性 × トラ",
+  "file": "illust/SSR006.webp"
+ },
+ {
+  "id": "SSR007",
+  "no": 247,
+  "name": "深淵のヘビ",
+  "rarity": "SSR",
+  "element": "水",
+  "motif": "ヘビ",
+  "theme": "水属性 × ヘビ",
+  "file": "illust/SSR007.webp"
+ },
+ {
+  "id": "SSR008",
+  "no": 248,
+  "name": "煉獄のライオン",
+  "rarity": "SSR",
+  "element": "炎",
+  "motif": "ライオン",
+  "theme": "炎属性 × ライオン",
+  "file": "illust/SSR008.webp"
+ },
+ {
+  "id": "SSR009",
+  "no": 249,
+  "name": "轟雷のスライム",
+  "rarity": "SSR",
+  "element": "雷",
+  "motif": "スライム",
+  "theme": "雷属性 × スライム",
+  "file": "illust/SSR009.webp"
+ },
+ {
+  "id": "SSR010",
+  "no": 250,
+  "name": "天嵐のネコ",
+  "rarity": "SSR",
+  "element": "風",
+  "motif": "ネコ",
+  "theme": "風属性 × ネコ",
+  "file": "illust/SSR010.webp"
+ },
+ {
+  "id": "SSR011",
+  "no": 251,
+  "name": "天嵐のハリネズミ",
+  "rarity": "SSR",
+  "element": "風",
+  "motif": "ハリネズミ",
+  "theme": "風属性 × ハリネズミ",
+  "file": "illust/SSR011.webp"
+ },
+ {
+  "id": "SSR012",
+  "no": 252,
+  "name": "絶氷のライオン",
+  "rarity": "SSR",
+  "element": "氷",
+  "motif": "ライオン",
+  "theme": "氷属性 × ライオン",
+  "file": "illust/SSR012.webp"
+ },
+ {
+  "id": "SSR013",
+  "no": 253,
+  "name": "銀河のトラ",
+  "rarity": "SSR",
+  "element": "星",
+  "motif": "トラ",
+  "theme": "星属性 × トラ",
+  "file": "illust/SSR013.webp"
+ },
+ {
+  "id": "SSR014",
+  "no": 254,
+  "name": "深淵のチョウ",
+  "rarity": "SSR",
+  "element": "水",
+  "motif": "チョウ",
+  "theme": "水属性 × チョウ",
+  "file": "illust/SSR014.webp"
+ },
+ {
+  "id": "SSR015",
+  "no": 255,
+  "name": "冥府のヒツジ",
+  "rarity": "SSR",
+  "element": "闇",
+  "motif": "ヒツジ",
+  "theme": "闇属性 × ヒツジ",
+  "file": "illust/SSR015.webp"
+ },
+ {
+  "id": "SSR016",
+  "no": 256,
+  "name": "轟雷のカメ",
+  "rarity": "SSR",
+  "element": "雷",
+  "motif": "カメ",
+  "theme": "雷属性 × カメ",
+  "file": "illust/SSR016.webp"
+ },
+ {
+  "id": "SSR017",
+  "no": 257,
+  "name": "冥府のフェニックス",
+  "rarity": "SSR",
+  "element": "闇",
+  "motif": "フェニックス",
+  "theme": "闇属性 × フェニックス",
+  "file": "illust/SSR017.webp"
+ },
+ {
+  "id": "SSR018",
+  "no": 258,
+  "name": "古樹のトラ",
+  "rarity": "SSR",
+  "element": "森",
+  "motif": "トラ",
+  "theme": "森属性 × トラ",
+  "file": "illust/SSR018.webp"
+ },
+ {
+  "id": "SSR019",
+  "no": 259,
+  "name": "深淵のスライム",
+  "rarity": "SSR",
+  "element": "水",
+  "motif": "スライム",
+  "theme": "水属性 × スライム",
+  "file": "illust/SSR019.webp"
+ },
+ {
+  "id": "SSR020",
+  "no": 260,
+  "name": "絶氷のカメ",
+  "rarity": "SSR",
+  "element": "氷",
+  "motif": "カメ",
+  "theme": "氷属性 × カメ",
+  "file": "illust/SSR020.webp"
+ },
+ {
+  "id": "SSR021",
+  "no": 261,
+  "name": "深淵のユニコーン",
+  "rarity": "SSR",
+  "element": "水",
+  "motif": "ユニコーン",
+  "theme": "水属性 × ユニコーン",
+  "file": "illust/SSR021.webp"
+ },
+ {
+  "id": "SSR022",
+  "no": 262,
+  "name": "巨岩のイルカ",
+  "rarity": "SSR",
+  "element": "岩",
+  "motif": "イルカ",
+  "theme": "岩属性 × イルカ",
+  "file": "illust/SSR022.webp"
+ },
+ {
+  "id": "SSR023",
+  "no": 263,
+  "name": "絶氷のヘビ",
+  "rarity": "SSR",
+  "element": "氷",
+  "motif": "ヘビ",
+  "theme": "氷属性 × ヘビ",
+  "file": "illust/SSR023.webp"
+ },
+ {
+  "id": "SSR024",
+  "no": 264,
+  "name": "冥府のクジラ",
+  "rarity": "SSR",
+  "element": "闇",
+  "motif": "クジラ",
+  "theme": "闇属性 × クジラ",
+  "file": "illust/SSR024.webp"
+ },
+ {
+  "id": "SSR025",
+  "no": 265,
+  "name": "絶氷のゴーレム",
+  "rarity": "SSR",
+  "element": "氷",
+  "motif": "ゴーレム",
+  "theme": "氷属性 × ゴーレム",
+  "file": "illust/SSR025.webp"
+ },
+ {
+  "id": "SSR026",
+  "no": 266,
+  "name": "冥府のモモンガ",
+  "rarity": "SSR",
+  "element": "闇",
+  "motif": "モモンガ",
+  "theme": "闇属性 × モモンガ",
+  "file": "illust/SSR026.webp"
+ },
+ {
+  "id": "SSR027",
+  "no": 267,
+  "name": "天嵐のユニコーン",
+  "rarity": "SSR",
+  "element": "風",
+  "motif": "ユニコーン",
+  "theme": "風属性 × ユニコーン",
+  "file": "illust/SSR027.webp"
+ },
+ {
+  "id": "SSR028",
+  "no": 268,
+  "name": "巨岩のクラゲ",
+  "rarity": "SSR",
+  "element": "岩",
+  "motif": "クラゲ",
+  "theme": "岩属性 × クラゲ",
+  "file": "illust/SSR028.webp"
+ },
+ {
+  "id": "SSR029",
+  "no": 269,
+  "name": "聖光のリス",
+  "rarity": "SSR",
+  "element": "光",
+  "motif": "リス",
+  "theme": "光属性 × リス",
+  "file": "illust/SSR029.webp"
+ },
+ {
+  "id": "SSR030",
+  "no": 270,
+  "name": "深淵のハリネズミ",
+  "rarity": "SSR",
+  "element": "水",
+  "motif": "ハリネズミ",
+  "theme": "水属性 × ハリネズミ",
+  "file": "illust/SSR030.webp"
+ },
+ {
+  "id": "SSR031",
+  "no": 271,
+  "name": "深淵のペンギン",
+  "rarity": "SSR",
+  "element": "水",
+  "motif": "ペンギン",
+  "theme": "水属性 × ペンギン",
+  "file": "illust/SSR031.webp"
+ },
+ {
+  "id": "SSR032",
+  "no": 272,
+  "name": "絶氷のチョウ",
+  "rarity": "SSR",
+  "element": "氷",
+  "motif": "チョウ",
+  "theme": "氷属性 × チョウ",
+  "file": "illust/SSR032.webp"
+ },
+ {
+  "id": "SSR033",
+  "no": 273,
+  "name": "轟雷のヒツジ",
+  "rarity": "SSR",
+  "element": "雷",
+  "motif": "ヒツジ",
+  "theme": "雷属性 × ヒツジ",
+  "file": "illust/SSR033.webp"
+ },
+ {
+  "id": "SSR034",
+  "no": 274,
+  "name": "煉獄のトラ",
+  "rarity": "SSR",
+  "element": "炎",
+  "motif": "トラ",
+  "theme": "炎属性 × トラ",
+  "file": "illust/SSR034.webp"
+ },
+ {
+  "id": "SSR035",
+  "no": 275,
+  "name": "轟雷のウサギ",
+  "rarity": "SSR",
+  "element": "雷",
+  "motif": "ウサギ",
+  "theme": "雷属性 × ウサギ",
+  "file": "illust/SSR035.webp"
+ },
+ {
+  "id": "SSR036",
+  "no": 276,
+  "name": "天嵐のクマ",
+  "rarity": "SSR",
+  "element": "風",
+  "motif": "クマ",
+  "theme": "風属性 × クマ",
+  "file": "illust/SSR036.webp"
+ },
+ {
+  "id": "SSR037",
+  "no": 277,
+  "name": "銀河のホタル",
+  "rarity": "SSR",
+  "element": "星",
+  "motif": "ホタル",
+  "theme": "星属性 × ホタル",
+  "file": "illust/SSR037.webp"
+ },
+ {
+  "id": "SSR038",
+  "no": 278,
+  "name": "轟雷のカエル",
+  "rarity": "SSR",
+  "element": "雷",
+  "motif": "カエル",
+  "theme": "雷属性 × カエル",
+  "file": "illust/SSR038.webp"
+ },
+ {
+  "id": "SSR039",
+  "no": 279,
+  "name": "巨岩のフェニックス",
+  "rarity": "SSR",
+  "element": "岩",
+  "motif": "フェニックス",
+  "theme": "岩属性 × フェニックス",
+  "file": "illust/SSR039.webp"
+ },
+ {
+  "id": "SSR040",
+  "no": 280,
+  "name": "冥府のホタル",
+  "rarity": "SSR",
+  "element": "闇",
+  "motif": "ホタル",
+  "theme": "闇属性 × ホタル",
+  "file": "illust/SSR040.webp"
+ },
+ {
+  "id": "UR001",
+  "no": 281,
+  "name": "氷神フェニックス",
+  "rarity": "UR",
+  "element": "氷",
+  "motif": "フェニックス",
+  "theme": "氷属性 × フェニックス",
+  "file": "illust/UR001.webp"
+ },
+ {
+  "id": "UR002",
+  "no": 282,
+  "name": "森神ペンギン",
+  "rarity": "UR",
+  "element": "森",
+  "motif": "ペンギン",
+  "theme": "森属性 × ペンギン",
+  "file": "illust/UR002.webp"
+ },
+ {
+  "id": "UR003",
+  "no": 283,
+  "name": "冥神フクロウ",
+  "rarity": "UR",
+  "element": "闇",
+  "motif": "フクロウ",
+  "theme": "闇属性 × フクロウ",
+  "file": "illust/UR003.webp"
+ },
+ {
+  "id": "UR004",
+  "no": 284,
+  "name": "光神ライオン",
+  "rarity": "UR",
+  "element": "光",
+  "motif": "ライオン",
+  "theme": "光属性 × ライオン",
+  "file": "illust/UR004.webp"
+ },
+ {
+  "id": "UR005",
+  "no": 285,
+  "name": "風神クラゲ",
+  "rarity": "UR",
+  "element": "風",
+  "motif": "クラゲ",
+  "theme": "風属性 × クラゲ",
+  "file": "illust/UR005.webp"
+ },
+ {
+  "id": "UR006",
+  "no": 286,
+  "name": "森神タカ",
+  "rarity": "UR",
+  "element": "森",
+  "motif": "タカ",
+  "theme": "森属性 × タカ",
+  "file": "illust/UR006.webp"
+ },
+ {
+  "id": "UR007",
+  "no": 287,
+  "name": "光神クマ",
+  "rarity": "UR",
+  "element": "光",
+  "motif": "クマ",
+  "theme": "光属性 × クマ",
+  "file": "illust/UR007.webp"
+ },
+ {
+  "id": "UR008",
+  "no": 288,
+  "name": "星神シカ",
+  "rarity": "UR",
+  "element": "星",
+  "motif": "シカ",
+  "theme": "星属性 × シカ",
+  "file": "illust/UR008.webp"
+ },
+ {
+  "id": "UR009",
+  "no": 289,
+  "name": "海神ゴーレム",
+  "rarity": "UR",
+  "element": "水",
+  "motif": "ゴーレム",
+  "theme": "水属性 × ゴーレム",
+  "file": "illust/UR009.webp"
+ },
+ {
+  "id": "UR010",
+  "no": 290,
+  "name": "雷神ドラゴン",
+  "rarity": "UR",
+  "element": "雷",
+  "motif": "ドラゴン",
+  "theme": "雷属性 × ドラゴン",
+  "file": "illust/UR010.webp"
+ },
+ {
+  "id": "UR011",
+  "no": 291,
+  "name": "氷神ホタル",
+  "rarity": "UR",
+  "element": "氷",
+  "motif": "ホタル",
+  "theme": "氷属性 × ホタル",
+  "file": "illust/UR011.webp"
+ },
+ {
+  "id": "UR012",
+  "no": 292,
+  "name": "岩神コウモリ",
+  "rarity": "UR",
+  "element": "岩",
+  "motif": "コウモリ",
+  "theme": "岩属性 × コウモリ",
+  "file": "illust/UR012.webp"
+ },
+ {
+  "id": "UR013",
+  "no": 293,
+  "name": "雷神トラ",
+  "rarity": "UR",
+  "element": "雷",
+  "motif": "トラ",
+  "theme": "雷属性 × トラ",
+  "file": "illust/UR013.webp"
+ },
+ {
+  "id": "UR014",
+  "no": 294,
+  "name": "風神ホタル",
+  "rarity": "UR",
+  "element": "風",
+  "motif": "ホタル",
+  "theme": "風属性 × ホタル",
+  "file": "illust/UR014.webp"
+ },
+ {
+  "id": "UR015",
+  "no": 295,
+  "name": "森神クマ",
+  "rarity": "UR",
+  "element": "森",
+  "motif": "クマ",
+  "theme": "森属性 × クマ",
+  "file": "illust/UR015.webp"
+ }
+]
