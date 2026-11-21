@@ -346,7 +346,7 @@ input[type=range]{width:100%;height:32px;accent-color:var(--ac)}
     <div class="row"><label>BGM音量 <span id="bgmV"></span></label><input type="range" id="bgm" min="0" max="100" step="1"></div>
     <div class="row"><label>SE音量 <span id="seV"></span></label><input type="range" id="se" min="0" max="100" step="1"></div>
     <div class="row"><label>開封演出</label><div class="seg" id="modeSeg"><button data-m="normal">通常開封</button><button data-m="fast">高速開封</button></div></div>
-    <div class="row"><div class="tg"><div>高速開封でもUR演出を表示<small>URを引いたときだけ専用演出を流します</small></div><button class="sw" id="urSw" aria-label="UR演出"></button></div></div>
+    <div class="row"><div class="tg"><div>所持済みのURも演出を表示<small>高速開封・SKIP時の設定です。未取得のSSR・URは常にめくる演出が流れます</small></div><button class="sw" id="urSw" aria-label="UR演出"></button></div></div>
     <div class="row"><label>排出確率</label>
       <table class="rates"><tbody id="rateT"></tbody></table>
       <div style="font-size:12px;color:var(--sub);margin-top:6px">1枚ずつ独立抽選・確率固定・天井なし・確定枠なし・重複あり。同じレアリティ内は均等。</div>
@@ -630,34 +630,32 @@ async function openPack(){
   await ready;
   AU.play('tear');L.querySelector('.oPack').className='oPack burst';flash();await sleep(fast?200:420);
   const order=res.map((r,i)=>({...r,i}));
-  let urShown=false;
-  if(!fast){
-    const DUR=[420,700,1100,1700,2400];
-    for(let k=0;k<order.length&&!skipping;k++){
-      const {c,isNew}=order[k];$('counter').textContent=`${k+1} / 10`;
-      if(c.ri===4&&!urShown){await urSequence();urShown=true}
-      setBg(c.ri>=3?c.ri:-1);
-      L.innerHTML=`<div class="revealSlot"><div class="flip in r-glow-${c.rarity}" style="--ft:${c.ri>=2?.55:.3}s"><div class="cback">${PRISM}</div>${cardHTML(c,{isNew})}</div><div class="revName"><small>${RAR[c.ri].label}</small>${c.name}</div></div>`;
-      const fl=L.querySelector('.flip');
-      const hold=[90,220,420,620,500][c.ri];
-      await waitTap(hold);if(skipping)break;
-      AU.play('flip');fl.classList.add('turn');
-      await sleep(c.ri>=2?260:140);
-      AU.play(c.ri===4?'ur':'reveal',c.ri);L.querySelector('.revName').classList.add('on');
-      if(c.ri===1){ring('#9fc0ff')}
-      if(c.ri===2){ring('#ffd36e');particles(18,['#ffe08a','#fff','#ffc04d'],true,.8)}
-      if(c.ri===3){flash();ring('#fff');particles(36,['#ff9ad5','#9ab8ff','#9affe1','#fff19a','#fff'],true,1.2)}
-      if(c.ri===4){flash();ring('#ffd36e');particles(60,['#ffd36e','#fff4d0','#ffb84d','#fff'],true,1.5)}
-      await sleep(Math.min(DUR[c.ri],450));if(skipping)break;
-      const nh=document.createElement('div');nh.className='nextHint';nh.textContent=k<order.length-1?'タップで次のカードへ':'タップで結果へ';$('open').appendChild(nh);
-      await waitTap(Infinity);nh.remove();
-    }
+  let urShown=false;const shown=new Set();
+  const DUR=[420,700,1100,1700,2400];
+  // 1枚めくる演出。skippable=false のときはSKIPで中断しない
+  async function revealOne(k,skippable,last){
+    const {c,isNew}=order[k];$('counter').textContent=`${k+1} / 10`;
+    if(c.ri===4&&!urShown){await urSequence();urShown=true}
+    setBg(c.ri>=3?c.ri:-1);
+    L.innerHTML=`<div class="revealSlot"><div class="flip in r-glow-${c.rarity}" style="--ft:${c.ri>=2?.55:.3}s"><div class="cback">${PRISM}</div>${cardHTML(c,{isNew})}</div><div class="revName"><small>${RAR[c.ri].label}</small>${c.name}</div></div>`;
+    const fl=L.querySelector('.flip');
+    await waitTap([90,220,420,620,500][c.ri]);if(skippable&&skipping)return false;
+    AU.play('flip');fl.classList.add('turn');shown.add(k);
+    await sleep(c.ri>=2?260:140);
+    AU.play(c.ri===4?'ur':'reveal',c.ri);L.querySelector('.revName').classList.add('on');
+    if(c.ri===1){ring('#9fc0ff')}
+    if(c.ri===2){ring('#ffd36e');particles(18,['#ffe08a','#fff','#ffc04d'],true,.8)}
+    if(c.ri===3){flash();ring('#fff');particles(36,['#ff9ad5','#9ab8ff','#9affe1','#fff19a','#fff'],true,1.2)}
+    if(c.ri===4){flash();ring('#ffd36e');particles(60,['#ffd36e','#fff4d0','#ffb84d','#fff'],true,1.5)}
+    await sleep(Math.min(DUR[c.ri],450));if(skippable&&skipping)return false;
+    const nh=document.createElement('div');nh.className='nextHint';nh.textContent=last?'タップで結果へ':'タップで次のカードへ';$('open').appendChild(nh);
+    await waitTap(Infinity);nh.remove();return true;
   }
-  if(hasUR&&!urShown&&(!fast||S.urFast)){$('counter').textContent='';$('skipBtn').style.display='none';await urSequence();urShown=true;
-    const u=order.find(r=>r.c.ri===4).c;setBg(4);
-    L.innerHTML=`<div class="revealSlot"><div class="flip in turn">${'<div class="cback"></div>'}${cardHTML(u,{isNew:res.find(r=>r.c===u).isNew})}</div><div class="revName on"><small>ULTRA RARE</small>${u.name}</div></div>`;
-    AU.play('ur');particles(60,['#ffd36e','#fff4d0','#ffb84d','#fff'],true,1.5);await sleep(600);
-    const nh=document.createElement('div');nh.className='nextHint';nh.textContent='タップで結果へ';$('open').appendChild(nh);await waitTap(Infinity);nh.remove()}
+  if(!fast){for(let k=0;k<order.length&&!skipping;k++)await revealOne(k,true,k===order.length-1)}
+  // 高速開封・SKIP時でも、未取得のSSR以上（とUR）はめくる演出を流す
+  const pend=order.map((r,k)=>k).filter(k=>!shown.has(k)&&((order[k].isNew&&order[k].c.ri>=3)||(order[k].c.ri===4&&(!fast||S.urFast))));
+  if(pend.length){skipping=false;$('skipBtn').style.display='none';
+    for(let n=0;n<pend.length;n++)await revealOne(pend[n],false,n===pend.length-1)}
   // 結果
   setBg(-1);$('counter').textContent='';$('skipBtn').style.display='none';
   const nNew=res.filter(r=>r.isNew).length,HG=['','','#ffd36e','conic-gradient(#ff9ad5,#9ab8ff,#9affe1,#fff19a,#ff9ad5)','#ffcf5a'];
