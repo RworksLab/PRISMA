@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c3ccff"/><stop offset=".35" stop-color="#ecdfff"/>
+      <stop offset=".62" stop-color="#fff0dc"/><stop offset="1" stop-color="#cdeffe"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="p1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7f8dff"/><stop offset="1" stop-color="#3418b0"/></linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff7eb3"/><stop offset=".33" stop-color="#ffd36e"/><stop offset=".66" stop-color="#6ee7c4"/><stop offset="1" stop-color="#7e9bff"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset=".35" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".55"/><stop offset=".65" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <g opacity=".35" fill="#fff">
+    <path d="M256 250 L-40 120 L-40 170Z"/><path d="M256 250 L560 90 L560 150Z"/><path d="M256 250 L560 430 L560 500Z"/><path d="M256 250 L-40 460 L-40 520Z"/>
+  </g>
+  <circle cx="250" cy="270" r="200" fill="url(#glow)" opacity=".8"/>
+  <path d="M40 250 L200 272" stroke="#fff" stroke-width="20" stroke-linecap="round"/>
+  <path d="M300 268 L512 214 L512 352Z" fill="url(#beam)"/>
+  <g transform="translate(250 262) scale(3.7) translate(-50 -46)">
+    <path d="M50 10L88 78H12Z" fill="url(#p1)"/>
+    <path d="M50 10L88 78L50 64Z" fill="#fff" opacity=".2"/>
+    <path d="M50 10L12 78L50 64Z" fill="#fff" opacity=".3"/>
+    <path d="M12 78H88L50 64Z" fill="#24157a" opacity=".38"/>
+    <path d="M50 10L88 78H12Z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" opacity=".85"/>
+  </g>
+  </svg>

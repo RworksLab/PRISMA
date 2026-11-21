@@ -35,6 +35,10 @@ python3 -m http.server 8000
 ```
 index.html              ゲーム本体（画面・抽選・演出・保存・図鑑・共有・データ移行）
 cards.json              カードマスター（295件）
+manifest.webmanifest    ホーム画面に追加したときのアプリ情報
+icon.svg / favicon.ico  ブラウザのタブに出るアイコン
+apple-touch-icon.png    iPhone のホーム画面アイコン（180×180）
+icon-192.png / icon-512.png  Android のホーム画面アイコン
 illust/                 カードイラスト 840×1000px WebP（ファイル名 = カードID）
   N001.webp … N100.webp
   R001.webp … R080.webp
