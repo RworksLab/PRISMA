@@ -55,7 +55,7 @@ button:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
 .chip.fast{background:#1d2335;color:#fff;box-shadow:none}
 .homeMid{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px}
 .packWrap{position:relative;animation:bob 4.2s ease-in-out infinite;cursor:pointer}
-.packWrap::before{content:"";position:absolute;inset:-18% -30%;background:radial-gradient(closest-side,rgba(170,150,255,.45),transparent);z-index:-1;animation:pulse 2.6s ease-in-out infinite}
+.packWrap::before{content:"";position:absolute;inset:-18% -30%;pointer-events:none;background:radial-gradient(closest-side,rgba(170,150,255,.45),transparent);z-index:-1;animation:pulse 2.6s ease-in-out infinite}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 @keyframes pulse{0%,100%{opacity:.6;transform:scale(.95)}50%{opacity:1;transform:scale(1.05)}}
 .pack{position:relative;width:min(60vw,240px);aspect-ratio:.64;border-radius:12px;overflow:hidden;
@@ -545,8 +545,8 @@ const packHTML=()=>`<div class="pack"><div class="irid"></div><div class="shine"
 /* ================= サウンド（WebAudio合成） ================= */
 const AU={ctx:null,
  init(){if(!this.ctx){const C=window.AudioContext||window.webkitAudioContext;if(!C)return;
-  // iPhoneのマナーモードでも鳴るように「再生」扱いにする（Safari 16.4以降）
-  try{if(navigator.audioSession)navigator.audioSession.type='playback'}catch(e){}
+  // マナーモード中は鳴らさない・ほかのアプリの音楽を止めない（Safari 16.4以降）
+  try{if(navigator.audioSession)navigator.audioSession.type='ambient'}catch(e){}
   try{this.ctx=new C()}catch(e){return}const x=this.ctx;
   this.bg=x.createGain();this.se=x.createGain();this.bg.connect(x.destination);this.se.connect(x.destination);this.vol();this.startBgm()}
   this.unlock()},
@@ -554,13 +554,7 @@ const AU={ctx:null,
  unlock(){const x=this.ctx;if(!x||document.hidden)return;
   if(x.state!=='running'){const r=x.resume();r&&r.catch&&r.catch(()=>{})}
   if(!this.kick){try{const b=x.createBuffer(1,1,22050),src=x.createBufferSource();src.buffer=b;src.connect(x.destination);src.start(0)}catch(e){}this.kick=1}
-  // 古いiPhone向け：無音のaudio要素を流してマナーモードの影響を外す
-  if(!navigator.audioSession&&/iPhone|iPad|iPod/.test(navigator.userAgent)||(!navigator.audioSession&&/Macintosh/.test(navigator.userAgent)&&'ontouchend' in document)){
-   if(!this.tag){const n=8000,buf=new ArrayBuffer(44+n),v=new DataView(buf),w=(o,t)=>{for(let i=0;i<t.length;i++)v.setUint8(o+i,t.charCodeAt(i))};
-    w(0,'RIFF');v.setUint32(4,36+n,true);w(8,'WAVEfmt ');v.setUint32(16,16,true);v.setUint16(20,1,true);v.setUint16(22,1,true);v.setUint32(24,8000,true);v.setUint32(28,8000,true);v.setUint16(32,1,true);v.setUint16(34,8,true);w(36,'data');v.setUint32(40,n,true);
-    for(let i=0;i<n;i++)v.setUint8(44+i,128);
-    const a=document.createElement('audio');a.setAttribute('playsinline','');a.setAttribute('x-webkit-airplay','deny');a.loop=true;a.preload='auto';a.src=URL.createObjectURL(new Blob([buf],{type:'audio/wav'}));this.tag=a}
-   if(this.tag.paused){const r=this.tag.play();r&&r.catch&&r.catch(()=>{})}}},
+  },
  vol(){if(!this.ctx)return;this.bg.gain.value=Math.pow(S.bgm/100,2)*.55;this.se.gain.value=Math.pow(S.se/100,2)*.9},
  tone(fr,t,d,type='sine',g=.2,dest=this.se,a=.005){const x=this.ctx,o=x.createOscillator(),v=x.createGain();o.type=type;o.frequency.setValueAtTime(fr,t);
   v.gain.setValueAtTime(0,t);v.gain.linearRampToValueAtTime(g,t+a);v.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(v);v.connect(dest);o.start(t);o.stop(t+d+.05);return o},
@@ -586,7 +580,7 @@ const AU={ctx:null,
     next+=bar;bi++}};
   sched();this.timer=setInterval(sched,300)}};
 document.addEventListener('visibilitychange',()=>{if(!AU.ctx)return;
-  if(document.hidden){AU.ctx.suspend().catch(()=>{});AU.tag&&AU.tag.pause()}else{AU.ctx.resume().catch(()=>{})}});
+  if(document.hidden){AU.ctx.suspend().catch(()=>{})}else{AU.ctx.resume().catch(()=>{})}});
 // 画面に触れるたびに音声を再開（アプリ切替・着信・イヤホン抜き差しなどで止まった場合の復帰）
 ['pointerdown','touchend','keydown'].forEach(t=>document.addEventListener(t,()=>AU.unlock(),{capture:true,passive:true}));
 window.addEventListener('pageshow',()=>AU.unlock());
