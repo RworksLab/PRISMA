@@ -604,7 +604,7 @@ $('toTitle').onclick=()=>{AU.play('tap');go('title')};
 // ホーム
 $('packBtn').innerHTML=packHTML();
 function renderHome(){const n=ownedTotal();$('dexCount').textContent=`${n} / ${CARDS.length} 種`;$('dexMeter').style.width=(n/CARDS.length*100)+'%';
-  $('homeSub').textContent=S.totalPacks?`累計 ${S.totalPacks.toLocaleString()} 回開封`:'';
+  $('homeSub').textContent=S.totalCards?`累計 ${S.totalCards.toLocaleString()} 枚`:'';
   const fast=S.mode==='fast',sb=$('speedBtn');sb.classList.toggle('fast',fast);
   sb.innerHTML=`<svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>${fast?'高速開封':'通常開封'}`}
 $('speedBtn').onclick=()=>{S.mode=S.mode==='fast'?'normal':'fast';save();AU.play('tap');renderHome();toast(S.mode==='fast'?'高速開封：演出を省略します':'通常開封：1枚ずつ演出します')};
