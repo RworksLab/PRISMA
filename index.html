@@ -89,6 +89,7 @@ button:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
 .pack.p-sw{background:linear-gradient(165deg,#ffcfe2 0%,#fff1dc 32%,#ffe0ef 58%,#d6f5ea 82%,#ffc6dd 100%)}
 .pack.p-sw .irid{background:conic-gradient(from 160deg at 60% 40%,#ff9ad5,#ffe39a,#9affd8,#ffb3d9,#ff9ad5)}
 .pack.p-sw .pin b{color:#c23f78}.pack.p-sw .pin small,.pack.p-sw .pin i{color:#d0679a}
+.pseg[hidden]{display:none}
 .pseg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;margin:0 12px 12px;padding:4px;border-radius:18px;background:#1d2335;box-shadow:0 8px 18px -12px rgba(20,25,60,.6)}
 .pseg button{display:flex;align-items:center;justify-content:center;gap:8px;height:48px;border-radius:14px;font-weight:800;font-size:13px;letter-spacing:.04em;color:#9aa3bb;line-height:1.15;text-align:left;transition:background .2s,color .2s}
 .pseg button svg{width:24px;height:24px;flex:none;opacity:.55;transition:opacity .2s}
@@ -449,9 +450,11 @@ const RAR=[
  {k:'UR',count:15,w:3,label:'ULTRA RARE'}];
 const RI={N:0,R:1,SR:2,SSR:3,UR:4};
 // パック定義（counts は N,R,SR,SSR,UR の種類数）
+// 公開中のパック。新パックを公開するときはここに追加する
+const RELEASED=['prisma','sweets'];
 const PACKS=[
  {k:'prisma',title:'PRISMA BOOSTER PACK',short:'BOOSTER PACK',foot:'PRISMA  BOOSTER PACK',counts:[100,80,60,40,15]},
- {k:'sweets',title:'PRISMA SWEETS PACK',short:'SWEETS PACK',foot:'PRISMA  SWEETS PACK',counts:[35,30,20,10,5]}];
+ {k:'sweets',title:'PRISMA SWEETS PACK',short:'SWEETS PACK',foot:'PRISMA  SWEETS PACK',counts:[35,30,20,10,5]}].filter(P=>RELEASED.includes(P.k));
 const FLV=[{k:'いちご',h:350,s:78,l:82},{k:'チョコ',h:22,s:42,l:50},{k:'メロン',h:100,s:55,l:76},{k:'ソーダ',h:195,s:78,l:78},{k:'レモン',h:52,s:88,l:72},
  {k:'ぶどう',h:278,s:52,l:76},{k:'まっちゃ',h:84,s:42,l:62},{k:'ミルク',h:40,s:50,l:92},{k:'キャラメル',h:30,s:62,l:66},{k:'もも',h:12,s:88,l:84}];
 const SWT=[['プリン','pudding'],['ドーナツ','donut',[32,62,74]],['マフィン','muffin'],['ソフト','softcream'],['マカロン','macaron'],
@@ -483,6 +486,7 @@ const CARDS=[];
     CARDS.push({id,code,file:`illust/${code}.webp`,no:code,rarity:r.k,ri,el:e,cr:c,seed:id*7919+13,pk:0,tag:`${ELEM[e].k}属性`,elName:ELEM[e].k,motif:CRE[c][0],
       name:ELEM[e].ep[ri]+CRE[c][0],desc:`${ELEM[e].k}の力を宿した${CRE[c][0]}。`});id++}});
   // PRISMA SWEETS PACK（10味 × 10スイーツ = 100種）
+  if(PACKS.length<2)return;
   const r2=mulberry(20261126),pr=[];
   for(let e=0;e<FLV.length;e++)for(let c=0;c<SWT.length;c++)pr.push([e,c]);
   for(let i=pr.length-1;i>0;i--){const j=Math.floor(r2()*(i+1));[pr[i],pr[j]]=[pr[j],pr[i]]}
@@ -505,6 +509,8 @@ const KEY='prisma-collection-v1';
 const DEF=()=>({v:1,cards:{},totalCards:0,totalPacks:0,bgm:60,se:80,mode:'normal',urFast:true,pack:0,ceil:{}});
 let S=DEF();
 try{const s=JSON.parse(localStorage.getItem(KEY));if(s&&s.v===1)S=Object.assign(DEF(),s)}catch(e){}
+// 天井の開始記念：天井導入前に1000枚以上引いていたプレイヤーは、BOOSTER PACK の次回がUR確定
+if(S.ceilInit===undefined){if(!S.ceil||typeof S.ceil!=='object')S.ceil={};if(S.totalCards>=1000&&!S.ceil[0])S.ceil[0]={n:0,t:1};S.ceilInit=1;try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
 const owned=id=>S.cards[id];
 const ownedCount=(p,ri)=>BY_P[p][ri].filter(c=>S.cards[c.id]).length;
@@ -726,7 +732,7 @@ document.querySelectorAll('.modal').forEach(m=>m.addEventListener('click',e=>{if
 // タイトル
 $('prismLogo').outerHTML=PRISM.replace('<svg ','<svg id="prismLogo" style="width:110px;height:110px" ');
 (function floaters(){let h='';for(let i=0;i<9;i++){h+=`<div class="cb" style="left:${(i*11+Math.random()*6)%96-6}%;animation-duration:${16+Math.random()*12}s;animation-delay:${-Math.random()*24}s;--r0:${Math.random()*40-20}deg;--r1:${Math.random()*80-40}deg"><div style="position:relative;aspect-ratio:63/88"><div class="cback">${PRISM}</div></div></div>`}$('floaters').innerHTML=h})();
-$('ver').textContent=`全${PACKS.length}パック · ${CARDS.length}種 · 何度でも無料で開封`;
+$('ver').textContent=PACKS.length>1?`全${PACKS.length}パック · ${CARDS.length}種 · 何度でも無料で開封`:`全${CARDS.length}種 · 何度でも無料で開封`;
 $('startBtn').onclick=()=>{AU.init();AU.play('tap');go('home')};
 $('settingBtn').onclick=()=>{AU.init();AU.play('tap');openSettings()};
 $('toTitle').onclick=()=>{AU.play('tap');go('title')};
@@ -743,7 +749,7 @@ window.addEventListener('resize',()=>{if($('home').classList.contains('on'))$('p
 function renderHome(){const P=PACKS[curPack],n=ownedPack(curPack),C=ceilOf(curPack);
   $('ceil').innerHTML=C.t>0?`<span class="urNext">次回UR確定！</span><div class="cbar"><div style="width:100%"></div></div>`
     :`UR確定まで あと <b>${(CEIL-C.n).toLocaleString()}</b> 枚<div class="cbar"><div style="width:${C.n/CEIL*100}%"></div></div>`;
-  document.querySelectorAll('#packCar .packWrap').forEach(w=>w.classList.toggle('ur',ceilOf(+w.dataset.p).t>0));$('dexCount').textContent=`${P.short}  ${n} / ${P.total} 種`;$('dexMeter').style.width=(n/P.total*100)+'%';
+  document.querySelectorAll('#packCar .packWrap').forEach(w=>w.classList.toggle('ur',ceilOf(+w.dataset.p).t>0));$('dexCount').textContent=PACKS.length>1?`${P.short}  ${n} / ${P.total} 種`:`${n} / ${P.total} 種`;$('dexMeter').style.width=(n/P.total*100)+'%';
   $('pPrev').disabled=curPack===0;$('pNext').disabled=curPack===PACKS.length-1;
   document.querySelectorAll('#packCar .packWrap').forEach(w=>{w.querySelector('.pRib').hidden=ownedPack(+w.dataset.p)>0||+w.dataset.p===0});
   $('homeSub').textContent=S.totalCards?`累計 ${S.totalCards.toLocaleString()} 枚`:'';
@@ -827,7 +833,7 @@ async function openPack(pk=curPack,guar=false){
 let tab=0,dexPack=0;
 function renderDex(){
   const P=PACKS[dexPack],n=ownedPack(dexPack);$('dexTot').innerHTML=`${n} / ${P.total}<small>収集率 ${(n/P.total*100).toFixed(1)}%</small>`;
-  $('pseg').innerHTML=PACKS.map((Q,i)=>`<button class="${i===dexPack?'on':''}" data-p="${i}" aria-pressed="${i===dexPack}">${i===1?CANDY:PRISM}<span>${Q.short}<small>${ownedPack(i)} / ${Q.total}</small></span></button>`).join('');
+  $('pseg').hidden=PACKS.length<2;$('pseg').innerHTML=PACKS.map((Q,i)=>`<button class="${i===dexPack?'on':''}" data-p="${i}" aria-pressed="${i===dexPack}">${i===1?CANDY:PRISM}<span>${Q.short}<small>${ownedPack(i)} / ${Q.total}</small></span></button>`).join('');
   $('dexStats').innerHTML=`<span>全パック <b>${ownedTotal()}</b> / ${CARDS.length} 種</span><span>累計開封 <b>${S.totalCards.toLocaleString()}</b> 枚</span><span>10連 <b>${S.totalPacks.toLocaleString()}</b> 回</span>`;
   $('tabs').innerHTML=RAR.map((r,i)=>`<button class="tab${i===tab?' on':''}" data-r="${r.k}" data-i="${i}"><b>${r.k}</b><span>${ownedCount(dexPack,i)}/${P.counts[i]}</span></button>`).join('');
   const list=BY_P[dexPack][tab],all=ownedCount(dexPack,tab)===list.length;
@@ -890,7 +896,7 @@ $('shareNative').onclick=async()=>{AU.play('tap');
     throw 0}catch(e){if(e&&e.name==='AbortError')return;toast('この環境では共有できません。画像を長押しして保存してください')}};
 
 /* ================= 設定 ================= */
-$('rateT').innerHTML=PACKS.map(P=>`<tr class="ph"><td colspan="3">${P.title}（${P.total}種）</td></tr>`+RAR.map((r,i)=>{const n=P.counts[i],v=r.w/100/n;return `<tr><td><b>${r.k}</b>　${n}種</td><td>${(r.w/100).toFixed(2)}%</td><td style="color:var(--sub)">1種あたり ${Number(v.toPrecision(3))}%</td></tr>`}).join('')).join('');
+$('rateT').innerHTML=PACKS.map(P=>(PACKS.length>1?`<tr class="ph"><td colspan="3">${P.title}（${P.total}種）</td></tr>`:'')+RAR.map((r,i)=>{const n=P.counts[i],v=r.w/100/n;return `<tr><td><b>${r.k}</b>　${n}種</td><td>${(r.w/100).toFixed(2)}%</td><td style="color:var(--sub)">1種あたり ${Number(v.toPrecision(3))}%</td></tr>`}).join('')).join('');
 function syncSet(){$('bgm').value=S.bgm;$('se').value=S.se;$('bgmV').textContent=S.bgm;$('seV').textContent=S.se;
   $('modeSeg').querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.m===S.mode));$('urSw').classList.toggle('on',S.urFast)}
 function openSettings(){syncSet();$('setModal').classList.add('on')}
@@ -920,6 +926,7 @@ async function readCode(t){
   const d=JSON.parse(new TextDecoder().decode(u8));if(!d||d.v!==1||!Array.isArray(d.c))throw '対応していないデータです';
   const cards={};for(const[id,n,f]of d.c){if(!(id>=1&&id<=CARDS.length)||!(n>=1))throw 'データの中身が正しくありません';cards[id]={n:Math.floor(n),first:f*1000}}
   const ceil={};if(d.ce&&typeof d.ce==='object')for(const k in d.ce){const p=+k,v=d.ce[k];if(p>=0&&p<PACKS.length&&v)ceil[p]={n:Math.min(CEIL-10,Math.max(0,v.n|0)),t:Math.max(0,v.t|0)}}
+  if(d.ce===undefined&&(d.tc|0)>=1000)ceil[0]={n:0,t:1};
   return {cards,ceil,totalCards:Math.max(0,d.tc|0),totalPacks:Math.max(0,d.tp|0),at:d.at}}
 $('moveBtn').onclick=async()=>{AU.play('tap');$('inCode').value='';$('inErr').textContent='';$('outCode').value='作成中…';$('moveModal').classList.add('on');
   const code=await makeCode();$('outCode').value=code;
@@ -931,13 +938,13 @@ $('loadCode').onclick=async()=>{AU.play('tap');$('inErr').textContent='';let d;
   try{d=await readCode($('inCode').value)}catch(e){$('inErr').textContent=typeof e==='string'?e:'コードを読み込めませんでした';return}
   const n=Object.keys(d.cards).length,when=d.at?new Date(d.at*1000):null;
   if(!await ask('このデータで復元しますか？',`図鑑 ${n} 種・累計 ${d.totalPacks} 回開封のデータです${when?`（${when.getMonth()+1}/${when.getDate()} ${String(when.getHours()).padStart(2,'0')}:${String(when.getMinutes()).padStart(2,'0')} 発行）`:''}。この端末の ${ownedTotal()} 種のデータは上書きされ、元に戻せません。`,'復元する'))return;
-  S.cards=d.cards;S.ceil=d.ceil;S.totalCards=d.totalCards;S.totalPacks=d.totalPacks;save();
+  S.cards=d.cards;S.ceil=d.ceil;S.ceilInit=1;S.totalCards=d.totalCards;S.totalPacks=d.totalPacks;save();
   $('moveModal').classList.remove('on');$('setModal').classList.remove('on');toast('データを復元しました')};
 
 $('resetBtn').onclick=async()=>{AU.play('tap');
   if(!await ask('データを初期化しますか？','カードの所持情報・開封記録など、すべてのゲームデータが消去されます。','次へ'))return;
   if(!await ask('本当に初期化しますか？',`所持中の ${ownedTotal()} 種のカードと ${S.totalPacks} 回分の開封記録は元に戻せません。`,'初期化する'))return;
-  const keep={bgm:S.bgm,se:S.se};S=DEF();S.bgm=keep.bgm;S.se=keep.se;
+  const keep={bgm:S.bgm,se:S.se};S=DEF();S.bgm=keep.bgm;S.se=keep.se;S.ceilInit=1;
   try{localStorage.removeItem(KEY)}catch(e){}save();syncSet();toast('データを初期化しました')};
 
 window.__prisma={drawOne,RAR,CARDS,artTpl,ELEM,CRE,AU,PACKS,FLV,SWT};
