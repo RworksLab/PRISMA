@@ -741,7 +741,7 @@ $('packCar').addEventListener('click',e=>{const w=e.target.closest('.packWrap');
 $('pPrev').onclick=()=>{AU.play('tap');scrollToPack(curPack-1,true)};$('pNext').onclick=()=>{AU.play('tap');scrollToPack(curPack+1,true)};
 window.addEventListener('resize',()=>{if($('home').classList.contains('on'))$('packCar').scrollLeft=curPack*$('packCar').clientWidth});
 function renderHome(){const P=PACKS[curPack],n=ownedPack(curPack),C=ceilOf(curPack);
-  $('ceil').innerHTML=C.t>0?`<span class="urNext">10連は UR確定！</span><div class="cbar"><div style="width:100%"></div></div>`
+  $('ceil').innerHTML=C.t>0?`<span class="urNext">次回UR確定！</span><div class="cbar"><div style="width:100%"></div></div>`
     :`UR確定まで あと <b>${(CEIL-C.n).toLocaleString()}</b> 枚<div class="cbar"><div style="width:${C.n/CEIL*100}%"></div></div>`;
   document.querySelectorAll('#packCar .packWrap').forEach(w=>w.classList.toggle('ur',ceilOf(+w.dataset.p).t>0));$('dexCount').textContent=`${P.short}  ${n} / ${P.total} 種`;$('dexMeter').style.width=(n/P.total*100)+'%';
   $('pPrev').disabled=curPack===0;$('pNext').disabled=curPack===PACKS.length-1;
