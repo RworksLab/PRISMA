@@ -2,6 +2,7 @@
  {
   "id": "N001",
   "no": 1,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いわのユニコーン",
   "rarity": "N",
   "element": "岩",
@@ -12,6 +13,7 @@
  {
   "id": "N002",
   "no": 2,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほしのクラゲ",
   "rarity": "N",
   "element": "星",
@@ -22,6 +24,7 @@
  {
   "id": "N003",
   "no": 3,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いわのネコ",
   "rarity": "N",
   "element": "岩",
@@ -32,6 +35,7 @@
  {
   "id": "N004",
   "no": 4,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ひかりのネコ",
   "rarity": "N",
   "element": "光",
@@ -42,6 +46,7 @@
  {
   "id": "N005",
   "no": 5,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "かぜのオオカミ",
   "rarity": "N",
   "element": "風",
@@ -52,6 +57,7 @@
  {
   "id": "N006",
   "no": 6,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "みずのウサギ",
   "rarity": "N",
   "element": "水",
@@ -62,6 +68,7 @@
  {
   "id": "N007",
   "no": 7,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほしのライオン",
   "rarity": "N",
   "element": "星",
@@ -72,6 +79,7 @@
  {
   "id": "N008",
   "no": 8,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "やみのライオン",
   "rarity": "N",
   "element": "闇",
@@ -82,6 +90,7 @@
  {
   "id": "N009",
   "no": 9,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ひかりのドラゴン",
   "rarity": "N",
   "element": "光",
@@ -92,6 +101,7 @@
  {
   "id": "N010",
   "no": 10,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほしのパンダ",
   "rarity": "N",
   "element": "星",
@@ -102,6 +112,7 @@
  {
   "id": "N011",
   "no": 11,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いわのタカ",
   "rarity": "N",
   "element": "岩",
@@ -112,6 +123,7 @@
  {
   "id": "N012",
   "no": 12,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "みずのオオカミ",
   "rarity": "N",
   "element": "水",
@@ -122,6 +134,7 @@
  {
   "id": "N013",
   "no": 13,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いかずちのユニコーン",
   "rarity": "N",
   "element": "雷",
@@ -132,6 +145,7 @@
  {
   "id": "N014",
   "no": 14,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "かぜのパンダ",
   "rarity": "N",
   "element": "風",
@@ -142,6 +156,7 @@
  {
   "id": "N015",
   "no": 15,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いわのモモンガ",
   "rarity": "N",
   "element": "岩",
@@ -152,6 +167,7 @@
  {
   "id": "N016",
   "no": 16,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほのおのウサギ",
   "rarity": "N",
   "element": "炎",
@@ -162,6 +178,7 @@
  {
   "id": "N017",
   "no": 17,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いかずちのホタル",
   "rarity": "N",
   "element": "雷",
@@ -172,6 +189,7 @@
  {
   "id": "N018",
   "no": 18,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いかずちのネコ",
   "rarity": "N",
   "element": "雷",
@@ -182,6 +200,7 @@
  {
   "id": "N019",
   "no": 19,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "みずのクジラ",
   "rarity": "N",
   "element": "水",
@@ -192,6 +211,7 @@
  {
   "id": "N020",
   "no": 20,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "みずのキツネ",
   "rarity": "N",
   "element": "水",
@@ -202,6 +222,7 @@
  {
   "id": "N021",
   "no": 21,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "みずのトラ",
   "rarity": "N",
   "element": "水",
@@ -212,6 +233,7 @@
  {
   "id": "N022",
   "no": 22,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いかずちのクラゲ",
   "rarity": "N",
   "element": "雷",
@@ -222,6 +244,7 @@
  {
   "id": "N023",
   "no": 23,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いわのカエル",
   "rarity": "N",
   "element": "岩",
@@ -232,6 +255,7 @@
  {
   "id": "N024",
   "no": 24,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いかずちのモモンガ",
   "rarity": "N",
   "element": "雷",
@@ -242,6 +266,7 @@
  {
   "id": "N025",
   "no": 25,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "もりのキツネ",
   "rarity": "N",
   "element": "森",
@@ -252,6 +277,7 @@
  {
   "id": "N026",
   "no": 26,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "やみのトラ",
   "rarity": "N",
   "element": "闇",
@@ -262,6 +288,7 @@
  {
   "id": "N027",
   "no": 27,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほのおのペンギン",
   "rarity": "N",
   "element": "炎",
@@ -272,6 +299,7 @@
  {
   "id": "N028",
   "no": 28,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほしのヒツジ",
   "rarity": "N",
   "element": "星",
@@ -282,6 +310,7 @@
  {
   "id": "N029",
   "no": 29,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いかずちのイルカ",
   "rarity": "N",
   "element": "雷",
@@ -292,6 +321,7 @@
  {
   "id": "N030",
   "no": 30,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "もりのライオン",
   "rarity": "N",
   "element": "森",
@@ -302,6 +332,7 @@
  {
   "id": "N031",
   "no": 31,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほのおのカエル",
   "rarity": "N",
   "element": "炎",
@@ -312,6 +343,7 @@
  {
   "id": "N032",
   "no": 32,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほのおのチョウ",
   "rarity": "N",
   "element": "炎",
@@ -322,6 +354,7 @@
  {
   "id": "N033",
   "no": 33,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "もりのユニコーン",
   "rarity": "N",
   "element": "森",
@@ -332,6 +365,7 @@
  {
   "id": "N034",
   "no": 34,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほしのクマ",
   "rarity": "N",
   "element": "星",
@@ -342,6 +376,7 @@
  {
   "id": "N035",
   "no": 35,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いわのホタル",
   "rarity": "N",
   "element": "岩",
@@ -352,6 +387,7 @@
  {
   "id": "N036",
   "no": 36,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "やみのパンダ",
   "rarity": "N",
   "element": "闇",
@@ -362,6 +398,7 @@
  {
   "id": "N037",
   "no": 37,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほのおのネコ",
   "rarity": "N",
   "element": "炎",
@@ -372,6 +409,7 @@
  {
   "id": "N038",
   "no": 38,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いかずちのパンダ",
   "rarity": "N",
   "element": "雷",
@@ -382,6 +420,7 @@
  {
   "id": "N039",
   "no": 39,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "もりのドラゴン",
   "rarity": "N",
   "element": "森",
@@ -392,6 +431,7 @@
  {
   "id": "N040",
   "no": 40,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ひかりのホタル",
   "rarity": "N",
   "element": "光",
@@ -402,6 +442,7 @@
  {
   "id": "N041",
   "no": 41,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "みずのタカ",
   "rarity": "N",
   "element": "水",
@@ -412,6 +453,7 @@
  {
   "id": "N042",
   "no": 42,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "かぜのフェニックス",
   "rarity": "N",
   "element": "風",
@@ -422,6 +464,7 @@
  {
   "id": "N043",
   "no": 43,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いかずちのクジラ",
   "rarity": "N",
   "element": "雷",
@@ -432,6 +475,7 @@
  {
   "id": "N044",
   "no": 44,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "もりのフェニックス",
   "rarity": "N",
   "element": "森",
@@ -442,6 +486,7 @@
  {
   "id": "N045",
   "no": 45,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ひかりのタカ",
   "rarity": "N",
   "element": "光",
@@ -452,6 +497,7 @@
  {
   "id": "N046",
   "no": 46,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほしのイルカ",
   "rarity": "N",
   "element": "星",
@@ -462,6 +508,7 @@
  {
   "id": "N047",
   "no": 47,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "もりのカエル",
   "rarity": "N",
   "element": "森",
@@ -472,6 +519,7 @@
  {
   "id": "N048",
   "no": 48,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いわのトラ",
   "rarity": "N",
   "element": "岩",
@@ -482,6 +530,7 @@
  {
   "id": "N049",
   "no": 49,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いかずちのヘビ",
   "rarity": "N",
   "element": "雷",
@@ -492,6 +541,7 @@
  {
   "id": "N050",
   "no": 50,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "やみのウサギ",
   "rarity": "N",
   "element": "闇",
@@ -502,6 +552,7 @@
  {
   "id": "N051",
   "no": 51,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ひかりのパンダ",
   "rarity": "N",
   "element": "光",
@@ -512,6 +563,7 @@
  {
   "id": "N052",
   "no": 52,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "もりのスライム",
   "rarity": "N",
   "element": "森",
@@ -522,6 +574,7 @@
  {
   "id": "N053",
   "no": 53,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "みずのコウモリ",
   "rarity": "N",
   "element": "水",
@@ -532,6 +585,7 @@
  {
   "id": "N054",
   "no": 54,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ひかりのモモンガ",
   "rarity": "N",
   "element": "光",
@@ -542,6 +596,7 @@
  {
   "id": "N055",
   "no": 55,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほしのハリネズミ",
   "rarity": "N",
   "element": "星",
@@ -552,6 +607,7 @@
  {
   "id": "N056",
   "no": 56,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "こおりのシカ",
   "rarity": "N",
   "element": "氷",
@@ -562,6 +618,7 @@
  {
   "id": "N057",
   "no": 57,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほしのウサギ",
   "rarity": "N",
   "element": "星",
@@ -572,6 +629,7 @@
  {
   "id": "N058",
   "no": 58,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "かぜのスライム",
   "rarity": "N",
   "element": "風",
@@ -582,6 +640,7 @@
  {
   "id": "N059",
   "no": 59,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほのおのコウモリ",
   "rarity": "N",
   "element": "炎",
@@ -592,6 +651,7 @@
  {
   "id": "N060",
   "no": 60,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "こおりのスライム",
   "rarity": "N",
   "element": "氷",
@@ -602,6 +662,7 @@
  {
   "id": "N061",
   "no": 61,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "みずのシカ",
   "rarity": "N",
   "element": "水",
@@ -612,6 +673,7 @@
  {
   "id": "N062",
   "no": 62,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほしのチョウ",
   "rarity": "N",
   "element": "星",
@@ -622,6 +684,7 @@
  {
   "id": "N063",
   "no": 63,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "かぜのドラゴン",
   "rarity": "N",
   "element": "風",
@@ -632,6 +695,7 @@
  {
   "id": "N064",
   "no": 64,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほのおのフクロウ",
   "rarity": "N",
   "element": "炎",
@@ -642,6 +706,7 @@
  {
   "id": "N065",
   "no": 65,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "みずのヒツジ",
   "rarity": "N",
   "element": "水",
@@ -652,6 +717,7 @@
  {
   "id": "N066",
   "no": 66,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "もりのウサギ",
   "rarity": "N",
   "element": "森",
@@ -662,6 +728,7 @@
  {
   "id": "N067",
   "no": 67,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "やみのキツネ",
   "rarity": "N",
   "element": "闇",
@@ -672,6 +739,7 @@
  {
   "id": "N068",
   "no": 68,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ひかりのハリネズミ",
   "rarity": "N",
   "element": "光",
@@ -682,6 +750,7 @@
  {
   "id": "N069",
   "no": 69,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いわのペンギン",
   "rarity": "N",
   "element": "岩",
@@ -692,6 +761,7 @@
  {
   "id": "N070",
   "no": 70,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "みずのカメ",
   "rarity": "N",
   "element": "水",
@@ -702,6 +772,7 @@
  {
   "id": "N071",
   "no": 71,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほのおのクマ",
   "rarity": "N",
   "element": "炎",
@@ -712,6 +783,7 @@
  {
   "id": "N072",
   "no": 72,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いわのヘビ",
   "rarity": "N",
   "element": "岩",
@@ -722,6 +794,7 @@
  {
   "id": "N073",
   "no": 73,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほのおのヘビ",
   "rarity": "N",
   "element": "炎",
@@ -732,6 +805,7 @@
  {
   "id": "N074",
   "no": 74,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほのおのモモンガ",
   "rarity": "N",
   "element": "炎",
@@ -742,6 +816,7 @@
  {
   "id": "N075",
   "no": 75,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほのおのドラゴン",
   "rarity": "N",
   "element": "炎",
@@ -752,6 +827,7 @@
  {
   "id": "N076",
   "no": 76,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "かぜのヒツジ",
   "rarity": "N",
   "element": "風",
@@ -762,6 +838,7 @@
  {
   "id": "N077",
   "no": 77,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "かぜのカエル",
   "rarity": "N",
   "element": "風",
@@ -772,6 +849,7 @@
  {
   "id": "N078",
   "no": 78,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほしのオオカミ",
   "rarity": "N",
   "element": "星",
@@ -782,6 +860,7 @@
  {
   "id": "N079",
   "no": 79,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いかずちのチョウ",
   "rarity": "N",
   "element": "雷",
@@ -792,6 +871,7 @@
  {
   "id": "N080",
   "no": 80,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "やみのスライム",
   "rarity": "N",
   "element": "闇",
@@ -802,6 +882,7 @@
  {
   "id": "N081",
   "no": 81,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いわのウサギ",
   "rarity": "N",
   "element": "岩",
@@ -812,6 +893,7 @@
  {
   "id": "N082",
   "no": 82,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ひかりのカエル",
   "rarity": "N",
   "element": "光",
@@ -822,6 +904,7 @@
  {
   "id": "N083",
   "no": 83,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いわのオオカミ",
   "rarity": "N",
   "element": "岩",
@@ -832,6 +915,7 @@
  {
   "id": "N084",
   "no": 84,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いわのクジラ",
   "rarity": "N",
   "element": "岩",
@@ -842,6 +926,7 @@
  {
   "id": "N085",
   "no": 85,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "かぜのクジラ",
   "rarity": "N",
   "element": "風",
@@ -852,6 +937,7 @@
  {
   "id": "N086",
   "no": 86,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "もりのハリネズミ",
   "rarity": "N",
   "element": "森",
@@ -862,6 +948,7 @@
  {
   "id": "N087",
   "no": 87,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほしのユニコーン",
   "rarity": "N",
   "element": "星",
@@ -872,6 +959,7 @@
  {
   "id": "N088",
   "no": 88,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "やみのカエル",
   "rarity": "N",
   "element": "闇",
@@ -882,6 +970,7 @@
  {
   "id": "N089",
   "no": 89,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "こおりのモモンガ",
   "rarity": "N",
   "element": "氷",
@@ -892,6 +981,7 @@
  {
   "id": "N090",
   "no": 90,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ひかりのヒツジ",
   "rarity": "N",
   "element": "光",
@@ -902,6 +992,7 @@
  {
   "id": "N091",
   "no": 91,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほのおのイルカ",
   "rarity": "N",
   "element": "炎",
@@ -912,6 +1003,7 @@
  {
   "id": "N092",
   "no": 92,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "みずのドラゴン",
   "rarity": "N",
   "element": "水",
@@ -922,6 +1014,7 @@
  {
   "id": "N093",
   "no": 93,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほしのキツネ",
   "rarity": "N",
   "element": "星",
@@ -932,6 +1025,7 @@
  {
   "id": "N094",
   "no": 94,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "こおりのカエル",
   "rarity": "N",
   "element": "氷",
@@ -942,6 +1036,7 @@
  {
   "id": "N095",
   "no": 95,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ひかりのヘビ",
   "rarity": "N",
   "element": "光",
@@ -952,6 +1047,7 @@
  {
   "id": "N096",
   "no": 96,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "こおりのヒツジ",
   "rarity": "N",
   "element": "氷",
@@ -962,6 +1058,7 @@
  {
   "id": "N097",
   "no": 97,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ひかりのシカ",
   "rarity": "N",
   "element": "光",
@@ -972,6 +1069,7 @@
  {
   "id": "N098",
   "no": 98,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほのおのリス",
   "rarity": "N",
   "element": "炎",
@@ -982,6 +1080,7 @@
  {
   "id": "N099",
   "no": 99,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "みずのイルカ",
   "rarity": "N",
   "element": "水",
@@ -992,6 +1091,7 @@
  {
   "id": "N100",
   "no": 100,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "ほしのクジラ",
   "rarity": "N",
   "element": "星",
@@ -1002,6 +1102,7 @@
  {
   "id": "R001",
   "no": 101,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "小石のライオン",
   "rarity": "R",
   "element": "岩",
@@ -1012,6 +1113,7 @@
  {
   "id": "R002",
   "no": 102,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "小石のクマ",
   "rarity": "R",
   "element": "岩",
@@ -1022,6 +1124,7 @@
  {
   "id": "R003",
   "no": 103,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "霜のクラゲ",
   "rarity": "R",
   "element": "氷",
@@ -1032,6 +1135,7 @@
  {
   "id": "R004",
   "no": 104,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "若葉のパンダ",
   "rarity": "R",
   "element": "森",
@@ -1042,6 +1146,7 @@
  {
   "id": "R005",
   "no": 105,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "火花のフェニックス",
   "rarity": "R",
   "element": "炎",
@@ -1052,6 +1157,7 @@
  {
   "id": "R006",
   "no": 106,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "陽だまりのゴーレム",
   "rarity": "R",
   "element": "光",
@@ -1062,6 +1168,7 @@
  {
   "id": "R007",
   "no": 107,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "宵のペンギン",
   "rarity": "R",
   "element": "闇",
@@ -1072,6 +1179,7 @@
  {
   "id": "R008",
   "no": 108,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "流れ星のヘビ",
   "rarity": "R",
   "element": "星",
@@ -1082,6 +1190,7 @@
  {
   "id": "R009",
   "no": 109,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "稲妻のキツネ",
   "rarity": "R",
   "element": "雷",
@@ -1092,6 +1201,7 @@
  {
   "id": "R010",
   "no": 110,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "火花のヒツジ",
   "rarity": "R",
   "element": "炎",
@@ -1102,6 +1212,7 @@
  {
   "id": "R011",
   "no": 111,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "そよ風のコウモリ",
   "rarity": "R",
   "element": "風",
@@ -1112,6 +1223,7 @@
  {
   "id": "R012",
   "no": 112,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "稲妻のコウモリ",
   "rarity": "R",
   "element": "雷",
@@ -1122,6 +1234,7 @@
  {
   "id": "R013",
   "no": 113,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "稲妻のオオカミ",
   "rarity": "R",
   "element": "雷",
@@ -1132,6 +1245,7 @@
  {
   "id": "R014",
   "no": 114,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "稲妻のフクロウ",
   "rarity": "R",
   "element": "雷",
@@ -1142,6 +1256,7 @@
  {
   "id": "R015",
   "no": 115,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "小石のスライム",
   "rarity": "R",
   "element": "岩",
@@ -1152,6 +1267,7 @@
  {
   "id": "R016",
   "no": 116,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "小石のキツネ",
   "rarity": "R",
   "element": "岩",
@@ -1162,6 +1278,7 @@
  {
   "id": "R017",
   "no": 117,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "小石のカメ",
   "rarity": "R",
   "element": "岩",
@@ -1172,6 +1289,7 @@
  {
   "id": "R018",
   "no": 118,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "若葉のチョウ",
   "rarity": "R",
   "element": "森",
@@ -1182,6 +1300,7 @@
  {
   "id": "R019",
   "no": 119,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "流れ星のタカ",
   "rarity": "R",
   "element": "星",
@@ -1192,6 +1311,7 @@
  {
   "id": "R020",
   "no": 120,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "霜のユニコーン",
   "rarity": "R",
   "element": "氷",
@@ -1202,6 +1322,7 @@
  {
   "id": "R021",
   "no": 121,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "稲妻のクマ",
   "rarity": "R",
   "element": "雷",
@@ -1212,6 +1333,7 @@
  {
   "id": "R022",
   "no": 122,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "宵のカメ",
   "rarity": "R",
   "element": "闇",
@@ -1222,6 +1344,7 @@
  {
   "id": "R023",
   "no": 123,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "小石のパンダ",
   "rarity": "R",
   "element": "岩",
@@ -1232,6 +1355,7 @@
  {
   "id": "R024",
   "no": 124,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "若葉のゴーレム",
   "rarity": "R",
   "element": "森",
@@ -1242,6 +1366,7 @@
  {
   "id": "R025",
   "no": 125,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "火花のホタル",
   "rarity": "R",
   "element": "炎",
@@ -1252,6 +1377,7 @@
  {
   "id": "R026",
   "no": 126,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "そよ風のヘビ",
   "rarity": "R",
   "element": "風",
@@ -1262,6 +1388,7 @@
  {
   "id": "R027",
   "no": 127,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "火花のシカ",
   "rarity": "R",
   "element": "炎",
@@ -1272,6 +1399,7 @@
  {
   "id": "R028",
   "no": 128,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "そよ風のモモンガ",
   "rarity": "R",
   "element": "風",
@@ -1282,6 +1410,7 @@
  {
   "id": "R029",
   "no": 129,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "火花のクジラ",
   "rarity": "R",
   "element": "炎",
@@ -1292,6 +1421,7 @@
  {
   "id": "R030",
   "no": 130,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "流れ星のペンギン",
   "rarity": "R",
   "element": "星",
@@ -1302,6 +1432,7 @@
  {
   "id": "R031",
   "no": 131,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "流れ星のコウモリ",
   "rarity": "R",
   "element": "星",
@@ -1312,6 +1443,7 @@
  {
   "id": "R032",
   "no": 132,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "火花のクラゲ",
   "rarity": "R",
   "element": "炎",
@@ -1322,6 +1454,7 @@
  {
   "id": "R033",
   "no": 133,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "若葉のヘビ",
   "rarity": "R",
   "element": "森",
@@ -1332,6 +1465,7 @@
  {
   "id": "R034",
   "no": 134,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "宵のリス",
   "rarity": "R",
   "element": "闇",
@@ -1342,6 +1476,7 @@
  {
   "id": "R035",
   "no": 135,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "小石のシカ",
   "rarity": "R",
   "element": "岩",
@@ -1352,6 +1487,7 @@
  {
   "id": "R036",
   "no": 136,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "火花のパンダ",
   "rarity": "R",
   "element": "炎",
@@ -1362,6 +1498,7 @@
  {
   "id": "R037",
   "no": 137,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "若葉のシカ",
   "rarity": "R",
   "element": "森",
@@ -1372,6 +1509,7 @@
  {
   "id": "R038",
   "no": 138,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "宵のドラゴン",
   "rarity": "R",
   "element": "闇",
@@ -1382,6 +1520,7 @@
  {
   "id": "R039",
   "no": 139,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "火花のカメ",
   "rarity": "R",
   "element": "炎",
@@ -1392,6 +1531,7 @@
  {
   "id": "R040",
   "no": 140,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "さざなみのライオン",
   "rarity": "R",
   "element": "水",
@@ -1402,6 +1542,7 @@
  {
   "id": "R041",
   "no": 141,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "陽だまりのスライム",
   "rarity": "R",
   "element": "光",
@@ -1412,6 +1553,7 @@
  {
   "id": "R042",
   "no": 142,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "宵のクラゲ",
   "rarity": "R",
   "element": "闇",
@@ -1422,6 +1564,7 @@
  {
   "id": "R043",
   "no": 143,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "さざなみのカエル",
   "rarity": "R",
   "element": "水",
@@ -1432,6 +1575,7 @@
  {
   "id": "R044",
   "no": 144,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "そよ風のシカ",
   "rarity": "R",
   "element": "風",
@@ -1442,6 +1586,7 @@
  {
   "id": "R045",
   "no": 145,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "さざなみのクラゲ",
   "rarity": "R",
   "element": "水",
@@ -1452,6 +1597,7 @@
  {
   "id": "R046",
   "no": 146,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "霜のオオカミ",
   "rarity": "R",
   "element": "氷",
@@ -1462,6 +1608,7 @@
  {
   "id": "R047",
   "no": 147,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "若葉のイルカ",
   "rarity": "R",
   "element": "森",
@@ -1472,6 +1619,7 @@
  {
   "id": "R048",
   "no": 148,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "火花のハリネズミ",
   "rarity": "R",
   "element": "炎",
@@ -1482,6 +1630,7 @@
  {
   "id": "R049",
   "no": 149,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "さざなみのリス",
   "rarity": "R",
   "element": "水",
@@ -1492,6 +1641,7 @@
  {
   "id": "R050",
   "no": 150,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "さざなみのフクロウ",
   "rarity": "R",
   "element": "水",
@@ -1502,6 +1652,7 @@
  {
   "id": "R051",
   "no": 151,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "流れ星のモモンガ",
   "rarity": "R",
   "element": "星",
@@ -1512,6 +1663,7 @@
  {
   "id": "R052",
   "no": 152,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "若葉のネコ",
   "rarity": "R",
   "element": "森",
@@ -1522,6 +1674,7 @@
  {
   "id": "R053",
   "no": 153,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "稲妻のシカ",
   "rarity": "R",
   "element": "雷",
@@ -1532,6 +1685,7 @@
  {
   "id": "R054",
   "no": 154,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "霜のリス",
   "rarity": "R",
   "element": "氷",
@@ -1542,6 +1696,7 @@
  {
   "id": "R055",
   "no": 155,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "霜のキツネ",
   "rarity": "R",
   "element": "氷",
@@ -1552,6 +1707,7 @@
  {
   "id": "R056",
   "no": 156,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "稲妻のリス",
   "rarity": "R",
   "element": "雷",
@@ -1562,6 +1718,7 @@
  {
   "id": "R057",
   "no": 157,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "そよ風のライオン",
   "rarity": "R",
   "element": "風",
@@ -1572,6 +1729,7 @@
  {
   "id": "R058",
   "no": 158,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "火花のキツネ",
   "rarity": "R",
   "element": "炎",
@@ -1582,6 +1740,7 @@
  {
   "id": "R059",
   "no": 159,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "流れ星のフェニックス",
   "rarity": "R",
   "element": "星",
@@ -1592,6 +1751,7 @@
  {
   "id": "R060",
   "no": 160,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "そよ風のイルカ",
   "rarity": "R",
   "element": "風",
@@ -1602,6 +1762,7 @@
  {
   "id": "R061",
   "no": 161,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "霜のネコ",
   "rarity": "R",
   "element": "氷",
@@ -1612,6 +1773,7 @@
  {
   "id": "R062",
   "no": 162,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "陽だまりのクジラ",
   "rarity": "R",
   "element": "光",
@@ -1622,6 +1784,7 @@
  {
   "id": "R063",
   "no": 163,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "小石のドラゴン",
   "rarity": "R",
   "element": "岩",
@@ -1632,6 +1795,7 @@
  {
   "id": "R064",
   "no": 164,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "流れ星のネコ",
   "rarity": "R",
   "element": "星",
@@ -1642,6 +1806,7 @@
  {
   "id": "R065",
   "no": 165,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "そよ風のチョウ",
   "rarity": "R",
   "element": "風",
@@ -1652,6 +1817,7 @@
  {
   "id": "R066",
   "no": 166,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "流れ星のカエル",
   "rarity": "R",
   "element": "星",
@@ -1662,6 +1828,7 @@
  {
   "id": "R067",
   "no": 167,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "若葉のオオカミ",
   "rarity": "R",
   "element": "森",
@@ -1672,6 +1839,7 @@
  {
   "id": "R068",
   "no": 168,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "霜のドラゴン",
   "rarity": "R",
   "element": "氷",
@@ -1682,6 +1850,7 @@
  {
   "id": "R069",
   "no": 169,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "流れ星のスライム",
   "rarity": "R",
   "element": "星",
@@ -1692,6 +1861,7 @@
  {
   "id": "R070",
   "no": 170,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "霜のウサギ",
   "rarity": "R",
   "element": "氷",
@@ -1702,6 +1872,7 @@
  {
   "id": "R071",
   "no": 171,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "陽だまりのキツネ",
   "rarity": "R",
   "element": "光",
@@ -1712,6 +1883,7 @@
  {
   "id": "R072",
   "no": 172,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "宵のタカ",
   "rarity": "R",
   "element": "闇",
@@ -1722,6 +1894,7 @@
  {
   "id": "R073",
   "no": 173,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "陽だまりのウサギ",
   "rarity": "R",
   "element": "光",
@@ -1732,6 +1905,7 @@
  {
   "id": "R074",
   "no": 174,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "稲妻のゴーレム",
   "rarity": "R",
   "element": "雷",
@@ -1742,6 +1916,7 @@
  {
   "id": "R075",
   "no": 175,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "若葉のホタル",
   "rarity": "R",
   "element": "森",
@@ -1752,6 +1927,7 @@
  {
   "id": "R076",
   "no": 176,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "若葉のカメ",
   "rarity": "R",
   "element": "森",
@@ -1762,6 +1938,7 @@
  {
   "id": "R077",
   "no": 177,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "陽だまりのイルカ",
   "rarity": "R",
   "element": "光",
@@ -1772,6 +1949,7 @@
  {
   "id": "R078",
   "no": 178,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "霜のハリネズミ",
   "rarity": "R",
   "element": "氷",
@@ -1782,6 +1960,7 @@
  {
   "id": "R079",
   "no": 179,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "霜のペンギン",
   "rarity": "R",
   "element": "氷",
@@ -1792,6 +1971,7 @@
  {
   "id": "R080",
   "no": 180,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "火花のユニコーン",
   "rarity": "R",
   "element": "炎",
@@ -1802,6 +1982,7 @@
  {
   "id": "SR001",
   "no": 181,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "剛岩のリス",
   "rarity": "SR",
   "element": "岩",
@@ -1812,6 +1993,7 @@
  {
   "id": "SR002",
   "no": 182,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "氷晶のタカ",
   "rarity": "SR",
   "element": "氷",
@@ -1822,6 +2004,7 @@
  {
   "id": "SR003",
   "no": 183,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "月影のハリネズミ",
   "rarity": "SR",
   "element": "闇",
@@ -1832,6 +2015,7 @@
  {
   "id": "SR004",
   "no": 184,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "翠緑のクジラ",
   "rarity": "SR",
   "element": "森",
@@ -1842,6 +2026,7 @@
  {
   "id": "SR005",
   "no": 185,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "疾風のタカ",
   "rarity": "SR",
   "element": "風",
@@ -1852,6 +2037,7 @@
  {
   "id": "SR006",
   "no": 186,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "疾風のウサギ",
   "rarity": "SR",
   "element": "風",
@@ -1862,6 +2048,7 @@
  {
   "id": "SR007",
   "no": 187,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "雷鳴のタカ",
   "rarity": "SR",
   "element": "雷",
@@ -1872,6 +2059,7 @@
  {
   "id": "SR008",
   "no": 188,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "翠緑のクラゲ",
   "rarity": "SR",
   "element": "森",
@@ -1882,6 +2070,7 @@
  {
   "id": "SR009",
   "no": 189,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "白光のフクロウ",
   "rarity": "SR",
   "element": "光",
@@ -1892,6 +2081,7 @@
  {
   "id": "SR010",
   "no": 190,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "白光のフェニックス",
   "rarity": "SR",
   "element": "光",
@@ -1902,6 +2092,7 @@
  {
   "id": "SR011",
   "no": 191,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "蒼海のネコ",
   "rarity": "SR",
   "element": "水",
@@ -1912,6 +2103,7 @@
  {
   "id": "SR012",
   "no": 192,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "剛岩のチョウ",
   "rarity": "SR",
   "element": "岩",
@@ -1922,6 +2114,7 @@
  {
   "id": "SR013",
   "no": 193,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "翠緑のリス",
   "rarity": "SR",
   "element": "森",
@@ -1932,6 +2125,7 @@
  {
   "id": "SR014",
   "no": 194,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "蒼海のパンダ",
   "rarity": "SR",
   "element": "水",
@@ -1942,6 +2136,7 @@
  {
   "id": "SR015",
   "no": 195,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "剛岩のハリネズミ",
   "rarity": "SR",
   "element": "岩",
@@ -1952,6 +2147,7 @@
  {
   "id": "SR016",
   "no": 196,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "疾風のペンギン",
   "rarity": "SR",
   "element": "風",
@@ -1962,6 +2158,7 @@
  {
   "id": "SR017",
   "no": 197,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "白光のペンギン",
   "rarity": "SR",
   "element": "光",
@@ -1972,6 +2169,7 @@
  {
   "id": "SR018",
   "no": 198,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "氷晶のコウモリ",
   "rarity": "SR",
   "element": "氷",
@@ -1982,6 +2180,7 @@
  {
   "id": "SR019",
   "no": 199,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "雷鳴のフェニックス",
   "rarity": "SR",
   "element": "雷",
@@ -1992,6 +2191,7 @@
  {
   "id": "SR020",
   "no": 200,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "氷晶のクマ",
   "rarity": "SR",
   "element": "氷",
@@ -2002,6 +2202,7 @@
  {
   "id": "SR021",
   "no": 201,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "疾風のフクロウ",
   "rarity": "SR",
   "element": "風",
@@ -2012,6 +2213,7 @@
  {
   "id": "SR022",
   "no": 202,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "紅蓮のタカ",
   "rarity": "SR",
   "element": "炎",
@@ -2022,6 +2224,7 @@
  {
   "id": "SR023",
   "no": 203,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "疾風のキツネ",
   "rarity": "SR",
   "element": "風",
@@ -2032,6 +2235,7 @@
  {
   "id": "SR024",
   "no": 204,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "星屑のカメ",
   "rarity": "SR",
   "element": "星",
@@ -2042,6 +2246,7 @@
  {
   "id": "SR025",
   "no": 205,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "星屑のドラゴン",
   "rarity": "SR",
   "element": "星",
@@ -2052,6 +2257,7 @@
  {
   "id": "SR026",
   "no": 206,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "月影のネコ",
   "rarity": "SR",
   "element": "闇",
@@ -2062,6 +2268,7 @@
  {
   "id": "SR027",
   "no": 207,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "雷鳴のライオン",
   "rarity": "SR",
   "element": "雷",
@@ -2072,6 +2279,7 @@
  {
   "id": "SR028",
   "no": 208,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "翠緑のフクロウ",
   "rarity": "SR",
   "element": "森",
@@ -2082,6 +2290,7 @@
  {
   "id": "SR029",
   "no": 209,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "翠緑のコウモリ",
   "rarity": "SR",
   "element": "森",
@@ -2092,6 +2301,7 @@
  {
   "id": "SR030",
   "no": 210,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "月影のヘビ",
   "rarity": "SR",
   "element": "闇",
@@ -2102,6 +2312,7 @@
  {
   "id": "SR031",
   "no": 211,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "剛岩のヒツジ",
   "rarity": "SR",
   "element": "岩",
@@ -2112,6 +2323,7 @@
  {
   "id": "SR032",
   "no": 212,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "月影のイルカ",
   "rarity": "SR",
   "element": "闇",
@@ -2122,6 +2334,7 @@
  {
   "id": "SR033",
   "no": 213,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "紅蓮のゴーレム",
   "rarity": "SR",
   "element": "炎",
@@ -2132,6 +2345,7 @@
  {
   "id": "SR034",
   "no": 214,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "疾風のゴーレム",
   "rarity": "SR",
   "element": "風",
@@ -2142,6 +2356,7 @@
  {
   "id": "SR035",
   "no": 215,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "疾風のトラ",
   "rarity": "SR",
   "element": "風",
@@ -2152,6 +2367,7 @@
  {
   "id": "SR036",
   "no": 216,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "白光のユニコーン",
   "rarity": "SR",
   "element": "光",
@@ -2162,6 +2378,7 @@
  {
   "id": "SR037",
   "no": 217,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "剛岩のゴーレム",
   "rarity": "SR",
   "element": "岩",
@@ -2172,6 +2389,7 @@
  {
   "id": "SR038",
   "no": 218,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "蒼海のホタル",
   "rarity": "SR",
   "element": "水",
@@ -2182,6 +2400,7 @@
  {
   "id": "SR039",
   "no": 219,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "星屑のフクロウ",
   "rarity": "SR",
   "element": "星",
@@ -2192,6 +2411,7 @@
  {
   "id": "SR040",
   "no": 220,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "翠緑のヒツジ",
   "rarity": "SR",
   "element": "森",
@@ -2202,6 +2422,7 @@
  {
   "id": "SR041",
   "no": 221,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "白光のオオカミ",
   "rarity": "SR",
   "element": "光",
@@ -2212,6 +2433,7 @@
  {
   "id": "SR042",
   "no": 222,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "星屑のリス",
   "rarity": "SR",
   "element": "星",
@@ -2222,6 +2444,7 @@
  {
   "id": "SR043",
   "no": 223,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "月影のシカ",
   "rarity": "SR",
   "element": "闇",
@@ -2232,6 +2455,7 @@
  {
   "id": "SR044",
   "no": 224,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "翠緑のモモンガ",
   "rarity": "SR",
   "element": "森",
@@ -2242,6 +2466,7 @@
  {
   "id": "SR045",
   "no": 225,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "剛岩のフクロウ",
   "rarity": "SR",
   "element": "岩",
@@ -2252,6 +2477,7 @@
  {
   "id": "SR046",
   "no": 226,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "月影のオオカミ",
   "rarity": "SR",
   "element": "闇",
@@ -2262,6 +2488,7 @@
  {
   "id": "SR047",
   "no": 227,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "紅蓮のオオカミ",
   "rarity": "SR",
   "element": "炎",
@@ -2272,6 +2499,7 @@
  {
   "id": "SR048",
   "no": 228,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "雷鳴のペンギン",
   "rarity": "SR",
   "element": "雷",
@@ -2282,6 +2510,7 @@
  {
   "id": "SR049",
   "no": 229,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "蒼海のフェニックス",
   "rarity": "SR",
   "element": "水",
@@ -2292,6 +2521,7 @@
  {
   "id": "SR050",
   "no": 230,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "月影のゴーレム",
   "rarity": "SR",
   "element": "闇",
@@ -2302,6 +2532,7 @@
  {
   "id": "SR051",
   "no": 231,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "白光のカメ",
   "rarity": "SR",
   "element": "光",
@@ -2312,6 +2543,7 @@
  {
   "id": "SR052",
   "no": 232,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "疾風のリス",
   "rarity": "SR",
   "element": "風",
@@ -2322,6 +2554,7 @@
  {
   "id": "SR053",
   "no": 233,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "紅蓮のスライム",
   "rarity": "SR",
   "element": "炎",
@@ -2332,6 +2565,7 @@
  {
   "id": "SR054",
   "no": 234,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "月影のユニコーン",
   "rarity": "SR",
   "element": "闇",
@@ -2342,6 +2576,7 @@
  {
   "id": "SR055",
   "no": 235,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "月影のコウモリ",
   "rarity": "SR",
   "element": "闇",
@@ -2352,6 +2587,7 @@
  {
   "id": "SR056",
   "no": 236,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "白光のクラゲ",
   "rarity": "SR",
   "element": "光",
@@ -2362,6 +2598,7 @@
  {
   "id": "SR057",
   "no": 237,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "氷晶のフクロウ",
   "rarity": "SR",
   "element": "氷",
@@ -2372,6 +2609,7 @@
  {
   "id": "SR058",
   "no": 238,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "氷晶のパンダ",
   "rarity": "SR",
   "element": "氷",
@@ -2382,6 +2620,7 @@
  {
   "id": "SR059",
   "no": 239,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "疾風のカメ",
   "rarity": "SR",
   "element": "風",
@@ -2392,6 +2631,7 @@
  {
   "id": "SR060",
   "no": 240,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "白光のチョウ",
   "rarity": "SR",
   "element": "光",
@@ -2402,6 +2642,7 @@
  {
   "id": "SSR001",
   "no": 241,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "絶氷のクジラ",
   "rarity": "SSR",
   "element": "氷",
@@ -2412,6 +2653,7 @@
  {
   "id": "SSR002",
   "no": 242,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "絶氷のイルカ",
   "rarity": "SSR",
   "element": "氷",
@@ -2422,6 +2664,7 @@
  {
   "id": "SSR003",
   "no": 243,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "深淵のモモンガ",
   "rarity": "SSR",
   "element": "水",
@@ -2432,6 +2675,7 @@
  {
   "id": "SSR004",
   "no": 244,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "深淵のクマ",
   "rarity": "SSR",
   "element": "水",
@@ -2442,6 +2686,7 @@
  {
   "id": "SSR005",
   "no": 245,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "聖光のトラ",
   "rarity": "SSR",
   "element": "光",
@@ -2452,6 +2697,7 @@
  {
   "id": "SSR006",
   "no": 246,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "絶氷のトラ",
   "rarity": "SSR",
   "element": "氷",
@@ -2462,6 +2708,7 @@
  {
   "id": "SSR007",
   "no": 247,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "深淵のヘビ",
   "rarity": "SSR",
   "element": "水",
@@ -2472,6 +2719,7 @@
  {
   "id": "SSR008",
   "no": 248,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "煉獄のライオン",
   "rarity": "SSR",
   "element": "炎",
@@ -2482,6 +2730,7 @@
  {
   "id": "SSR009",
   "no": 249,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "轟雷のスライム",
   "rarity": "SSR",
   "element": "雷",
@@ -2492,6 +2741,7 @@
  {
   "id": "SSR010",
   "no": 250,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "天嵐のネコ",
   "rarity": "SSR",
   "element": "風",
@@ -2502,6 +2752,7 @@
  {
   "id": "SSR011",
   "no": 251,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "天嵐のハリネズミ",
   "rarity": "SSR",
   "element": "風",
@@ -2512,6 +2763,7 @@
  {
   "id": "SSR012",
   "no": 252,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "絶氷のライオン",
   "rarity": "SSR",
   "element": "氷",
@@ -2522,6 +2774,7 @@
  {
   "id": "SSR013",
   "no": 253,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "銀河のトラ",
   "rarity": "SSR",
   "element": "星",
@@ -2532,6 +2785,7 @@
  {
   "id": "SSR014",
   "no": 254,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "深淵のチョウ",
   "rarity": "SSR",
   "element": "水",
@@ -2542,6 +2796,7 @@
  {
   "id": "SSR015",
   "no": 255,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "冥府のヒツジ",
   "rarity": "SSR",
   "element": "闇",
@@ -2552,6 +2807,7 @@
  {
   "id": "SSR016",
   "no": 256,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "轟雷のカメ",
   "rarity": "SSR",
   "element": "雷",
@@ -2562,6 +2818,7 @@
  {
   "id": "SSR017",
   "no": 257,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "冥府のフェニックス",
   "rarity": "SSR",
   "element": "闇",
@@ -2572,6 +2829,7 @@
  {
   "id": "SSR018",
   "no": 258,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "古樹のトラ",
   "rarity": "SSR",
   "element": "森",
@@ -2582,6 +2840,7 @@
  {
   "id": "SSR019",
   "no": 259,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "深淵のスライム",
   "rarity": "SSR",
   "element": "水",
@@ -2592,6 +2851,7 @@
  {
   "id": "SSR020",
   "no": 260,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "絶氷のカメ",
   "rarity": "SSR",
   "element": "氷",
@@ -2602,6 +2862,7 @@
  {
   "id": "SSR021",
   "no": 261,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "深淵のユニコーン",
   "rarity": "SSR",
   "element": "水",
@@ -2612,6 +2873,7 @@
  {
   "id": "SSR022",
   "no": 262,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "巨岩のイルカ",
   "rarity": "SSR",
   "element": "岩",
@@ -2622,6 +2884,7 @@
  {
   "id": "SSR023",
   "no": 263,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "絶氷のヘビ",
   "rarity": "SSR",
   "element": "氷",
@@ -2632,6 +2895,7 @@
  {
   "id": "SSR024",
   "no": 264,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "冥府のクジラ",
   "rarity": "SSR",
   "element": "闇",
@@ -2642,6 +2906,7 @@
  {
   "id": "SSR025",
   "no": 265,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "絶氷のゴーレム",
   "rarity": "SSR",
   "element": "氷",
@@ -2652,6 +2917,7 @@
  {
   "id": "SSR026",
   "no": 266,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "冥府のモモンガ",
   "rarity": "SSR",
   "element": "闇",
@@ -2662,6 +2928,7 @@
  {
   "id": "SSR027",
   "no": 267,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "天嵐のユニコーン",
   "rarity": "SSR",
   "element": "風",
@@ -2672,6 +2939,7 @@
  {
   "id": "SSR028",
   "no": 268,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "巨岩のクラゲ",
   "rarity": "SSR",
   "element": "岩",
@@ -2682,6 +2950,7 @@
  {
   "id": "SSR029",
   "no": 269,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "聖光のリス",
   "rarity": "SSR",
   "element": "光",
@@ -2692,6 +2961,7 @@
  {
   "id": "SSR030",
   "no": 270,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "深淵のハリネズミ",
   "rarity": "SSR",
   "element": "水",
@@ -2702,6 +2972,7 @@
  {
   "id": "SSR031",
   "no": 271,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "深淵のペンギン",
   "rarity": "SSR",
   "element": "水",
@@ -2712,6 +2983,7 @@
  {
   "id": "SSR032",
   "no": 272,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "絶氷のチョウ",
   "rarity": "SSR",
   "element": "氷",
@@ -2722,6 +2994,7 @@
  {
   "id": "SSR033",
   "no": 273,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "轟雷のヒツジ",
   "rarity": "SSR",
   "element": "雷",
@@ -2732,6 +3005,7 @@
  {
   "id": "SSR034",
   "no": 274,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "煉獄のトラ",
   "rarity": "SSR",
   "element": "炎",
@@ -2742,6 +3016,7 @@
  {
   "id": "SSR035",
   "no": 275,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "轟雷のウサギ",
   "rarity": "SSR",
   "element": "雷",
@@ -2752,6 +3027,7 @@
  {
   "id": "SSR036",
   "no": 276,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "天嵐のクマ",
   "rarity": "SSR",
   "element": "風",
@@ -2762,6 +3038,7 @@
  {
   "id": "SSR037",
   "no": 277,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "銀河のホタル",
   "rarity": "SSR",
   "element": "星",
@@ -2772,6 +3049,7 @@
  {
   "id": "SSR038",
   "no": 278,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "轟雷のカエル",
   "rarity": "SSR",
   "element": "雷",
@@ -2782,6 +3060,7 @@
  {
   "id": "SSR039",
   "no": 279,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "巨岩のフェニックス",
   "rarity": "SSR",
   "element": "岩",
@@ -2792,6 +3071,7 @@
  {
   "id": "SSR040",
   "no": 280,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "冥府のホタル",
   "rarity": "SSR",
   "element": "闇",
@@ -2802,6 +3082,7 @@
  {
   "id": "UR001",
   "no": 281,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "氷神フェニックス",
   "rarity": "UR",
   "element": "氷",
@@ -2812,6 +3093,7 @@
  {
   "id": "UR002",
   "no": 282,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "森神ペンギン",
   "rarity": "UR",
   "element": "森",
@@ -2822,6 +3104,7 @@
  {
   "id": "UR003",
   "no": 283,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "冥神フクロウ",
   "rarity": "UR",
   "element": "闇",
@@ -2832,6 +3115,7 @@
  {
   "id": "UR004",
   "no": 284,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "光神ライオン",
   "rarity": "UR",
   "element": "光",
@@ -2842,6 +3126,7 @@
  {
   "id": "UR005",
   "no": 285,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "風神クラゲ",
   "rarity": "UR",
   "element": "風",
@@ -2852,6 +3137,7 @@
  {
   "id": "UR006",
   "no": 286,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "森神タカ",
   "rarity": "UR",
   "element": "森",
@@ -2862,6 +3148,7 @@
  {
   "id": "UR007",
   "no": 287,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "光神クマ",
   "rarity": "UR",
   "element": "光",
@@ -2872,6 +3159,7 @@
  {
   "id": "UR008",
   "no": 288,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "星神シカ",
   "rarity": "UR",
   "element": "星",
@@ -2882,6 +3170,7 @@
  {
   "id": "UR009",
   "no": 289,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "海神ゴーレム",
   "rarity": "UR",
   "element": "水",
@@ -2892,6 +3181,7 @@
  {
   "id": "UR010",
   "no": 290,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "雷神ドラゴン",
   "rarity": "UR",
   "element": "雷",
@@ -2902,6 +3192,7 @@
  {
   "id": "UR011",
   "no": 291,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "氷神ホタル",
   "rarity": "UR",
   "element": "氷",
@@ -2912,6 +3203,7 @@
  {
   "id": "UR012",
   "no": 292,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "岩神コウモリ",
   "rarity": "UR",
   "element": "岩",
@@ -2922,6 +3214,7 @@
  {
   "id": "UR013",
   "no": 293,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "雷神トラ",
   "rarity": "UR",
   "element": "雷",
@@ -2932,6 +3225,7 @@
  {
   "id": "UR014",
   "no": 294,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "風神ホタル",
   "rarity": "UR",
   "element": "風",
@@ -2942,11 +3236,1112 @@
  {
   "id": "UR015",
   "no": 295,
+  "pack": "PRISMA BOOSTER PACK",
   "name": "森神クマ",
   "rarity": "UR",
   "element": "森",
   "motif": "クマ",
   "theme": "森属性 × クマ",
   "file": "illust/UR015.webp"
+ },
+ {
+  "id": "SW-N001",
+  "no": 296,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "メロンショート",
+  "rarity": "N",
+  "element": "メロン",
+  "motif": "ショート",
+  "theme": "メロン味 × ショート",
+  "file": "illust/SW-N001.webp"
+ },
+ {
+  "id": "SW-N002",
+  "no": 297,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "ぶどうショート",
+  "rarity": "N",
+  "element": "ぶどう",
+  "motif": "ショート",
+  "theme": "ぶどう味 × ショート",
+  "file": "illust/SW-N002.webp"
+ },
+ {
+  "id": "SW-N003",
+  "no": 298,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "キャラメルキャンディ",
+  "rarity": "N",
+  "element": "キャラメル",
+  "motif": "キャンディ",
+  "theme": "キャラメル味 × キャンディ",
+  "file": "illust/SW-N003.webp"
+ },
+ {
+  "id": "SW-N004",
+  "no": 299,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "ソーダマカロン",
+  "rarity": "N",
+  "element": "ソーダ",
+  "motif": "マカロン",
+  "theme": "ソーダ味 × マカロン",
+  "file": "illust/SW-N004.webp"
+ },
+ {
+  "id": "SW-N005",
+  "no": 300,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "チョコクッキー",
+  "rarity": "N",
+  "element": "チョコ",
+  "motif": "クッキー",
+  "theme": "チョコ味 × クッキー",
+  "file": "illust/SW-N005.webp"
+ },
+ {
+  "id": "SW-N006",
+  "no": 301,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "チョコマカロン",
+  "rarity": "N",
+  "element": "チョコ",
+  "motif": "マカロン",
+  "theme": "チョコ味 × マカロン",
+  "file": "illust/SW-N006.webp"
+ },
+ {
+  "id": "SW-N007",
+  "no": 302,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "チョコプリン",
+  "rarity": "N",
+  "element": "チョコ",
+  "motif": "プリン",
+  "theme": "チョコ味 × プリン",
+  "file": "illust/SW-N007.webp"
+ },
+ {
+  "id": "SW-N008",
+  "no": 303,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "ソーダわたあめ",
+  "rarity": "N",
+  "element": "ソーダ",
+  "motif": "わたあめ",
+  "theme": "ソーダ味 × わたあめ",
+  "file": "illust/SW-N008.webp"
+ },
+ {
+  "id": "SW-N009",
+  "no": 304,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "ももマフィン",
+  "rarity": "N",
+  "element": "もも",
+  "motif": "マフィン",
+  "theme": "もも味 × マフィン",
+  "file": "illust/SW-N009.webp"
+ },
+ {
+  "id": "SW-N010",
+  "no": 305,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "ミルクマカロン",
+  "rarity": "N",
+  "element": "ミルク",
+  "motif": "マカロン",
+  "theme": "ミルク味 × マカロン",
+  "file": "illust/SW-N010.webp"
+ },
+ {
+  "id": "SW-N011",
+  "no": 306,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "ソーダマフィン",
+  "rarity": "N",
+  "element": "ソーダ",
+  "motif": "マフィン",
+  "theme": "ソーダ味 × マフィン",
+  "file": "illust/SW-N011.webp"
+ },
+ {
+  "id": "SW-N012",
+  "no": 307,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "チョコショート",
+  "rarity": "N",
+  "element": "チョコ",
+  "motif": "ショート",
+  "theme": "チョコ味 × ショート",
+  "file": "illust/SW-N012.webp"
+ },
+ {
+  "id": "SW-N013",
+  "no": 308,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "ぶどうだんご",
+  "rarity": "N",
+  "element": "ぶどう",
+  "motif": "だんご",
+  "theme": "ぶどう味 × だんご",
+  "file": "illust/SW-N013.webp"
+ },
+ {
+  "id": "SW-N014",
+  "no": 309,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "まっちゃキャンディ",
+  "rarity": "N",
+  "element": "まっちゃ",
+  "motif": "キャンディ",
+  "theme": "まっちゃ味 × キャンディ",
+  "file": "illust/SW-N014.webp"
+ },
+ {
+  "id": "SW-N015",
+  "no": 310,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "メロンだんご",
+  "rarity": "N",
+  "element": "メロン",
+  "motif": "だんご",
+  "theme": "メロン味 × だんご",
+  "file": "illust/SW-N015.webp"
+ },
+ {
+  "id": "SW-N016",
+  "no": 311,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "チョコマフィン",
+  "rarity": "N",
+  "element": "チョコ",
+  "motif": "マフィン",
+  "theme": "チョコ味 × マフィン",
+  "file": "illust/SW-N016.webp"
+ },
+ {
+  "id": "SW-N017",
+  "no": 312,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "ぶどうソフト",
+  "rarity": "N",
+  "element": "ぶどう",
+  "motif": "ソフト",
+  "theme": "ぶどう味 × ソフト",
+  "file": "illust/SW-N017.webp"
+ },
+ {
+  "id": "SW-N018",
+  "no": 313,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "チョコだんご",
+  "rarity": "N",
+  "element": "チョコ",
+  "motif": "だんご",
+  "theme": "チョコ味 × だんご",
+  "file": "illust/SW-N018.webp"
+ },
+ {
+  "id": "SW-N019",
+  "no": 314,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "ミルクわたあめ",
+  "rarity": "N",
+  "element": "ミルク",
+  "motif": "わたあめ",
+  "theme": "ミルク味 × わたあめ",
+  "file": "illust/SW-N019.webp"
+ },
+ {
+  "id": "SW-N020",
+  "no": 315,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "ももクッキー",
+  "rarity": "N",
+  "element": "もも",
+  "motif": "クッキー",
+  "theme": "もも味 × クッキー",
+  "file": "illust/SW-N020.webp"
+ },
+ {
+  "id": "SW-N021",
+  "no": 316,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "チョコわたあめ",
+  "rarity": "N",
+  "element": "チョコ",
+  "motif": "わたあめ",
+  "theme": "チョコ味 × わたあめ",
+  "file": "illust/SW-N021.webp"
+ },
+ {
+  "id": "SW-N022",
+  "no": 317,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "キャラメルだんご",
+  "rarity": "N",
+  "element": "キャラメル",
+  "motif": "だんご",
+  "theme": "キャラメル味 × だんご",
+  "file": "illust/SW-N022.webp"
+ },
+ {
+  "id": "SW-N023",
+  "no": 318,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "ミルクショート",
+  "rarity": "N",
+  "element": "ミルク",
+  "motif": "ショート",
+  "theme": "ミルク味 × ショート",
+  "file": "illust/SW-N023.webp"
+ },
+ {
+  "id": "SW-N024",
+  "no": 319,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "ソーダだんご",
+  "rarity": "N",
+  "element": "ソーダ",
+  "motif": "だんご",
+  "theme": "ソーダ味 × だんご",
+  "file": "illust/SW-N024.webp"
+ },
+ {
+  "id": "SW-N025",
+  "no": 320,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "キャラメルクッキー",
+  "rarity": "N",
+  "element": "キャラメル",
+  "motif": "クッキー",
+  "theme": "キャラメル味 × クッキー",
+  "file": "illust/SW-N025.webp"
+ },
+ {
+  "id": "SW-N026",
+  "no": 321,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "まっちゃだんご",
+  "rarity": "N",
+  "element": "まっちゃ",
+  "motif": "だんご",
+  "theme": "まっちゃ味 × だんご",
+  "file": "illust/SW-N026.webp"
+ },
+ {
+  "id": "SW-N027",
+  "no": 322,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "ぶどうクッキー",
+  "rarity": "N",
+  "element": "ぶどう",
+  "motif": "クッキー",
+  "theme": "ぶどう味 × クッキー",
+  "file": "illust/SW-N027.webp"
+ },
+ {
+  "id": "SW-N028",
+  "no": 323,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "キャラメルソフト",
+  "rarity": "N",
+  "element": "キャラメル",
+  "motif": "ソフト",
+  "theme": "キャラメル味 × ソフト",
+  "file": "illust/SW-N028.webp"
+ },
+ {
+  "id": "SW-N029",
+  "no": 324,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "レモンプリン",
+  "rarity": "N",
+  "element": "レモン",
+  "motif": "プリン",
+  "theme": "レモン味 × プリン",
+  "file": "illust/SW-N029.webp"
+ },
+ {
+  "id": "SW-N030",
+  "no": 325,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "レモンソフト",
+  "rarity": "N",
+  "element": "レモン",
+  "motif": "ソフト",
+  "theme": "レモン味 × ソフト",
+  "file": "illust/SW-N030.webp"
+ },
+ {
+  "id": "SW-N031",
+  "no": 326,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "ぶどうドーナツ",
+  "rarity": "N",
+  "element": "ぶどう",
+  "motif": "ドーナツ",
+  "theme": "ぶどう味 × ドーナツ",
+  "file": "illust/SW-N031.webp"
+ },
+ {
+  "id": "SW-N032",
+  "no": 327,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "メロンマフィン",
+  "rarity": "N",
+  "element": "メロン",
+  "motif": "マフィン",
+  "theme": "メロン味 × マフィン",
+  "file": "illust/SW-N032.webp"
+ },
+ {
+  "id": "SW-N033",
+  "no": 328,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "まっちゃショート",
+  "rarity": "N",
+  "element": "まっちゃ",
+  "motif": "ショート",
+  "theme": "まっちゃ味 × ショート",
+  "file": "illust/SW-N033.webp"
+ },
+ {
+  "id": "SW-N034",
+  "no": 329,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "ソーダショート",
+  "rarity": "N",
+  "element": "ソーダ",
+  "motif": "ショート",
+  "theme": "ソーダ味 × ショート",
+  "file": "illust/SW-N034.webp"
+ },
+ {
+  "id": "SW-N035",
+  "no": 330,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "ぶどうプリン",
+  "rarity": "N",
+  "element": "ぶどう",
+  "motif": "プリン",
+  "theme": "ぶどう味 × プリン",
+  "file": "illust/SW-N035.webp"
+ },
+ {
+  "id": "SW-R001",
+  "no": 331,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製ミルクマフィン",
+  "rarity": "R",
+  "element": "ミルク",
+  "motif": "マフィン",
+  "theme": "ミルク味 × マフィン",
+  "file": "illust/SW-R001.webp"
+ },
+ {
+  "id": "SW-R002",
+  "no": 332,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製まっちゃドーナツ",
+  "rarity": "R",
+  "element": "まっちゃ",
+  "motif": "ドーナツ",
+  "theme": "まっちゃ味 × ドーナツ",
+  "file": "illust/SW-R002.webp"
+ },
+ {
+  "id": "SW-R003",
+  "no": 333,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製いちごだんご",
+  "rarity": "R",
+  "element": "いちご",
+  "motif": "だんご",
+  "theme": "いちご味 × だんご",
+  "file": "illust/SW-R003.webp"
+ },
+ {
+  "id": "SW-R004",
+  "no": 334,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製キャラメルマカロン",
+  "rarity": "R",
+  "element": "キャラメル",
+  "motif": "マカロン",
+  "theme": "キャラメル味 × マカロン",
+  "file": "illust/SW-R004.webp"
+ },
+ {
+  "id": "SW-R005",
+  "no": 335,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製いちごソフト",
+  "rarity": "R",
+  "element": "いちご",
+  "motif": "ソフト",
+  "theme": "いちご味 × ソフト",
+  "file": "illust/SW-R005.webp"
+ },
+ {
+  "id": "SW-R006",
+  "no": 336,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製キャラメルショート",
+  "rarity": "R",
+  "element": "キャラメル",
+  "motif": "ショート",
+  "theme": "キャラメル味 × ショート",
+  "file": "illust/SW-R006.webp"
+ },
+ {
+  "id": "SW-R007",
+  "no": 337,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製いちごキャンディ",
+  "rarity": "R",
+  "element": "いちご",
+  "motif": "キャンディ",
+  "theme": "いちご味 × キャンディ",
+  "file": "illust/SW-R007.webp"
+ },
+ {
+  "id": "SW-R008",
+  "no": 338,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製メロンキャンディ",
+  "rarity": "R",
+  "element": "メロン",
+  "motif": "キャンディ",
+  "theme": "メロン味 × キャンディ",
+  "file": "illust/SW-R008.webp"
+ },
+ {
+  "id": "SW-R009",
+  "no": 339,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製レモンドーナツ",
+  "rarity": "R",
+  "element": "レモン",
+  "motif": "ドーナツ",
+  "theme": "レモン味 × ドーナツ",
+  "file": "illust/SW-R009.webp"
+ },
+ {
+  "id": "SW-R010",
+  "no": 340,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製いちごショート",
+  "rarity": "R",
+  "element": "いちご",
+  "motif": "ショート",
+  "theme": "いちご味 × ショート",
+  "file": "illust/SW-R010.webp"
+ },
+ {
+  "id": "SW-R011",
+  "no": 341,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製ぶどうわたあめ",
+  "rarity": "R",
+  "element": "ぶどう",
+  "motif": "わたあめ",
+  "theme": "ぶどう味 × わたあめ",
+  "file": "illust/SW-R011.webp"
+ },
+ {
+  "id": "SW-R012",
+  "no": 342,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製メロンドーナツ",
+  "rarity": "R",
+  "element": "メロン",
+  "motif": "ドーナツ",
+  "theme": "メロン味 × ドーナツ",
+  "file": "illust/SW-R012.webp"
+ },
+ {
+  "id": "SW-R013",
+  "no": 343,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製メロンプリン",
+  "rarity": "R",
+  "element": "メロン",
+  "motif": "プリン",
+  "theme": "メロン味 × プリン",
+  "file": "illust/SW-R013.webp"
+ },
+ {
+  "id": "SW-R014",
+  "no": 344,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製いちごプリン",
+  "rarity": "R",
+  "element": "いちご",
+  "motif": "プリン",
+  "theme": "いちご味 × プリン",
+  "file": "illust/SW-R014.webp"
+ },
+ {
+  "id": "SW-R015",
+  "no": 345,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製ミルクドーナツ",
+  "rarity": "R",
+  "element": "ミルク",
+  "motif": "ドーナツ",
+  "theme": "ミルク味 × ドーナツ",
+  "file": "illust/SW-R015.webp"
+ },
+ {
+  "id": "SW-R016",
+  "no": 346,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製ももキャンディ",
+  "rarity": "R",
+  "element": "もも",
+  "motif": "キャンディ",
+  "theme": "もも味 × キャンディ",
+  "file": "illust/SW-R016.webp"
+ },
+ {
+  "id": "SW-R017",
+  "no": 347,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製メロンわたあめ",
+  "rarity": "R",
+  "element": "メロン",
+  "motif": "わたあめ",
+  "theme": "メロン味 × わたあめ",
+  "file": "illust/SW-R017.webp"
+ },
+ {
+  "id": "SW-R018",
+  "no": 348,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製メロンマカロン",
+  "rarity": "R",
+  "element": "メロン",
+  "motif": "マカロン",
+  "theme": "メロン味 × マカロン",
+  "file": "illust/SW-R018.webp"
+ },
+ {
+  "id": "SW-R019",
+  "no": 349,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製ももドーナツ",
+  "rarity": "R",
+  "element": "もも",
+  "motif": "ドーナツ",
+  "theme": "もも味 × ドーナツ",
+  "file": "illust/SW-R019.webp"
+ },
+ {
+  "id": "SW-R020",
+  "no": 350,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製ソーダソフト",
+  "rarity": "R",
+  "element": "ソーダ",
+  "motif": "ソフト",
+  "theme": "ソーダ味 × ソフト",
+  "file": "illust/SW-R020.webp"
+ },
+ {
+  "id": "SW-R021",
+  "no": 351,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製ぶどうキャンディ",
+  "rarity": "R",
+  "element": "ぶどう",
+  "motif": "キャンディ",
+  "theme": "ぶどう味 × キャンディ",
+  "file": "illust/SW-R021.webp"
+ },
+ {
+  "id": "SW-R022",
+  "no": 352,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製ももプリン",
+  "rarity": "R",
+  "element": "もも",
+  "motif": "プリン",
+  "theme": "もも味 × プリン",
+  "file": "illust/SW-R022.webp"
+ },
+ {
+  "id": "SW-R023",
+  "no": 353,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製ソーダキャンディ",
+  "rarity": "R",
+  "element": "ソーダ",
+  "motif": "キャンディ",
+  "theme": "ソーダ味 × キャンディ",
+  "file": "illust/SW-R023.webp"
+ },
+ {
+  "id": "SW-R024",
+  "no": 354,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製ミルクだんご",
+  "rarity": "R",
+  "element": "ミルク",
+  "motif": "だんご",
+  "theme": "ミルク味 × だんご",
+  "file": "illust/SW-R024.webp"
+ },
+ {
+  "id": "SW-R025",
+  "no": 355,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製レモンクッキー",
+  "rarity": "R",
+  "element": "レモン",
+  "motif": "クッキー",
+  "theme": "レモン味 × クッキー",
+  "file": "illust/SW-R025.webp"
+ },
+ {
+  "id": "SW-R026",
+  "no": 356,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製ももソフト",
+  "rarity": "R",
+  "element": "もも",
+  "motif": "ソフト",
+  "theme": "もも味 × ソフト",
+  "file": "illust/SW-R026.webp"
+ },
+ {
+  "id": "SW-R027",
+  "no": 357,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製ぶどうマカロン",
+  "rarity": "R",
+  "element": "ぶどう",
+  "motif": "マカロン",
+  "theme": "ぶどう味 × マカロン",
+  "file": "illust/SW-R027.webp"
+ },
+ {
+  "id": "SW-R028",
+  "no": 358,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製ぶどうマフィン",
+  "rarity": "R",
+  "element": "ぶどう",
+  "motif": "マフィン",
+  "theme": "ぶどう味 × マフィン",
+  "file": "illust/SW-R028.webp"
+ },
+ {
+  "id": "SW-R029",
+  "no": 359,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製メロンソフト",
+  "rarity": "R",
+  "element": "メロン",
+  "motif": "ソフト",
+  "theme": "メロン味 × ソフト",
+  "file": "illust/SW-R029.webp"
+ },
+ {
+  "id": "SW-R030",
+  "no": 360,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "特製キャラメルプリン",
+  "rarity": "R",
+  "element": "キャラメル",
+  "motif": "プリン",
+  "theme": "キャラメル味 × プリン",
+  "file": "illust/SW-R030.webp"
+ },
+ {
+  "id": "SW-SR001",
+  "no": 361,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上メロンクッキー",
+  "rarity": "SR",
+  "element": "メロン",
+  "motif": "クッキー",
+  "theme": "メロン味 × クッキー",
+  "file": "illust/SW-SR001.webp"
+ },
+ {
+  "id": "SW-SR002",
+  "no": 362,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上まっちゃマフィン",
+  "rarity": "SR",
+  "element": "まっちゃ",
+  "motif": "マフィン",
+  "theme": "まっちゃ味 × マフィン",
+  "file": "illust/SW-SR002.webp"
+ },
+ {
+  "id": "SW-SR003",
+  "no": 363,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上ももショート",
+  "rarity": "SR",
+  "element": "もも",
+  "motif": "ショート",
+  "theme": "もも味 × ショート",
+  "file": "illust/SW-SR003.webp"
+ },
+ {
+  "id": "SW-SR004",
+  "no": 364,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上レモンマカロン",
+  "rarity": "SR",
+  "element": "レモン",
+  "motif": "マカロン",
+  "theme": "レモン味 × マカロン",
+  "file": "illust/SW-SR004.webp"
+ },
+ {
+  "id": "SW-SR005",
+  "no": 365,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上チョコソフト",
+  "rarity": "SR",
+  "element": "チョコ",
+  "motif": "ソフト",
+  "theme": "チョコ味 × ソフト",
+  "file": "illust/SW-SR005.webp"
+ },
+ {
+  "id": "SW-SR006",
+  "no": 366,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上いちごマフィン",
+  "rarity": "SR",
+  "element": "いちご",
+  "motif": "マフィン",
+  "theme": "いちご味 × マフィン",
+  "file": "illust/SW-SR006.webp"
+ },
+ {
+  "id": "SW-SR007",
+  "no": 367,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上まっちゃマカロン",
+  "rarity": "SR",
+  "element": "まっちゃ",
+  "motif": "マカロン",
+  "theme": "まっちゃ味 × マカロン",
+  "file": "illust/SW-SR007.webp"
+ },
+ {
+  "id": "SW-SR008",
+  "no": 368,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上キャラメルドーナツ",
+  "rarity": "SR",
+  "element": "キャラメル",
+  "motif": "ドーナツ",
+  "theme": "キャラメル味 × ドーナツ",
+  "file": "illust/SW-SR008.webp"
+ },
+ {
+  "id": "SW-SR009",
+  "no": 369,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上ソーダドーナツ",
+  "rarity": "SR",
+  "element": "ソーダ",
+  "motif": "ドーナツ",
+  "theme": "ソーダ味 × ドーナツ",
+  "file": "illust/SW-SR009.webp"
+ },
+ {
+  "id": "SW-SR010",
+  "no": 370,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上チョコドーナツ",
+  "rarity": "SR",
+  "element": "チョコ",
+  "motif": "ドーナツ",
+  "theme": "チョコ味 × ドーナツ",
+  "file": "illust/SW-SR010.webp"
+ },
+ {
+  "id": "SW-SR011",
+  "no": 371,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上キャラメルマフィン",
+  "rarity": "SR",
+  "element": "キャラメル",
+  "motif": "マフィン",
+  "theme": "キャラメル味 × マフィン",
+  "file": "illust/SW-SR011.webp"
+ },
+ {
+  "id": "SW-SR012",
+  "no": 372,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上ももだんご",
+  "rarity": "SR",
+  "element": "もも",
+  "motif": "だんご",
+  "theme": "もも味 × だんご",
+  "file": "illust/SW-SR012.webp"
+ },
+ {
+  "id": "SW-SR013",
+  "no": 373,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上ミルクプリン",
+  "rarity": "SR",
+  "element": "ミルク",
+  "motif": "プリン",
+  "theme": "ミルク味 × プリン",
+  "file": "illust/SW-SR013.webp"
+ },
+ {
+  "id": "SW-SR014",
+  "no": 374,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上レモンショート",
+  "rarity": "SR",
+  "element": "レモン",
+  "motif": "ショート",
+  "theme": "レモン味 × ショート",
+  "file": "illust/SW-SR014.webp"
+ },
+ {
+  "id": "SW-SR015",
+  "no": 375,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上ももわたあめ",
+  "rarity": "SR",
+  "element": "もも",
+  "motif": "わたあめ",
+  "theme": "もも味 × わたあめ",
+  "file": "illust/SW-SR015.webp"
+ },
+ {
+  "id": "SW-SR016",
+  "no": 376,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上まっちゃソフト",
+  "rarity": "SR",
+  "element": "まっちゃ",
+  "motif": "ソフト",
+  "theme": "まっちゃ味 × ソフト",
+  "file": "illust/SW-SR016.webp"
+ },
+ {
+  "id": "SW-SR017",
+  "no": 377,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上いちごドーナツ",
+  "rarity": "SR",
+  "element": "いちご",
+  "motif": "ドーナツ",
+  "theme": "いちご味 × ドーナツ",
+  "file": "illust/SW-SR017.webp"
+ },
+ {
+  "id": "SW-SR018",
+  "no": 378,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上いちごクッキー",
+  "rarity": "SR",
+  "element": "いちご",
+  "motif": "クッキー",
+  "theme": "いちご味 × クッキー",
+  "file": "illust/SW-SR018.webp"
+ },
+ {
+  "id": "SW-SR019",
+  "no": 379,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上いちごマカロン",
+  "rarity": "SR",
+  "element": "いちご",
+  "motif": "マカロン",
+  "theme": "いちご味 × マカロン",
+  "file": "illust/SW-SR019.webp"
+ },
+ {
+  "id": "SW-SR020",
+  "no": 380,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "極上まっちゃプリン",
+  "rarity": "SR",
+  "element": "まっちゃ",
+  "motif": "プリン",
+  "theme": "まっちゃ味 × プリン",
+  "file": "illust/SW-SR020.webp"
+ },
+ {
+  "id": "SW-SSR001",
+  "no": 381,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "宝石のレモンわたあめ",
+  "rarity": "SSR",
+  "element": "レモン",
+  "motif": "わたあめ",
+  "theme": "レモン味 × わたあめ",
+  "file": "illust/SW-SSR001.webp"
+ },
+ {
+  "id": "SW-SSR002",
+  "no": 382,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "宝石のももマカロン",
+  "rarity": "SSR",
+  "element": "もも",
+  "motif": "マカロン",
+  "theme": "もも味 × マカロン",
+  "file": "illust/SW-SSR002.webp"
+ },
+ {
+  "id": "SW-SSR003",
+  "no": 383,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "宝石のいちごわたあめ",
+  "rarity": "SSR",
+  "element": "いちご",
+  "motif": "わたあめ",
+  "theme": "いちご味 × わたあめ",
+  "file": "illust/SW-SSR003.webp"
+ },
+ {
+  "id": "SW-SSR004",
+  "no": 384,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "宝石のレモンマフィン",
+  "rarity": "SSR",
+  "element": "レモン",
+  "motif": "マフィン",
+  "theme": "レモン味 × マフィン",
+  "file": "illust/SW-SSR004.webp"
+ },
+ {
+  "id": "SW-SSR005",
+  "no": 385,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "宝石のレモンキャンディ",
+  "rarity": "SSR",
+  "element": "レモン",
+  "motif": "キャンディ",
+  "theme": "レモン味 × キャンディ",
+  "file": "illust/SW-SSR005.webp"
+ },
+ {
+  "id": "SW-SSR006",
+  "no": 386,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "宝石のソーダクッキー",
+  "rarity": "SSR",
+  "element": "ソーダ",
+  "motif": "クッキー",
+  "theme": "ソーダ味 × クッキー",
+  "file": "illust/SW-SSR006.webp"
+ },
+ {
+  "id": "SW-SSR007",
+  "no": 387,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "宝石のミルクキャンディ",
+  "rarity": "SSR",
+  "element": "ミルク",
+  "motif": "キャンディ",
+  "theme": "ミルク味 × キャンディ",
+  "file": "illust/SW-SSR007.webp"
+ },
+ {
+  "id": "SW-SSR008",
+  "no": 388,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "宝石のレモンだんご",
+  "rarity": "SSR",
+  "element": "レモン",
+  "motif": "だんご",
+  "theme": "レモン味 × だんご",
+  "file": "illust/SW-SSR008.webp"
+ },
+ {
+  "id": "SW-SSR009",
+  "no": 389,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "宝石のまっちゃわたあめ",
+  "rarity": "SSR",
+  "element": "まっちゃ",
+  "motif": "わたあめ",
+  "theme": "まっちゃ味 × わたあめ",
+  "file": "illust/SW-SSR009.webp"
+ },
+ {
+  "id": "SW-SSR010",
+  "no": 390,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "宝石のソーダプリン",
+  "rarity": "SSR",
+  "element": "ソーダ",
+  "motif": "プリン",
+  "theme": "ソーダ味 × プリン",
+  "file": "illust/SW-SSR010.webp"
+ },
+ {
+  "id": "SW-UR001",
+  "no": 391,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "天上のミルクソフト",
+  "rarity": "UR",
+  "element": "ミルク",
+  "motif": "ソフト",
+  "theme": "ミルク味 × ソフト",
+  "file": "illust/SW-UR001.webp"
+ },
+ {
+  "id": "SW-UR002",
+  "no": 392,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "天上のミルククッキー",
+  "rarity": "UR",
+  "element": "ミルク",
+  "motif": "クッキー",
+  "theme": "ミルク味 × クッキー",
+  "file": "illust/SW-UR002.webp"
+ },
+ {
+  "id": "SW-UR003",
+  "no": 393,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "天上のチョコキャンディ",
+  "rarity": "UR",
+  "element": "チョコ",
+  "motif": "キャンディ",
+  "theme": "チョコ味 × キャンディ",
+  "file": "illust/SW-UR003.webp"
+ },
+ {
+  "id": "SW-UR004",
+  "no": 394,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "天上のまっちゃクッキー",
+  "rarity": "UR",
+  "element": "まっちゃ",
+  "motif": "クッキー",
+  "theme": "まっちゃ味 × クッキー",
+  "file": "illust/SW-UR004.webp"
+ },
+ {
+  "id": "SW-UR005",
+  "no": 395,
+  "pack": "PRISMA SWEETS PACK",
+  "name": "天上のキャラメルわたあめ",
+  "rarity": "UR",
+  "element": "キャラメル",
+  "motif": "わたあめ",
+  "theme": "キャラメル味 × わたあめ",
+  "file": "illust/SW-UR005.webp"
  }
 ]
