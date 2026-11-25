@@ -89,10 +89,13 @@ button:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
 .pack.p-sw{background:linear-gradient(165deg,#ffcfe2 0%,#fff1dc 32%,#ffe0ef 58%,#d6f5ea 82%,#ffc6dd 100%)}
 .pack.p-sw .irid{background:conic-gradient(from 160deg at 60% 40%,#ff9ad5,#ffe39a,#9affd8,#ffb3d9,#ff9ad5)}
 .pack.p-sw .pin b{color:#c23f78}.pack.p-sw .pin small,.pack.p-sw .pin i{color:#d0679a}
-.pseg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin:0 12px 10px;padding:4px;border-radius:16px;background:#e9ecf4}
-.pseg button{height:46px;border-radius:12px;font-weight:800;font-size:14px;color:var(--sub);line-height:1.15}
-.pseg button small{display:block;font:700 11px/1.3 var(--fonte)}
-.pseg button.on{background:#fff;color:var(--ink);box-shadow:0 2px 8px -3px rgba(0,0,0,.2)}
+.pseg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;margin:0 12px 12px;padding:4px;border-radius:18px;background:#1d2335;box-shadow:0 8px 18px -12px rgba(20,25,60,.6)}
+.pseg button{display:flex;align-items:center;justify-content:center;gap:8px;height:48px;border-radius:14px;font-weight:800;font-size:13px;letter-spacing:.04em;color:#9aa3bb;line-height:1.15;text-align:left;transition:background .2s,color .2s}
+.pseg button svg{width:24px;height:24px;flex:none;opacity:.55;transition:opacity .2s}
+.pseg button small{display:block;font:700 11px/1.3 var(--fonte);letter-spacing:0;opacity:.85}
+.pseg button.on{color:#fff}.pseg button.on svg{opacity:1}
+.pseg button.on[data-p="0"]{background:linear-gradient(110deg,#5a63ff,#9b5cff)}
+.pseg button.on[data-p="1"]{background:linear-gradient(110deg,#ff6fa8,#ff9a6b)}
 .rates .ph td{padding-top:12px;font-weight:800;color:var(--ink);border-bottom:2px solid var(--line)}
 .tapHint{font:800 14px/1 var(--fonte);letter-spacing:.35em;color:#6a70c7;animation:blink 1.6s ease-in-out infinite}
 @keyframes blink{50%{opacity:.35}}
@@ -812,7 +815,7 @@ async function openPack(pk=curPack,guar=false){
 let tab=0,dexPack=0;
 function renderDex(){
   const P=PACKS[dexPack],n=ownedPack(dexPack);$('dexTot').innerHTML=`${n} / ${P.total}<small>収集率 ${(n/P.total*100).toFixed(1)}%</small>`;
-  $('pseg').innerHTML=PACKS.map((Q,i)=>`<button class="${i===dexPack?'on':''}" data-p="${i}">${Q.short}<small>${ownedPack(i)} / ${Q.total}</small></button>`).join('');
+  $('pseg').innerHTML=PACKS.map((Q,i)=>`<button class="${i===dexPack?'on':''}" data-p="${i}" aria-pressed="${i===dexPack}">${i===1?CANDY:PRISM}<span>${Q.short}<small>${ownedPack(i)} / ${Q.total}</small></span></button>`).join('');
   $('dexStats').innerHTML=`<span>全パック <b>${ownedTotal()}</b> / ${CARDS.length} 種</span><span>累計開封 <b>${S.totalCards.toLocaleString()}</b> 枚</span><span>10連 <b>${S.totalPacks.toLocaleString()}</b> 回</span>`;
   $('tabs').innerHTML=RAR.map((r,i)=>`<button class="tab${i===tab?' on':''}" data-r="${r.k}" data-i="${i}"><b>${r.k}</b><span>${ownedCount(dexPack,i)}/${P.counts[i]}</span></button>`).join('');
   const list=BY_P[dexPack][tab],all=ownedCount(dexPack,tab)===list.length;
