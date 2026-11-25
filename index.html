@@ -424,7 +424,7 @@ const RI={N:0,R:1,SR:2,SSR:3,UR:4};
 // パック定義（counts は N,R,SR,SSR,UR の種類数）
 const PACKS=[
  {k:'prisma',title:'PRISMA',foot:'PRISMA  CARD COLLECTION',counts:[100,80,60,40,15]},
- {k:'sweets',title:'スイーツパレード',foot:'PRISMA  SWEETS PARADE',counts:[35,30,20,10,5]}];
+ {k:'sweets',title:'SWEETS PARADE',foot:'PRISMA  SWEETS PARADE',counts:[35,30,20,10,5]}];
 const FLV=[{k:'いちご',h:350,s:78,l:82},{k:'チョコ',h:22,s:42,l:50},{k:'メロン',h:100,s:55,l:76},{k:'ソーダ',h:195,s:78,l:78},{k:'レモン',h:52,s:88,l:72},
  {k:'ぶどう',h:278,s:52,l:76},{k:'まっちゃ',h:84,s:42,l:62},{k:'ミルク',h:40,s:50,l:92},{k:'キャラメル',h:30,s:62,l:66},{k:'もも',h:12,s:88,l:84}];
 const SWT=[['プリン','pudding'],['ドーナツ','donut',[32,62,74]],['マフィン','muffin'],['ソフト','softcream'],['マカロン','macaron'],
@@ -455,7 +455,7 @@ const CARDS=[];
   RAR.forEach((r,ri)=>{for(let i=0;i<r.count;i++){const[e,c]=pairs[p++],code=r.k+String(i+1).padStart(3,'0');
     CARDS.push({id,code,file:`illust/${code}.webp`,no:code,rarity:r.k,ri,el:e,cr:c,seed:id*7919+13,pk:0,tag:`${ELEM[e].k}属性`,elName:ELEM[e].k,motif:CRE[c][0],
       name:ELEM[e].ep[ri]+CRE[c][0],desc:`${ELEM[e].k}の力を宿した${CRE[c][0]}。`});id++}});
-  // スイーツパレード（10味 × 10スイーツ = 100種）
+  // SWEETS PARADE（10味 × 10スイーツ = 100種）
   const r2=mulberry(20261126),pr=[];
   for(let e=0;e<FLV.length;e++)for(let c=0;c<SWT.length;c++)pr.push([e,c]);
   for(let i=pr.length-1;i>0;i--){const j=Math.floor(r2()*(i+1));[pr[i],pr[j]]=[pr[j],pr[i]]}
@@ -631,7 +631,11 @@ function cardHTML(c,o={}){
    ${own&&c.ri>=2?'<div class="holo"></div>':''}${o.isNew?'<div class="new">NEW</div>':''}${o.count?`<div class="cnt">×${o.count}</div>`:''}</div>`;
 }
 const PRISM=`<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="pz1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8f9bff"/><stop offset="1" stop-color="#5a3fd0"/></linearGradient><linearGradient id="pz2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff7eb3"/><stop offset=".33" stop-color="#ffd36e"/><stop offset=".66" stop-color="#6ee7c4"/><stop offset="1" stop-color="#7e9bff"/></linearGradient></defs><path d="M50 10L88 78H12Z" fill="url(#pz1)"/><path d="M50 10L88 78L50 64Z" fill="#fff" opacity=".22"/><path d="M50 10L12 78L50 64Z" fill="#fff" opacity=".42"/><path d="M12 78H88L50 64Z" fill="#2c1d80" opacity=".35"/><path d="M50 50L98 56L98 70Z" fill="url(#pz2)" opacity=".9"/><path d="M2 44L50 50" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>`;
-const CANDY=`<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="cdA" cx=".38" cy=".32" r=".75"><stop offset="0" stop-color="#ffd0e4"/><stop offset="1" stop-color="#ff6fa8"/></radialGradient></defs><path d="M30,46L6,30Q2,50 6,70L30,54Z" fill="#9fe6d0" stroke="#c23f78" stroke-width="2.5" stroke-linejoin="round"/><path d="M70,46L94,30Q98,50 94,70L70,54Z" fill="#9fe6d0" stroke="#c23f78" stroke-width="2.5" stroke-linejoin="round"/><circle cx="50" cy="50" r="24" fill="url(#cdA)" stroke="#c23f78" stroke-width="2.5"/><path d="M50,50m-14,0a14,14 0 1,1 14,14a9,9 0 1,1 -9,-9a5,5 0 1,1 5,5" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" opacity=".9"/><circle cx="40" cy="38" r="4" fill="#fff" opacity=".8"/><path d="M80,14l2,6 6,2-6,2-2,6-2-6-6-2 6-2Z" fill="#ffd36e"/><path d="M18,78l1.5,4.5 4.5,1.5-4.5,1.5-1.5,4.5-1.5-4.5-4.5-1.5 4.5-1.5Z" fill="#fff"/></svg>`;
+const CANDY=`<svg viewBox="0 0 100 100" overflow="visible" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="cz1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffa3cc"/><stop offset="1" stop-color="#d63a86"/></linearGradient><linearGradient id="cz2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff7eb3"/><stop offset=".33" stop-color="#ffd36e"/><stop offset=".66" stop-color="#6ee7c4"/><stop offset="1" stop-color="#7e9bff"/></linearGradient></defs>`
+ +`<path d="M-6 40L8 48" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M94 52L122 56L122 76Z" fill="url(#cz2)" opacity=".9"/>`
+ +`<g transform="translate(50 50) scale(1.12) translate(-50 -50)"><path d="M30 50L8 34L8 66Z" fill="url(#cz1)"/><path d="M30 50L8 34L8 50Z" fill="#fff" opacity=".42"/><path d="M30 50L8 66L8 50Z" fill="#7a1048" opacity=".3"/>`
+ +`<path d="M70 50L92 34L92 66Z" fill="url(#cz1)"/><path d="M70 50L92 34L92 50Z" fill="#fff" opacity=".22"/><path d="M70 50L92 66L92 50Z" fill="#7a1048" opacity=".35"/>`
+ +`<path d="M50 24L72 37L72 63L50 76L28 63L28 37Z" fill="url(#cz1)"/><path d="M50 24L28 37L50 50Z" fill="#fff" opacity=".42"/><path d="M50 24L72 37L50 50Z" fill="#fff" opacity=".22"/><path d="M28 37L28 63L50 50Z" fill="#fff" opacity=".3"/><path d="M72 37L72 63L50 50Z" fill="#7a1048" opacity=".12"/><path d="M28 63L50 76L72 63L50 50Z" fill="#7a1048" opacity=".35"/></g></svg>`;
 const packHTML=(p=0)=>p===1?`<div class="pack p-sw"><div class="irid"></div><div class="shine"></div><div class="pin">${CANDY}<b>SWEETS</b><small>PARADE</small><i>10 CARDS</i></div></div>`
   :`<div class="pack"><div class="irid"></div><div class="shine"></div><div class="pin">${PRISM}<b>PRISMA</b><small>BOOSTER PACK</small><i>10 CARDS</i></div></div>`;
 

@@ -41,7 +41,7 @@ apple-touch-icon.png    iPhone のホーム画面アイコン（180×180）
 icon-192.png / icon-512.png  Android のホーム画面アイコン
 illust/                 カードイラスト 840×1000px WebP（ファイル名 = カードID）
   N001.webp … UR015.webp          PRISMA（295枚）
-  SW-N001.webp … SW-UR005.webp    スイーツパレード（100枚）
+  SW-N001.webp … SW-UR005.webp    SWEETS PARADE（100枚）
 tools/export_illust.py  イラストと cards.json を描画コードから書き出すスクリプト
 ```
 
@@ -50,13 +50,13 @@ tools/export_illust.py  イラストと cards.json を描画コードから書�
 | パック | カードID | 種類数 | テーマ |
 |---|---|---:|---|
 | PRISMA | N001〜UR015 | 295 | 属性10種 × 生き物30種 |
-| スイーツパレード | SW-N001〜SW-UR005 | 100 | 味10種 × スイーツ10種 |
+| SWEETS PARADE | SW-N001〜SW-UR005 | 100 | 味10種 × スイーツ10種 |
 
 ## カード構成と排出率
 
 排出率はどのパックも共通です。開封したパックのカードだけが出ます。
 
-| レアリティ | 排出率 | PRISMA 種類数 | 1種あたり | スイーツパレード 種類数 | 1種あたり |
+| レアリティ | 排出率 | PRISMA 種類数 | 1種あたり | SWEETS PARADE 種類数 | 1種あたり |
 |---|---:|---:|---:|---:|---:|
 | N | 70% | 100 | 0.70% | 35 | 2.0% |
 | R | 20% | 80 | 0.25% | 30 | 0.667% |

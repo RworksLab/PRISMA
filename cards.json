@@ -3247,7 +3247,7 @@
  {
   "id": "SW-N001",
   "no": 296,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "メロンショート",
   "rarity": "N",
   "element": "メロン",
@@ -3258,7 +3258,7 @@
  {
   "id": "SW-N002",
   "no": 297,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "ぶどうショート",
   "rarity": "N",
   "element": "ぶどう",
@@ -3269,7 +3269,7 @@
  {
   "id": "SW-N003",
   "no": 298,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "キャラメルキャンディ",
   "rarity": "N",
   "element": "キャラメル",
@@ -3280,7 +3280,7 @@
  {
   "id": "SW-N004",
   "no": 299,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "ソーダマカロン",
   "rarity": "N",
   "element": "ソーダ",
@@ -3291,7 +3291,7 @@
  {
   "id": "SW-N005",
   "no": 300,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "チョコクッキー",
   "rarity": "N",
   "element": "チョコ",
@@ -3302,7 +3302,7 @@
  {
   "id": "SW-N006",
   "no": 301,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "チョコマカロン",
   "rarity": "N",
   "element": "チョコ",
@@ -3313,7 +3313,7 @@
  {
   "id": "SW-N007",
   "no": 302,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "チョコプリン",
   "rarity": "N",
   "element": "チョコ",
@@ -3324,7 +3324,7 @@
  {
   "id": "SW-N008",
   "no": 303,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "ソーダわたあめ",
   "rarity": "N",
   "element": "ソーダ",
@@ -3335,7 +3335,7 @@
  {
   "id": "SW-N009",
   "no": 304,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "ももマフィン",
   "rarity": "N",
   "element": "もも",
@@ -3346,7 +3346,7 @@
  {
   "id": "SW-N010",
   "no": 305,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "ミルクマカロン",
   "rarity": "N",
   "element": "ミルク",
@@ -3357,7 +3357,7 @@
  {
   "id": "SW-N011",
   "no": 306,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "ソーダマフィン",
   "rarity": "N",
   "element": "ソーダ",
@@ -3368,7 +3368,7 @@
  {
   "id": "SW-N012",
   "no": 307,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "チョコショート",
   "rarity": "N",
   "element": "チョコ",
@@ -3379,7 +3379,7 @@
  {
   "id": "SW-N013",
   "no": 308,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "ぶどうだんご",
   "rarity": "N",
   "element": "ぶどう",
@@ -3390,7 +3390,7 @@
  {
   "id": "SW-N014",
   "no": 309,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "まっちゃキャンディ",
   "rarity": "N",
   "element": "まっちゃ",
@@ -3401,7 +3401,7 @@
  {
   "id": "SW-N015",
   "no": 310,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "メロンだんご",
   "rarity": "N",
   "element": "メロン",
@@ -3412,7 +3412,7 @@
  {
   "id": "SW-N016",
   "no": 311,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "チョコマフィン",
   "rarity": "N",
   "element": "チョコ",
@@ -3423,7 +3423,7 @@
  {
   "id": "SW-N017",
   "no": 312,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "ぶどうソフト",
   "rarity": "N",
   "element": "ぶどう",
@@ -3434,7 +3434,7 @@
  {
   "id": "SW-N018",
   "no": 313,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "チョコだんご",
   "rarity": "N",
   "element": "チョコ",
@@ -3445,7 +3445,7 @@
  {
   "id": "SW-N019",
   "no": 314,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "ミルクわたあめ",
   "rarity": "N",
   "element": "ミルク",
@@ -3456,7 +3456,7 @@
  {
   "id": "SW-N020",
   "no": 315,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "ももクッキー",
   "rarity": "N",
   "element": "もも",
@@ -3467,7 +3467,7 @@
  {
   "id": "SW-N021",
   "no": 316,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "チョコわたあめ",
   "rarity": "N",
   "element": "チョコ",
@@ -3478,7 +3478,7 @@
  {
   "id": "SW-N022",
   "no": 317,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "キャラメルだんご",
   "rarity": "N",
   "element": "キャラメル",
@@ -3489,7 +3489,7 @@
  {
   "id": "SW-N023",
   "no": 318,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "ミルクショート",
   "rarity": "N",
   "element": "ミルク",
@@ -3500,7 +3500,7 @@
  {
   "id": "SW-N024",
   "no": 319,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "ソーダだんご",
   "rarity": "N",
   "element": "ソーダ",
@@ -3511,7 +3511,7 @@
  {
   "id": "SW-N025",
   "no": 320,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "キャラメルクッキー",
   "rarity": "N",
   "element": "キャラメル",
@@ -3522,7 +3522,7 @@
  {
   "id": "SW-N026",
   "no": 321,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "まっちゃだんご",
   "rarity": "N",
   "element": "まっちゃ",
@@ -3533,7 +3533,7 @@
  {
   "id": "SW-N027",
   "no": 322,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "ぶどうクッキー",
   "rarity": "N",
   "element": "ぶどう",
@@ -3544,7 +3544,7 @@
  {
   "id": "SW-N028",
   "no": 323,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "キャラメルソフト",
   "rarity": "N",
   "element": "キャラメル",
@@ -3555,7 +3555,7 @@
  {
   "id": "SW-N029",
   "no": 324,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "レモンプリン",
   "rarity": "N",
   "element": "レモン",
@@ -3566,7 +3566,7 @@
  {
   "id": "SW-N030",
   "no": 325,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "レモンソフト",
   "rarity": "N",
   "element": "レモン",
@@ -3577,7 +3577,7 @@
  {
   "id": "SW-N031",
   "no": 326,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "ぶどうドーナツ",
   "rarity": "N",
   "element": "ぶどう",
@@ -3588,7 +3588,7 @@
  {
   "id": "SW-N032",
   "no": 327,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "メロンマフィン",
   "rarity": "N",
   "element": "メロン",
@@ -3599,7 +3599,7 @@
  {
   "id": "SW-N033",
   "no": 328,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "まっちゃショート",
   "rarity": "N",
   "element": "まっちゃ",
@@ -3610,7 +3610,7 @@
  {
   "id": "SW-N034",
   "no": 329,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "ソーダショート",
   "rarity": "N",
   "element": "ソーダ",
@@ -3621,7 +3621,7 @@
  {
   "id": "SW-N035",
   "no": 330,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "ぶどうプリン",
   "rarity": "N",
   "element": "ぶどう",
@@ -3632,7 +3632,7 @@
  {
   "id": "SW-R001",
   "no": 331,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製ミルクマフィン",
   "rarity": "R",
   "element": "ミルク",
@@ -3643,7 +3643,7 @@
  {
   "id": "SW-R002",
   "no": 332,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製まっちゃドーナツ",
   "rarity": "R",
   "element": "まっちゃ",
@@ -3654,7 +3654,7 @@
  {
   "id": "SW-R003",
   "no": 333,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製いちごだんご",
   "rarity": "R",
   "element": "いちご",
@@ -3665,7 +3665,7 @@
  {
   "id": "SW-R004",
   "no": 334,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製キャラメルマカロン",
   "rarity": "R",
   "element": "キャラメル",
@@ -3676,7 +3676,7 @@
  {
   "id": "SW-R005",
   "no": 335,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製いちごソフト",
   "rarity": "R",
   "element": "いちご",
@@ -3687,7 +3687,7 @@
  {
   "id": "SW-R006",
   "no": 336,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製キャラメルショート",
   "rarity": "R",
   "element": "キャラメル",
@@ -3698,7 +3698,7 @@
  {
   "id": "SW-R007",
   "no": 337,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製いちごキャンディ",
   "rarity": "R",
   "element": "いちご",
@@ -3709,7 +3709,7 @@
  {
   "id": "SW-R008",
   "no": 338,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製メロンキャンディ",
   "rarity": "R",
   "element": "メロン",
@@ -3720,7 +3720,7 @@
  {
   "id": "SW-R009",
   "no": 339,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製レモンドーナツ",
   "rarity": "R",
   "element": "レモン",
@@ -3731,7 +3731,7 @@
  {
   "id": "SW-R010",
   "no": 340,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製いちごショート",
   "rarity": "R",
   "element": "いちご",
@@ -3742,7 +3742,7 @@
  {
   "id": "SW-R011",
   "no": 341,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製ぶどうわたあめ",
   "rarity": "R",
   "element": "ぶどう",
@@ -3753,7 +3753,7 @@
  {
   "id": "SW-R012",
   "no": 342,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製メロンドーナツ",
   "rarity": "R",
   "element": "メロン",
@@ -3764,7 +3764,7 @@
  {
   "id": "SW-R013",
   "no": 343,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製メロンプリン",
   "rarity": "R",
   "element": "メロン",
@@ -3775,7 +3775,7 @@
  {
   "id": "SW-R014",
   "no": 344,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製いちごプリン",
   "rarity": "R",
   "element": "いちご",
@@ -3786,7 +3786,7 @@
  {
   "id": "SW-R015",
   "no": 345,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製ミルクドーナツ",
   "rarity": "R",
   "element": "ミルク",
@@ -3797,7 +3797,7 @@
  {
   "id": "SW-R016",
   "no": 346,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製ももキャンディ",
   "rarity": "R",
   "element": "もも",
@@ -3808,7 +3808,7 @@
  {
   "id": "SW-R017",
   "no": 347,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製メロンわたあめ",
   "rarity": "R",
   "element": "メロン",
@@ -3819,7 +3819,7 @@
  {
   "id": "SW-R018",
   "no": 348,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製メロンマカロン",
   "rarity": "R",
   "element": "メロン",
@@ -3830,7 +3830,7 @@
  {
   "id": "SW-R019",
   "no": 349,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製ももドーナツ",
   "rarity": "R",
   "element": "もも",
@@ -3841,7 +3841,7 @@
  {
   "id": "SW-R020",
   "no": 350,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製ソーダソフト",
   "rarity": "R",
   "element": "ソーダ",
@@ -3852,7 +3852,7 @@
  {
   "id": "SW-R021",
   "no": 351,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製ぶどうキャンディ",
   "rarity": "R",
   "element": "ぶどう",
@@ -3863,7 +3863,7 @@
  {
   "id": "SW-R022",
   "no": 352,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製ももプリン",
   "rarity": "R",
   "element": "もも",
@@ -3874,7 +3874,7 @@
  {
   "id": "SW-R023",
   "no": 353,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製ソーダキャンディ",
   "rarity": "R",
   "element": "ソーダ",
@@ -3885,7 +3885,7 @@
  {
   "id": "SW-R024",
   "no": 354,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製ミルクだんご",
   "rarity": "R",
   "element": "ミルク",
@@ -3896,7 +3896,7 @@
  {
   "id": "SW-R025",
   "no": 355,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製レモンクッキー",
   "rarity": "R",
   "element": "レモン",
@@ -3907,7 +3907,7 @@
  {
   "id": "SW-R026",
   "no": 356,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製ももソフト",
   "rarity": "R",
   "element": "もも",
@@ -3918,7 +3918,7 @@
  {
   "id": "SW-R027",
   "no": 357,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製ぶどうマカロン",
   "rarity": "R",
   "element": "ぶどう",
@@ -3929,7 +3929,7 @@
  {
   "id": "SW-R028",
   "no": 358,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製ぶどうマフィン",
   "rarity": "R",
   "element": "ぶどう",
@@ -3940,7 +3940,7 @@
  {
   "id": "SW-R029",
   "no": 359,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製メロンソフト",
   "rarity": "R",
   "element": "メロン",
@@ -3951,7 +3951,7 @@
  {
   "id": "SW-R030",
   "no": 360,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "特製キャラメルプリン",
   "rarity": "R",
   "element": "キャラメル",
@@ -3962,7 +3962,7 @@
  {
   "id": "SW-SR001",
   "no": 361,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上メロンクッキー",
   "rarity": "SR",
   "element": "メロン",
@@ -3973,7 +3973,7 @@
  {
   "id": "SW-SR002",
   "no": 362,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上まっちゃマフィン",
   "rarity": "SR",
   "element": "まっちゃ",
@@ -3984,7 +3984,7 @@
  {
   "id": "SW-SR003",
   "no": 363,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上ももショート",
   "rarity": "SR",
   "element": "もも",
@@ -3995,7 +3995,7 @@
  {
   "id": "SW-SR004",
   "no": 364,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上レモンマカロン",
   "rarity": "SR",
   "element": "レモン",
@@ -4006,7 +4006,7 @@
  {
   "id": "SW-SR005",
   "no": 365,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上チョコソフト",
   "rarity": "SR",
   "element": "チョコ",
@@ -4017,7 +4017,7 @@
  {
   "id": "SW-SR006",
   "no": 366,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上いちごマフィン",
   "rarity": "SR",
   "element": "いちご",
@@ -4028,7 +4028,7 @@
  {
   "id": "SW-SR007",
   "no": 367,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上まっちゃマカロン",
   "rarity": "SR",
   "element": "まっちゃ",
@@ -4039,7 +4039,7 @@
  {
   "id": "SW-SR008",
   "no": 368,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上キャラメルドーナツ",
   "rarity": "SR",
   "element": "キャラメル",
@@ -4050,7 +4050,7 @@
  {
   "id": "SW-SR009",
   "no": 369,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上ソーダドーナツ",
   "rarity": "SR",
   "element": "ソーダ",
@@ -4061,7 +4061,7 @@
  {
   "id": "SW-SR010",
   "no": 370,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上チョコドーナツ",
   "rarity": "SR",
   "element": "チョコ",
@@ -4072,7 +4072,7 @@
  {
   "id": "SW-SR011",
   "no": 371,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上キャラメルマフィン",
   "rarity": "SR",
   "element": "キャラメル",
@@ -4083,7 +4083,7 @@
  {
   "id": "SW-SR012",
   "no": 372,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上ももだんご",
   "rarity": "SR",
   "element": "もも",
@@ -4094,7 +4094,7 @@
  {
   "id": "SW-SR013",
   "no": 373,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上ミルクプリン",
   "rarity": "SR",
   "element": "ミルク",
@@ -4105,7 +4105,7 @@
  {
   "id": "SW-SR014",
   "no": 374,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上レモンショート",
   "rarity": "SR",
   "element": "レモン",
@@ -4116,7 +4116,7 @@
  {
   "id": "SW-SR015",
   "no": 375,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上ももわたあめ",
   "rarity": "SR",
   "element": "もも",
@@ -4127,7 +4127,7 @@
  {
   "id": "SW-SR016",
   "no": 376,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上まっちゃソフト",
   "rarity": "SR",
   "element": "まっちゃ",
@@ -4138,7 +4138,7 @@
  {
   "id": "SW-SR017",
   "no": 377,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上いちごドーナツ",
   "rarity": "SR",
   "element": "いちご",
@@ -4149,7 +4149,7 @@
  {
   "id": "SW-SR018",
   "no": 378,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上いちごクッキー",
   "rarity": "SR",
   "element": "いちご",
@@ -4160,7 +4160,7 @@
  {
   "id": "SW-SR019",
   "no": 379,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上いちごマカロン",
   "rarity": "SR",
   "element": "いちご",
@@ -4171,7 +4171,7 @@
  {
   "id": "SW-SR020",
   "no": 380,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "極上まっちゃプリン",
   "rarity": "SR",
   "element": "まっちゃ",
@@ -4182,7 +4182,7 @@
  {
   "id": "SW-SSR001",
   "no": 381,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "宝石のレモンわたあめ",
   "rarity": "SSR",
   "element": "レモン",
@@ -4193,7 +4193,7 @@
  {
   "id": "SW-SSR002",
   "no": 382,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "宝石のももマカロン",
   "rarity": "SSR",
   "element": "もも",
@@ -4204,7 +4204,7 @@
  {
   "id": "SW-SSR003",
   "no": 383,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "宝石のいちごわたあめ",
   "rarity": "SSR",
   "element": "いちご",
@@ -4215,7 +4215,7 @@
  {
   "id": "SW-SSR004",
   "no": 384,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "宝石のレモンマフィン",
   "rarity": "SSR",
   "element": "レモン",
@@ -4226,7 +4226,7 @@
  {
   "id": "SW-SSR005",
   "no": 385,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "宝石のレモンキャンディ",
   "rarity": "SSR",
   "element": "レモン",
@@ -4237,7 +4237,7 @@
  {
   "id": "SW-SSR006",
   "no": 386,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "宝石のソーダクッキー",
   "rarity": "SSR",
   "element": "ソーダ",
@@ -4248,7 +4248,7 @@
  {
   "id": "SW-SSR007",
   "no": 387,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "宝石のミルクキャンディ",
   "rarity": "SSR",
   "element": "ミルク",
@@ -4259,7 +4259,7 @@
  {
   "id": "SW-SSR008",
   "no": 388,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "宝石のレモンだんご",
   "rarity": "SSR",
   "element": "レモン",
@@ -4270,7 +4270,7 @@
  {
   "id": "SW-SSR009",
   "no": 389,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "宝石のまっちゃわたあめ",
   "rarity": "SSR",
   "element": "まっちゃ",
@@ -4281,7 +4281,7 @@
  {
   "id": "SW-SSR010",
   "no": 390,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "宝石のソーダプリン",
   "rarity": "SSR",
   "element": "ソーダ",
@@ -4292,7 +4292,7 @@
  {
   "id": "SW-UR001",
   "no": 391,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "天上のミルクソフト",
   "rarity": "UR",
   "element": "ミルク",
@@ -4303,7 +4303,7 @@
  {
   "id": "SW-UR002",
   "no": 392,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "天上のミルククッキー",
   "rarity": "UR",
   "element": "ミルク",
@@ -4314,7 +4314,7 @@
  {
   "id": "SW-UR003",
   "no": 393,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "天上のチョコキャンディ",
   "rarity": "UR",
   "element": "チョコ",
@@ -4325,7 +4325,7 @@
  {
   "id": "SW-UR004",
   "no": 394,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "天上のまっちゃクッキー",
   "rarity": "UR",
   "element": "まっちゃ",
@@ -4336,7 +4336,7 @@
  {
   "id": "SW-UR005",
   "no": 395,
-  "pack": "スイーツパレード",
+  "pack": "SWEETS PARADE",
   "name": "天上のキャラメルわたあめ",
   "rarity": "UR",
   "element": "キャラメル",
