@@ -58,7 +58,7 @@ button:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
 .packWrap::before{content:"";position:absolute;inset:-18% -30%;pointer-events:none;background:radial-gradient(closest-side,rgba(170,150,255,.45),transparent);z-index:-1;animation:pulse 2.6s ease-in-out infinite}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 @keyframes pulse{0%,100%{opacity:.6;transform:scale(.95)}50%{opacity:1;transform:scale(1.05)}}
-.pack{position:relative;width:min(58vw,240px,calc((100dvh - 380px)*.64));aspect-ratio:.64;border-radius:12px;overflow:hidden;
+.pack{position:relative;width:min(58vw,240px,calc((100dvh - 430px)*.64));aspect-ratio:.64;border-radius:12px;overflow:hidden;
  background:linear-gradient(165deg,#c8d2ff 0%,#efe3ff 30%,#fff1df 55%,#d4f3ff 80%,#cbd0ff 100%);
  box-shadow:0 34px 50px -26px rgba(50,60,140,.6),inset 0 0 0 1.5px rgba(255,255,255,.8)}
 .pack::before,.pack::after{content:"";position:absolute;left:0;right:0;height:16px;z-index:3;
@@ -97,6 +97,14 @@ button:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
 .tapHint{font:800 14px/1 var(--fonte);letter-spacing:.35em;color:#6a70c7;animation:blink 1.6s ease-in-out infinite}
 @keyframes blink{50%{opacity:.35}}
 .homeSub{font-size:12px;color:var(--sub);margin-top:-12px}
+.ceil{width:min(240px,64vw);margin-top:-8px;font-size:12px;color:var(--sub);text-align:center}
+.ceil b{font-family:var(--fonte);color:var(--ink)}
+.ceil .cbar{height:6px;border-radius:9px;background:#e3e7f0;overflow:hidden;margin-top:6px}
+.ceil .cbar div{height:100%;background:linear-gradient(90deg,#f8e08e,#c9962e)}
+.urBtn{height:50px;padding:0 22px;border-radius:999px;margin-top:-6px;font-weight:800;font-size:15px;color:#2a1d05;letter-spacing:.04em;background:linear-gradient(100deg,#fff1b8,#f2c94c 45%,#c9962e);box-shadow:0 0 0 2px #fff6d0 inset,0 10px 24px -10px rgba(201,150,46,.9);animation:urGlow 1.8s ease-in-out infinite}
+.urBtn small{font:800 12px var(--fonte);opacity:.8;margin-left:6px}
+.urBtn:active{transform:scale(.96)}
+@keyframes urGlow{50%{box-shadow:0 0 0 2px #fff6d0 inset,0 0 26px 4px rgba(255,210,110,.75)}}
 .homeBot{padding:12px 20px 22px;display:flex;justify-content:center}
 .dexBtn{width:100%;max-width:340px;height:64px;border-radius:20px;background:#fff;box-shadow:0 0 0 1px var(--line),0 12px 24px -16px rgba(30,40,80,.4);display:flex;align-items:center;gap:14px;padding:0 18px;text-align:left}
 .dexBtn:active{transform:scale(.97)}
@@ -319,6 +327,8 @@ input[type=range]{width:100%;height:32px;accent-color:var(--ac)}
       <button class="pArrow l" id="pPrev" aria-label="前のパック"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
       <button class="pArrow r" id="pNext" aria-label="次のパック"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></button></div>
     <div class="tapHint">TAP TO OPEN</div>
+    <div class="ceil" id="ceil"></div>
+    <button class="urBtn" id="urBtn" hidden></button>
     <div class="homeSub" id="homeSub"></div>
   </div>
   <div class="homeBot">
@@ -374,7 +384,7 @@ input[type=range]{width:100%;height:32px;accent-color:var(--ac)}
     <div class="row"><div class="tg"><div>所持済みのURも演出を表示<small>高速開封・SKIP時の設定です。未取得のSSR・URは常にめくる演出が流れます</small></div><button class="sw" id="urSw" aria-label="UR演出"></button></div></div>
     <div class="row"><label>排出確率</label>
       <table class="rates"><tbody id="rateT"></tbody></table>
-      <div style="font-size:12px;color:var(--sub);margin-top:6px">1枚ずつ独立抽選・確率固定・天井なし・確定枠なし・重複あり。同じレアリティ内は均等。</div>
+      <div style="font-size:12px;color:var(--sub);margin-top:6px">1枚ずつ独立抽選・確率固定・重複あり。同じレアリティ内は均等。<br>天井：同じパックで1000枚（10連100回）引くごとにUR確定ガチャ1回。確定ガチャは10枚目がUR確定、ほかの9枚は通常の確率です（確定ガチャの枚数は天井に数えません）。</div>
     </div>
     <div class="row"><label>データ管理</label><button class="mv" id="moveBtn">データ移行（引き継ぎ）</button><button class="danger" id="resetBtn">データを初期化</button></div>
   </div>
@@ -425,8 +435,8 @@ const RAR=[
 const RI={N:0,R:1,SR:2,SSR:3,UR:4};
 // パック定義（counts は N,R,SR,SSR,UR の種類数）
 const PACKS=[
- {k:'prisma',title:'PRISMA',foot:'PRISMA  CARD COLLECTION',counts:[100,80,60,40,15]},
- {k:'sweets',title:'SWEETS PARADE',foot:'PRISMA  SWEETS PARADE',counts:[35,30,20,10,5]}];
+ {k:'prisma',title:'PRISMA BOOSTER PACK',short:'BOOSTER PACK',foot:'PRISMA  BOOSTER PACK',counts:[100,80,60,40,15]},
+ {k:'sweets',title:'PRISMA SWEETS PACK',short:'SWEETS PACK',foot:'PRISMA  SWEETS PACK',counts:[35,30,20,10,5]}];
 const FLV=[{k:'いちご',h:350,s:78,l:82},{k:'チョコ',h:22,s:42,l:50},{k:'メロン',h:100,s:55,l:76},{k:'ソーダ',h:195,s:78,l:78},{k:'レモン',h:52,s:88,l:72},
  {k:'ぶどう',h:278,s:52,l:76},{k:'まっちゃ',h:84,s:42,l:62},{k:'ミルク',h:40,s:50,l:92},{k:'キャラメル',h:30,s:62,l:66},{k:'もも',h:12,s:88,l:84}];
 const SWT=[['プリン','pudding'],['ドーナツ','donut',[32,62,74]],['マフィン','muffin'],['ソフト','softcream'],['マカロン','macaron'],
@@ -457,7 +467,7 @@ const CARDS=[];
   RAR.forEach((r,ri)=>{for(let i=0;i<r.count;i++){const[e,c]=pairs[p++],code=r.k+String(i+1).padStart(3,'0');
     CARDS.push({id,code,file:`illust/${code}.webp`,no:code,rarity:r.k,ri,el:e,cr:c,seed:id*7919+13,pk:0,tag:`${ELEM[e].k}属性`,elName:ELEM[e].k,motif:CRE[c][0],
       name:ELEM[e].ep[ri]+CRE[c][0],desc:`${ELEM[e].k}の力を宿した${CRE[c][0]}。`});id++}});
-  // SWEETS PARADE（10味 × 10スイーツ = 100種）
+  // PRISMA SWEETS PACK（10味 × 10スイーツ = 100種）
   const r2=mulberry(20261126),pr=[];
   for(let e=0;e<FLV.length;e++)for(let c=0;c<SWT.length;c++)pr.push([e,c]);
   for(let i=pr.length-1;i>0;i--){const j=Math.floor(r2()*(i+1));[pr[i],pr[j]]=[pr[j],pr[i]]}
@@ -477,7 +487,7 @@ function drawOne(p=0){let x=randInt(10000),ri=0;for(;ri<RAR.length;ri++){if(x<RA
 
 /* ================= 保存 ================= */
 const KEY='prisma-collection-v1';
-const DEF=()=>({v:1,cards:{},totalCards:0,totalPacks:0,bgm:60,se:80,mode:'normal',urFast:true,pack:0});
+const DEF=()=>({v:1,cards:{},totalCards:0,totalPacks:0,bgm:60,se:80,mode:'normal',urFast:true,pack:0,ceil:{}});
 let S=DEF();
 try{const s=JSON.parse(localStorage.getItem(KEY));if(s&&s.v===1)S=Object.assign(DEF(),s)}catch(e){}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
@@ -486,11 +496,16 @@ const ownedCount=(p,ri)=>BY_P[p][ri].filter(c=>S.cards[c.id]).length;
 const ownedPack=p=>CARDS.filter(c=>c.pk===p&&S.cards[c.id]).length;
 const ownedTotal=()=>Object.keys(S.cards).length;
 
-function pull10(p=0){
-  const res=[];
-  for(let i=0;i<10;i++){const c=drawOne(p);let o=S.cards[c.id];const isNew=!o;
+// 天井：パックごとに1000枚引くとUR確定ガチャ1回。確定ガチャの10枚はカウントしない
+const CEIL=1000;
+const ceilOf=p=>{if(!S.ceil||typeof S.ceil!=='object')S.ceil={};return S.ceil[p]||(S.ceil[p]={n:0,t:0})};
+function pull10(p=0,guar=false){
+  const res=[],C=ceilOf(p);let gained=0;
+  if(guar){if(C.t<1)guar=false;else C.t--}
+  for(let i=0;i<10;i++){const ur=BY_P[p][4],c=guar&&i===9?ur[randInt(ur.length)]:drawOne(p);let o=S.cards[c.id];const isNew=!o;
     if(!o)o=S.cards[c.id]={n:0,first:Date.now()};o.n++;res.push({c,isNew})}
-  S.totalCards+=10;S.totalPacks++;save();return res;
+  if(!guar){C.n+=10;while(C.n>=CEIL){C.n-=CEIL;C.t++;gained++}}
+  S.totalCards+=10;S.totalPacks++;save();res.gained=gained;res.guar=guar;return res;
 }
 
 /* ================= イラスト生成（SVG） ================= */
@@ -638,7 +653,7 @@ const CANDY=`<svg viewBox="0 0 100 100" overflow="visible" xmlns="http://www.w3.
  +`<g transform="translate(50 50) scale(1.12) translate(-50 -50)"><path d="M30 50L8 34L8 66Z" fill="url(#cz1)"/><path d="M30 50L8 34L8 50Z" fill="#fff" opacity=".42"/><path d="M30 50L8 66L8 50Z" fill="#7a1048" opacity=".3"/>`
  +`<path d="M70 50L92 34L92 66Z" fill="url(#cz1)"/><path d="M70 50L92 34L92 50Z" fill="#fff" opacity=".22"/><path d="M70 50L92 66L92 50Z" fill="#7a1048" opacity=".35"/>`
  +`<path d="M50 24L72 37L72 63L50 76L28 63L28 37Z" fill="url(#cz1)"/><path d="M50 24L28 37L50 50Z" fill="#fff" opacity=".42"/><path d="M50 24L72 37L50 50Z" fill="#fff" opacity=".22"/><path d="M28 37L28 63L50 50Z" fill="#fff" opacity=".3"/><path d="M72 37L72 63L50 50Z" fill="#7a1048" opacity=".12"/><path d="M28 63L50 76L72 63L50 50Z" fill="#7a1048" opacity=".35"/></g></svg>`;
-const packHTML=(p=0)=>p===1?`<div class="pack p-sw"><div class="irid"></div><div class="shine"></div><div class="pin">${CANDY}<b>SWEETS</b><small>PARADE</small><i>10 CARDS</i></div></div>`
+const packHTML=(p=0)=>p===1?`<div class="pack p-sw"><div class="irid"></div><div class="shine"></div><div class="pin">${CANDY}<b>PRISMA</b><small>SWEETS PACK</small><i>10 CARDS</i></div></div>`
   :`<div class="pack"><div class="irid"></div><div class="shine"></div><div class="pin">${PRISM}<b>PRISMA</b><small>BOOSTER PACK</small><i>10 CARDS</i></div></div>`;
 
 /* ================= サウンド（WebAudio合成） ================= */
@@ -708,9 +723,12 @@ function scrollToPack(i,smooth){const car=$('packCar');i=Math.max(0,Math.min(PAC
 function setPack(i){if(i===curPack)return;curPack=i;S.pack=i;save();renderHome()}
 let carT=0;$('packCar').addEventListener('scroll',()=>{clearTimeout(carT);carT=setTimeout(()=>{const car=$('packCar');if(car.clientWidth)setPack(Math.round(car.scrollLeft/car.clientWidth))},90)},{passive:true});
 $('packCar').addEventListener('click',e=>{const w=e.target.closest('.packWrap');if(!w)return;AU.init();openPack(+w.dataset.p)});
+$('urBtn').onclick=()=>{AU.init();openPack(curPack,true)};
 $('pPrev').onclick=()=>{AU.play('tap');scrollToPack(curPack-1,true)};$('pNext').onclick=()=>{AU.play('tap');scrollToPack(curPack+1,true)};
 window.addEventListener('resize',()=>{if($('home').classList.contains('on'))$('packCar').scrollLeft=curPack*$('packCar').clientWidth});
-function renderHome(){const P=PACKS[curPack],n=ownedPack(curPack);$('dexCount').textContent=`${P.title}  ${n} / ${P.total} 種`;$('dexMeter').style.width=(n/P.total*100)+'%';
+function renderHome(){const P=PACKS[curPack],n=ownedPack(curPack),C=ceilOf(curPack);
+  $('ceil').innerHTML=`UR確定まで あと <b>${(CEIL-C.n).toLocaleString()}</b> 枚<div class="cbar"><div style="width:${C.n/CEIL*100}%"></div></div>`;
+  $('urBtn').hidden=C.t<1;$('urBtn').innerHTML=`★ UR確定ガチャを引く<small>×${C.t}</small>`;$('dexCount').textContent=`${P.short}  ${n} / ${P.total} 種`;$('dexMeter').style.width=(n/P.total*100)+'%';
   $('pPrev').disabled=curPack===0;$('pNext').disabled=curPack===PACKS.length-1;
   document.querySelectorAll('#packCar .packWrap').forEach(w=>{w.querySelector('.pRib').hidden=ownedPack(+w.dataset.p)>0||+w.dataset.p===0});
   $('homeSub').textContent=S.totalCards?`累計 ${S.totalCards.toLocaleString()} 枚`:'';
@@ -736,9 +754,9 @@ async function urSequence(){
   const L=$('oLayer');const el=document.createElement('div');el.className='urT';el.innerHTML='<div class="dot"></div><h3>ULTRA RARE</h3><p>確定</p>';
   $('open').appendChild(el);AU.play('urIn');await waitTap(3000);flash();el.remove();
 }
-async function openPack(pk=curPack){
+async function openPack(pk=curPack,guar=false){
   if(busy)return;busy=true;skipping=false;
-  const res=pull10(pk);renderHome();
+  const res=pull10(pk,guar);renderHome();
   const ready=Promise.race([Promise.all(res.map(r=>preload(r.c))),sleep(4000)]);
   const fast=S.mode==='fast',max=Math.max(...res.map(r=>r.c.ri)),hasUR=max===4;
   const O=$('open'),L=$('oLayer');O.classList.add('on');setBg(-1);$('counter').textContent='';$('skipBtn').style.display=fast?'none':'';
@@ -780,7 +798,7 @@ async function openPack(pk=curPack){
   setBg(-1);$('counter').textContent='';$('skipBtn').style.display='none';
   const nNew=res.filter(r=>r.isNew).length,HG=['','','#ffd36e','conic-gradient(#ff9ad5,#9ab8ff,#9affe1,#fff19a,#ff9ad5)','#ffcf5a'];
   L.className='layer results';
-  L.innerHTML=`<div class="resTitle">RESULT<small>${nNew?`NEW ${nNew}枚`:'NEWなし'} · 図鑑 ${ownedPack(pk)} / ${PACKS[pk].total}</small></div>
+  L.innerHTML=`<div class="resTitle">${res.guar?'UR確定ガチャ ':''}RESULT<small>${nNew?`NEW ${nNew}枚`:'NEWなし'} · 図鑑 ${ownedPack(pk)} / ${PACKS[pk].total}</small>${res.gained?`<small style="color:#f8e08e">★ UR確定ガチャが開催されました！</small>`:''}</div>
    <div class="resGrid">${order.map((r,k)=>cardHTML(r.c,{isNew:r.isNew,cls:r.c.ri>=2?'hi':'',style:`animation-delay:${k*45}ms;--hg:${HG[r.c.ri]}`})).join('')}</div>
    <div class="resBtns"><button class="rb2" id="homeBack">ホームにもどる</button><button class="rb2 pri" id="again">もう1回開封</button></div>`;
   AU.play('result');
@@ -794,7 +812,7 @@ async function openPack(pk=curPack){
 let tab=0,dexPack=0;
 function renderDex(){
   const P=PACKS[dexPack],n=ownedPack(dexPack);$('dexTot').innerHTML=`${n} / ${P.total}<small>収集率 ${(n/P.total*100).toFixed(1)}%</small>`;
-  $('pseg').innerHTML=PACKS.map((Q,i)=>`<button class="${i===dexPack?'on':''}" data-p="${i}">${Q.title}<small>${ownedPack(i)} / ${Q.total}</small></button>`).join('');
+  $('pseg').innerHTML=PACKS.map((Q,i)=>`<button class="${i===dexPack?'on':''}" data-p="${i}">${Q.short}<small>${ownedPack(i)} / ${Q.total}</small></button>`).join('');
   $('dexStats').innerHTML=`<span>全パック <b>${ownedTotal()}</b> / ${CARDS.length} 種</span><span>累計開封 <b>${S.totalCards.toLocaleString()}</b> 枚</span><span>10連 <b>${S.totalPacks.toLocaleString()}</b> 回</span>`;
   $('tabs').innerHTML=RAR.map((r,i)=>`<button class="tab${i===tab?' on':''}" data-r="${r.k}" data-i="${i}"><b>${r.k}</b><span>${ownedCount(dexPack,i)}/${P.counts[i]}</span></button>`).join('');
   const list=BY_P[dexPack][tab],all=ownedCount(dexPack,tab)===list.length;
@@ -876,7 +894,7 @@ async function zip(u8,mode){if(typeof CompressionStream==='undefined')return nul
 const sum=t=>{let h=7;for(let i=0;i<t.length;i++)h=(h*31+t.charCodeAt(i))>>>0;return h.toString(36).slice(-4).padStart(4,'0')};
 async function makeCode(){
   const cards=Object.entries(S.cards).map(([id,o])=>[+id,o.n,Math.floor(o.first/1000)]);
-  const json=JSON.stringify({v:1,c:cards,tc:S.totalCards,tp:S.totalPacks,at:Math.floor(Date.now()/1000)});
+  const json=JSON.stringify({v:1,c:cards,tc:S.totalCards,tp:S.totalPacks,ce:S.ceil||{},at:Math.floor(Date.now()/1000)});
   const raw=new TextEncoder().encode(json);let z=null;try{z=await zip(raw,'c')}catch(e){}
   const body=(z?'z':'j')+b64e(z||raw);return MV+body+'.'+sum(body)}
 async function readCode(t){
@@ -886,7 +904,8 @@ async function readCode(t){
   let u8;try{u8=b64d(body.slice(1));if(body[0]==='z'){u8=await zip(u8,'d');if(!u8)throw 0}}catch(e){throw 'このブラウザではコードを読み込めませんでした'}
   const d=JSON.parse(new TextDecoder().decode(u8));if(!d||d.v!==1||!Array.isArray(d.c))throw '対応していないデータです';
   const cards={};for(const[id,n,f]of d.c){if(!(id>=1&&id<=CARDS.length)||!(n>=1))throw 'データの中身が正しくありません';cards[id]={n:Math.floor(n),first:f*1000}}
-  return {cards,totalCards:Math.max(0,d.tc|0),totalPacks:Math.max(0,d.tp|0),at:d.at}}
+  const ceil={};if(d.ce&&typeof d.ce==='object')for(const k in d.ce){const p=+k,v=d.ce[k];if(p>=0&&p<PACKS.length&&v)ceil[p]={n:Math.min(CEIL-10,Math.max(0,v.n|0)),t:Math.max(0,v.t|0)}}
+  return {cards,ceil,totalCards:Math.max(0,d.tc|0),totalPacks:Math.max(0,d.tp|0),at:d.at}}
 $('moveBtn').onclick=async()=>{AU.play('tap');$('inCode').value='';$('inErr').textContent='';$('outCode').value='作成中…';$('moveModal').classList.add('on');
   const code=await makeCode();$('outCode').value=code;
   $('outInfo').textContent=`図鑑 ${ownedTotal()} / ${CARDS.length} 種・累計 ${S.totalPacks.toLocaleString()} 回開封のデータです（${code.length}文字）。`};
@@ -897,7 +916,7 @@ $('loadCode').onclick=async()=>{AU.play('tap');$('inErr').textContent='';let d;
   try{d=await readCode($('inCode').value)}catch(e){$('inErr').textContent=typeof e==='string'?e:'コードを読み込めませんでした';return}
   const n=Object.keys(d.cards).length,when=d.at?new Date(d.at*1000):null;
   if(!await ask('このデータで復元しますか？',`図鑑 ${n} 種・累計 ${d.totalPacks} 回開封のデータです${when?`（${when.getMonth()+1}/${when.getDate()} ${String(when.getHours()).padStart(2,'0')}:${String(when.getMinutes()).padStart(2,'0')} 発行）`:''}。この端末の ${ownedTotal()} 種のデータは上書きされ、元に戻せません。`,'復元する'))return;
-  S.cards=d.cards;S.totalCards=d.totalCards;S.totalPacks=d.totalPacks;save();
+  S.cards=d.cards;S.ceil=d.ceil;S.totalCards=d.totalCards;S.totalPacks=d.totalPacks;save();
   $('moveModal').classList.remove('on');$('setModal').classList.remove('on');toast('データを復元しました')};
 
 $('resetBtn').onclick=async()=>{AU.play('tap');

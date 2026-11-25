@@ -40,8 +40,8 @@ icon.svg / favicon.ico  ブラウザのタブに出るアイコン
 apple-touch-icon.png    iPhone のホーム画面アイコン（180×180）
 icon-192.png / icon-512.png  Android のホーム画面アイコン
 illust/                 カードイラスト 840×1000px WebP（ファイル名 = カードID）
-  N001.webp … UR015.webp          PRISMA（295枚）
-  SW-N001.webp … SW-UR005.webp    SWEETS PARADE（100枚）
+  N001.webp … UR015.webp          PRISMA BOOSTER PACK（295枚）
+  SW-N001.webp … SW-UR005.webp    PRISMA SWEETS PACK（100枚）
 tools/export_illust.py  イラストと cards.json を描画コードから書き出すスクリプト
 ```
 
@@ -49,14 +49,14 @@ tools/export_illust.py  イラストと cards.json を描画コードから書�
 
 | パック | カードID | 種類数 | テーマ |
 |---|---|---:|---|
-| PRISMA | N001〜UR015 | 295 | 属性10種 × 生き物30種 |
-| SWEETS PARADE | SW-N001〜SW-UR005 | 100 | 味10種 × スイーツ10種 |
+| PRISMA BOOSTER PACK | N001〜UR015 | 295 | 属性10種 × 生き物30種 |
+| PRISMA SWEETS PACK | SW-N001〜SW-UR005 | 100 | 味10種 × スイーツ10種 |
 
 ## カード構成と排出率
 
 排出率はどのパックも共通です。開封したパックのカードだけが出ます。
 
-| レアリティ | 排出率 | PRISMA 種類数 | 1種あたり | SWEETS PARADE 種類数 | 1種あたり |
+| レアリティ | 排出率 | BOOSTER 種類数 | 1種あたり | SWEETS 種類数 | 1種あたり |
 |---|---:|---:|---:|---:|---:|
 | N | 70% | 100 | 0.70% | 35 | 2.0% |
 | R | 20% | 80 | 0.25% | 30 | 0.667% |
@@ -65,7 +65,9 @@ tools/export_illust.py  イラストと cards.json を描画コードから書�
 | UR | 0.03% | 15 | 0.002% | 5 | 0.006% |
 
 - 1枚ごとに独立抽選（`crypto.getRandomValues` を使用）
-- 確率固定・天井なし・10連確定枠なし・確率アップなし・重複あり
+- 確率固定・確率アップなし・重複あり
+- 天井：同じパックで1000枚（10連100回）引くごとに「UR確定ガチャ」を1回引ける。
+  確定ガチャは10枚目がそのパックのURから均等に確定、ほかの9枚は通常の確率。確定ガチャの10枚は天井に数えない
 - 同じレアリティ内は均等
 - 各パックで大量試行し、各レアリティの実測値が理論値と一致することを確認済み
 
@@ -75,7 +77,7 @@ tools/export_illust.py  イラストと cards.json を描画コードから書�
 {
   "id": "N001",
   "no": 1,
-  "pack": "PRISMA",
+  "pack": "PRISMA BOOSTER PACK",
   "name": "いわのユニコーン",
   "rarity": "N",
   "element": "岩",
@@ -125,6 +127,7 @@ python tools/export_illust.py SW-N001 UR015   # 指定したカードだけ
 
 - カードごとの所持枚数・初回獲得日時
 - 累計開封枚数・累計10連回数
+- パックごとの天井の進み具合とUR確定ガチャの残り回数
 - BGM音量・SE音量・演出設定
 
 別の端末へは、タイトル → 設定 → データ移行 で発行する「引き継ぎコード」で移せます。
