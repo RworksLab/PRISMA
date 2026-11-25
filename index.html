@@ -58,7 +58,7 @@ button:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
 .packWrap::before{content:"";position:absolute;inset:-18% -30%;pointer-events:none;background:radial-gradient(closest-side,rgba(170,150,255,.45),transparent);z-index:-1;animation:pulse 2.6s ease-in-out infinite}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 @keyframes pulse{0%,100%{opacity:.6;transform:scale(.95)}50%{opacity:1;transform:scale(1.05)}}
-.pack{position:relative;width:min(60vw,240px);aspect-ratio:.64;border-radius:12px;overflow:hidden;
+.pack{position:relative;width:min(58vw,240px,calc((100dvh - 430px)*.64));aspect-ratio:.64;border-radius:12px;overflow:hidden;
  background:linear-gradient(165deg,#c8d2ff 0%,#efe3ff 30%,#fff1df 55%,#d4f3ff 80%,#cbd0ff 100%);
  box-shadow:0 34px 50px -26px rgba(50,60,140,.6),inset 0 0 0 1.5px rgba(255,255,255,.8)}
 .pack::before,.pack::after{content:"";position:absolute;left:0;right:0;height:16px;z-index:3;
@@ -72,9 +72,55 @@ button:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
 .pack .pin b{margin-top:10px;font:800 clamp(22px,7vw,30px)/1 var(--fonte);letter-spacing:.08em;color:#3d3f8f}
 .pack .pin small{margin-top:6px;font:700 10px/1 var(--fonte);letter-spacing:.3em;color:#6d70b5}
 .pack .pin i{position:absolute;bottom:28px;font-style:normal;font:700 10px/1 var(--fonte);letter-spacing:.2em;color:#6d70b5;background:rgba(255,255,255,.6);padding:5px 10px;border-radius:99px}
+.packCar{width:100%;display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+.packCar::-webkit-scrollbar{display:none}
+.slide{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;display:flex;justify-content:center;padding:40px 0 30px}
+.packInfo{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:-18px}
+.carWrap{position:relative;width:100%}
+.pArrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.8);box-shadow:0 0 0 1px var(--line),0 6px 14px -8px rgba(30,40,80,.4);transition:opacity .2s}
+.pArrow.l{left:max(8px,calc(50% - min(29vw,120px) - 60px))}.pArrow.r{right:max(8px,calc(50% - min(29vw,120px) - 60px))}
+.pArrow svg{width:18px;height:18px}.pArrow:disabled{opacity:0;pointer-events:none}
+.pName{min-width:150px;text-align:center;font-weight:800;font-size:16px;line-height:1.25}
+.pName small{display:block;font:700 12px/1.4 var(--fonte);color:var(--sub)}
+.dots{display:flex;gap:8px;justify-content:center;margin-top:-12px}
+.dot{width:8px;height:8px;border-radius:99px;background:#c9cfdd;transition:width .2s,background .2s}
+.dot.on{width:22px;background:var(--ac)}
+.pRib{position:absolute;top:-8px;right:-10px;z-index:4;font:800 12px/1 var(--fonte);letter-spacing:.1em;color:#fff;padding:7px 11px;border-radius:99px;background:linear-gradient(90deg,#ff5f8f,#ff9a4d);box-shadow:0 6px 14px -6px rgba(255,80,120,.7)}
+.pack.p-sw{background:linear-gradient(165deg,#ffcfe2 0%,#fff1dc 32%,#ffe0ef 58%,#d6f5ea 82%,#ffc6dd 100%)}
+.pack.p-sw .irid{background:conic-gradient(from 160deg at 60% 40%,#ff9ad5,#ffe39a,#9affd8,#ffb3d9,#ff9ad5)}
+.pack.p-sw .pin b{color:#c23f78}.pack.p-sw .pin small,.pack.p-sw .pin i{color:#d0679a}
+.pseg[hidden]{display:none}
+.pseg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;margin:0 12px 12px;padding:4px;border-radius:18px;background:#1d2335;box-shadow:0 8px 18px -12px rgba(20,25,60,.6)}
+.pseg button{display:flex;align-items:center;justify-content:center;gap:8px;height:48px;border-radius:14px;font-weight:800;font-size:13px;letter-spacing:.04em;color:#9aa3bb;line-height:1.15;text-align:left;transition:background .2s,color .2s}
+.pseg button svg{width:24px;height:24px;flex:none;opacity:.55;transition:opacity .2s}
+.pseg button small{display:block;font:700 11px/1.3 var(--fonte);letter-spacing:0;opacity:.85}
+.pseg button.on{color:#fff}.pseg button.on svg{opacity:1}
+.pseg button.on[data-p="0"]{background:linear-gradient(110deg,#5a63ff,#9b5cff)}
+.pseg button.on[data-p="1"]{background:linear-gradient(110deg,#ff6fa8,#ff9a6b)}
+.rates .ph td{padding-top:12px;font-weight:800;color:var(--ink);border-bottom:2px solid var(--line)}
 .tapHint{font:800 14px/1 var(--fonte);letter-spacing:.35em;color:#6a70c7;animation:blink 1.6s ease-in-out infinite}
 @keyframes blink{50%{opacity:.35}}
 .homeSub{font-size:12px;color:var(--sub);margin-top:-12px}
+.ceil{width:min(240px,64vw);margin-top:-8px;font-size:12px;color:var(--sub);text-align:center}
+.ceil b{font-family:var(--fonte);color:var(--ink)}
+.ceil .cbar{height:6px;border-radius:9px;background:#e3e7f0;overflow:hidden;margin-top:6px}
+.ceil .cbar div{height:100%;background:linear-gradient(90deg,#f8e08e,#c9962e)}
+.urNext{font-weight:800;color:#b8861f;letter-spacing:.04em}
+.urGlint{position:absolute;inset:-6% -8%;pointer-events:none;opacity:0;transition:opacity .6s;z-index:3}
+.packWrap.ur .urGlint{opacity:1}
+.urGlint i{position:absolute;width:22px;height:22px;background:radial-gradient(circle,#fff 0 18%,#ffd54a 45%,#e0a21c 100%);clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%);animation:twinkle 2.4s ease-in-out infinite;opacity:0}
+.urGlint i:nth-child(1){left:4%;top:12%;animation-delay:0s}
+.urGlint i:nth-child(2){right:2%;top:22%;width:17px;height:17px;animation-delay:.5s}
+.urGlint i:nth-child(3){left:10%;bottom:20%;width:16px;height:16px;animation-delay:1s}
+.urGlint i:nth-child(4){right:8%;bottom:10%;animation-delay:1.5s}
+.urGlint i:nth-child(5){left:46%;top:2%;width:15px;height:15px;animation-delay:.8s}
+.urGlint i:nth-child(6){right:24%;top:46%;width:14px;height:14px;animation-delay:1.9s}
+.urGlint i:nth-child(7){left:28%;bottom:3%;width:15px;height:15px;animation-delay:1.2s}
+@keyframes twinkle{0%,100%{opacity:0;transform:scale(.4) rotate(0)}40%{opacity:1;transform:scale(1) rotate(20deg)}70%{opacity:.2;transform:scale(.7) rotate(35deg)}}
+.packWrap.ur::before{background:radial-gradient(closest-side,rgba(255,214,110,.6),transparent)}
+.packWrap.ur .pack{box-shadow:0 34px 50px -26px rgba(140,100,20,.55),0 0 0 2px rgba(255,226,140,.9),0 0 22px 2px rgba(255,210,110,.45)}
+.packWrap.ur .pack .shine{background:linear-gradient(115deg,transparent 42%,rgba(255,240,190,.95) 50%,transparent 58%);animation-duration:2.4s}
+@media (prefers-reduced-motion:reduce){.urGlint i{animation:none;opacity:.8}}
 .homeBot{padding:12px 20px 22px;display:flex;justify-content:center}
 .dexBtn{width:100%;max-width:340px;height:64px;border-radius:20px;background:#fff;box-shadow:0 0 0 1px var(--line),0 12px 24px -16px rgba(30,40,80,.4);display:flex;align-items:center;gap:14px;padding:0 18px;text-align:left}
 .dexBtn:active{transform:scale(.97)}
@@ -218,6 +264,7 @@ button:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
 .resGrid .card.hi::before{content:"";position:absolute;inset:-6%;border-radius:12%;z-index:-1;background:var(--hg);filter:blur(8px);opacity:.9;animation:pulse 1.6s ease-in-out infinite}
 @keyframes pop{from{transform:scale(.4) translateY(20px);opacity:0}}
 .resBtns{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:380px;margin-top:6px}
+.resBtns.one{grid-template-columns:1fr;max-width:240px}
 .rb2{height:52px;border-radius:999px;background:rgba(255,255,255,.14);color:#fff;font-weight:800;font-size:15px;backdrop-filter:blur(6px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}
 .rb2.pri{background:linear-gradient(100deg,#5a63ff,#9b5cff);box-shadow:0 10px 24px -10px rgba(90,99,255,.8)}
 .rb2:active{transform:scale(.96)}
@@ -283,7 +330,7 @@ input[type=range]{width:100%;height:32px;accent-color:var(--ac)}
     <button class="btn pri" id="startBtn">ゲームスタート</button>
     <button class="btn sec" id="settingBtn">設定</button>
   </div>
-  <div class="ver">全295種 · 何度でも無料で開封</div>
+  <div class="ver" id="ver"></div>
 </section>
 
 <!-- ホーム -->
@@ -293,8 +340,11 @@ input[type=range]{width:100%;height:32px;accent-color:var(--ac)}
     <button class="chip" id="speedBtn"></button>
   </div>
   <div class="homeMid">
-    <div class="packWrap" id="packBtn" role="button" aria-label="パックを開封"></div>
+    <div class="carWrap"><div class="packCar" id="packCar"></div>
+      <button class="pArrow l" id="pPrev" aria-label="前のパック"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="pArrow r" id="pNext" aria-label="次のパック"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></button></div>
     <div class="tapHint">TAP TO OPEN</div>
+    <div class="ceil" id="ceil"></div>
     <div class="homeSub" id="homeSub"></div>
   </div>
   <div class="homeBot">
@@ -314,6 +364,7 @@ input[type=range]{width:100%;height:32px;accent-color:var(--ac)}
     <div class="tot" id="dexTot"></div>
   </div>
   <div class="stats" id="dexStats"></div>
+  <div class="pseg" id="pseg"></div>
   <div class="tabs" id="tabs"></div>
   <div class="grid" id="grid"></div>
 </section>
@@ -349,7 +400,7 @@ input[type=range]{width:100%;height:32px;accent-color:var(--ac)}
     <div class="row"><div class="tg"><div>所持済みのURも演出を表示<small>高速開封・SKIP時の設定です。未取得のSSR・URは常にめくる演出が流れます</small></div><button class="sw" id="urSw" aria-label="UR演出"></button></div></div>
     <div class="row"><label>排出確率</label>
       <table class="rates"><tbody id="rateT"></tbody></table>
-      <div style="font-size:12px;color:var(--sub);margin-top:6px">1枚ずつ独立抽選・確率固定・天井なし・確定枠なし・重複あり。同じレアリティ内は均等。</div>
+      <div style="font-size:12px;color:var(--sub);margin-top:6px">1枚ずつ独立抽選・確率固定・重複あり。同じレアリティ内は均等。<br>天井：同じパックでURが出ないまま1000枚（10連100回）引くと、そのパックの次の10連がUR確定になります（パックがキラキラ光ります）。途中でURが出たら天井の枚数は0に戻ります。確定の10連は10枚目がUR確定、ほかの9枚は通常の確率です（この10枚は天井に数えません）。</div>
     </div>
     <div class="row"><label>データ管理</label><button class="mv" id="moveBtn">データ移行（引き継ぎ）</button><button class="danger" id="resetBtn">データを初期化</button></div>
   </div>
@@ -398,6 +449,17 @@ const RAR=[
  {k:'SSR',count:40,w:197,label:'SPECIAL SUPER RARE'},
  {k:'UR',count:15,w:3,label:'ULTRA RARE'}];
 const RI={N:0,R:1,SR:2,SSR:3,UR:4};
+// パック定義（counts は N,R,SR,SSR,UR の種類数）
+// 公開中のパック。新パックを公開するときはここに追加する
+const RELEASED=['prisma'];
+const PACKS=[
+ {k:'prisma',title:'PRISMA BOOSTER PACK',short:'BOOSTER PACK',foot:'PRISMA  BOOSTER PACK',counts:[100,80,60,40,15]},
+ {k:'sweets',title:'PRISMA SWEETS PACK',short:'SWEETS PACK',foot:'PRISMA  SWEETS PACK',counts:[35,30,20,10,5]}].filter(P=>RELEASED.includes(P.k));
+const FLV=[{k:'いちご',h:350,s:78,l:82},{k:'チョコ',h:22,s:42,l:50},{k:'メロン',h:100,s:55,l:76},{k:'ソーダ',h:195,s:78,l:78},{k:'レモン',h:52,s:88,l:72},
+ {k:'ぶどう',h:278,s:52,l:76},{k:'まっちゃ',h:84,s:42,l:62},{k:'ミルク',h:40,s:50,l:92},{k:'キャラメル',h:30,s:62,l:66},{k:'もも',h:12,s:88,l:84}];
+const SWT=[['プリン','pudding'],['ドーナツ','donut',[32,62,74]],['マフィン','muffin'],['ソフト','softcream'],['マカロン','macaron'],
+ ['ショート','shortcake'],['キャンディ','candy'],['クッキー','cookie',[34,58,72]],['だんご','dango'],['わたあめ','cotton']];
+const SW_EP=['','特製','極上','宝石の','天上の'];
 const ELEM=[
  {k:'炎',h:10,ep:['ほのおの','火花の','紅蓮の','煉獄の','焔神']},
  {k:'水',h:205,ep:['みずの','さざなみの','蒼海の','深淵の','海神']},
@@ -421,32 +483,50 @@ const CARDS=[];
   for(let i=pairs.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[pairs[i],pairs[j]]=[pairs[j],pairs[i]]}
   let id=1,p=0;
   RAR.forEach((r,ri)=>{for(let i=0;i<r.count;i++){const[e,c]=pairs[p++],code=r.k+String(i+1).padStart(3,'0');
-    CARDS.push({id,code,file:`illust/${code}.webp`,no:code,rarity:r.k,ri,el:e,cr:c,seed:id*7919+13,
+    CARDS.push({id,code,file:`illust/${code}.webp`,no:code,rarity:r.k,ri,el:e,cr:c,seed:id*7919+13,pk:0,tag:`${ELEM[e].k}属性`,elName:ELEM[e].k,motif:CRE[c][0],
       name:ELEM[e].ep[ri]+CRE[c][0],desc:`${ELEM[e].k}の力を宿した${CRE[c][0]}。`});id++}});
+  // PRISMA SWEETS PACK（10味 × 10スイーツ = 100種）
+  if(PACKS.length<2)return;
+  const r2=mulberry(20261126),pr=[];
+  for(let e=0;e<FLV.length;e++)for(let c=0;c<SWT.length;c++)pr.push([e,c]);
+  for(let i=pr.length-1;i>0;i--){const j=Math.floor(r2()*(i+1));[pr[i],pr[j]]=[pr[j],pr[i]]}
+  let q=0;
+  RAR.forEach((r,ri)=>{for(let i=0;i<PACKS[1].counts[ri];i++){const[e,c]=pr[q++],code='SW-'+r.k+String(i+1).padStart(3,'0');
+    CARDS.push({id,code,file:`illust/${code}.webp`,no:code,rarity:r.k,ri,el:e,cr:c,seed:id*7919+13,pk:1,tag:`${FLV[e].k}味`,elName:FLV[e].k,motif:SWT[c][0],
+      name:SW_EP[ri]+FLV[e].k+SWT[c][0],desc:`${FLV[e].k}味の${SWT[c][0]}。`});id++}});
 })();
 fetch('cards.json').then(r=>r.ok?r.json():null).then(list=>{if(!list)return;const by={};list.forEach(m=>by[m.id]=m);
   CARDS.forEach(c=>{const m=by[c.code];if(!m)return;if(m.name)c.name=m.name;if(m.theme)c.desc=m.theme;if(m.file)c.file=m.file})}).catch(()=>{});
-const BY_R=RAR.map((_,ri)=>CARDS.filter(c=>c.ri===ri));
+const BY_P=PACKS.map((_,p)=>RAR.map((_,ri)=>CARDS.filter(c=>c.pk===p&&c.ri===ri)));
+PACKS.forEach((P,p)=>P.total=CARDS.filter(c=>c.pk===p).length);
 
 /* ================= 抽選 ================= */
 function randInt(n){const a=new Uint32Array(1),lim=Math.floor(4294967296/n)*n;let v;do{crypto.getRandomValues(a);v=a[0]}while(v>=lim);return v%n}
-function drawOne(){let x=randInt(10000),ri=0;for(;ri<RAR.length;ri++){if(x<RAR[ri].w)break;x-=RAR[ri].w}const pool=BY_R[ri];return pool[randInt(pool.length)]}
+function drawOne(p=0){let x=randInt(10000),ri=0;for(;ri<RAR.length;ri++){if(x<RAR[ri].w)break;x-=RAR[ri].w}const pool=BY_P[p][ri];return pool[randInt(pool.length)]}
 
 /* ================= 保存 ================= */
 const KEY='prisma-collection-v1';
-const DEF=()=>({v:1,cards:{},totalCards:0,totalPacks:0,bgm:60,se:80,mode:'normal',urFast:true});
+const DEF=()=>({v:1,cards:{},totalCards:0,totalPacks:0,bgm:60,se:80,mode:'normal',urFast:true,pack:0,ceil:{}});
 let S=DEF();
 try{const s=JSON.parse(localStorage.getItem(KEY));if(s&&s.v===1)S=Object.assign(DEF(),s)}catch(e){}
+// 天井の開始記念：天井導入前に1000枚以上引いていたプレイヤーは、BOOSTER PACK の次回がUR確定
+if(S.ceilInit===undefined){if(!S.ceil||typeof S.ceil!=='object')S.ceil={};if(S.totalCards>=1000&&!S.ceil[0])S.ceil[0]={n:0,t:1};S.ceilInit=1;try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
 const owned=id=>S.cards[id];
-const ownedCount=ri=>BY_R[ri].filter(c=>S.cards[c.id]).length;
+const ownedCount=(p,ri)=>BY_P[p][ri].filter(c=>S.cards[c.id]).length;
+const ownedPack=p=>CARDS.filter(c=>c.pk===p&&S.cards[c.id]).length;
 const ownedTotal=()=>Object.keys(S.cards).length;
 
-function pull10(){
-  const res=[];
-  for(let i=0;i<10;i++){const c=drawOne();let o=S.cards[c.id];const isNew=!o;
+// 天井：パックごとに1000枚引くとUR確定ガチャ1回。途中でURが出たら0に戻る。確定ガチャの10枚はカウントしない
+const CEIL=1000;
+const ceilOf=p=>{if(!S.ceil||typeof S.ceil!=='object')S.ceil={};return S.ceil[p]||(S.ceil[p]={n:0,t:0})};
+function pull10(p=0,guar=false){
+  const res=[],C=ceilOf(p);let gained=0;
+  guar=C.t>0;if(guar)C.t--;
+  for(let i=0;i<10;i++){const ur=BY_P[p][4],c=guar&&i===9?ur[randInt(ur.length)]:drawOne(p);let o=S.cards[c.id];const isNew=!o;
     if(!o)o=S.cards[c.id]={n:0,first:Date.now()};o.n++;res.push({c,isNew})}
-  S.totalCards+=10;S.totalPacks++;save();return res;
+  if(!guar){if(res.some(r=>r.c.ri===4)){res.reset=C.n+10;C.n=0}else{C.n+=10;while(C.n>=CEIL){C.n-=CEIL;C.t++;gained++}}}
+  S.totalCards+=10;S.totalPacks++;save();res.gained=gained;res.guar=guar;return res;
 }
 
 /* ================= イラスト生成（SVG） ================= */
@@ -464,9 +544,11 @@ function star4(x,y,s){return `M${f(x)},${f(y-s)}Q${f(x)},${f(y)} ${f(x+s)},${f(y
 const artCache={};
 function artTpl(c,sil){
   const key=c.id+(sil?'s':'');if(artCache[key])return artCache[key];
-  const rng=mulberry(c.seed),h=(ELEM[c.el].h+Math.floor(rng()*16)-8+360)%360,type=CRE[c.cr][1],ri=c.ri;
+  const P2=c.pk===1,FL=P2?FLV[c.el]:null;
+  const rng=mulberry(c.seed),h=P2?(FL.h+Math.floor(rng()*6)-3+360)%360:(ELEM[c.el].h+Math.floor(rng()*16)-8+360)%360,type=P2?SWT[c.cr][1]:CRE[c.cr][1],ri=c.ri;
+  const BO=P2?(SWT[c.cr][2]||[h,FL.s,FL.l]):null;
   const W=230,H=200,cx=115,cy=118,rx=50+rng()*14,ry=44+rng()*10,yT=cy-ry;
-  const body=sil?'#aeb5c3':`url(#b§)`,stk=sil?'#aeb5c3':`hsl(${h},45%,${ri===4?30:38}%)`,acc=sil?'#aeb5c3':`hsl(${(h+30)%360},70%,${ri===4?60:55}%)`;
+  const body=sil?'#aeb5c3':`url(#b§)`,stk=sil?'#aeb5c3':P2?`hsl(${BO[0]},${Math.min(BO[1],50)}%,${Math.min(32,BO[2]-26)}%)`:`hsl(${h},45%,${ri===4?30:38}%)`,acc=sil?'#aeb5c3':`hsl(${(h+30)%360},70%,${ri===4?60:55}%)`;
   let g='',bg='',deco='';
   // 背景
   if(sil){bg=`<rect x="-60" y="-60" width="350" height="380" fill="#e4e7ee"/><circle cx="${cx}" cy="95" r="80" fill="#eceef3"/>`}
@@ -475,7 +557,7 @@ function artTpl(c,sil){
     for(let i=0;i<36;i++){const a=(i+.7)/36*6.283;deco+=`<path d="M${f(cx+Math.cos(a)*40)},${f(95+Math.sin(a)*40)}L${f(cx+Math.cos(a)*260)},${f(95+Math.sin(a)*260)}" stroke="#fff6d8" stroke-width=".8" opacity=".45"/>`}
     deco+=`<circle cx="${cx}" cy="100" r="62" fill="#ffe9a0" opacity=".35"/>`;
     for(let i=0;i<40;i++)deco+=`<circle cx="${f(rng()*W)}" cy="${f(rng()*H)}" r="${f(.5+rng()*1.6)}" fill="#fff4d0" opacity="${f(.4+rng()*.6)}"/>`;
-    deco+=`<ellipse cx="${cx}" cy="${f(yT-26)}" rx="30" ry="8" fill="none" stroke="#ffd36e" stroke-width="3.5" opacity=".95"/>`}
+    deco+=`<ellipse cx="${cx}" cy="${f(yT-(P2?({pudding:32,muffin:36,softcream:36,shortcake:42,dango:58}[type]||26):26))}" rx="30" ry="8" fill="none" stroke="#ffd36e" stroke-width="3.5" opacity=".95"/>`}
   else{bg=`<radialGradient id="g§" cx=".5" cy=".42" r=".78"><stop offset="0" stop-color="hsl(${h},95%,96%)"/><stop offset=".5" stop-color="hsl(${h},${ri>=3?78:70}%,${ri>=3?80:84}%)"/><stop offset="1" stop-color="hsl(${h},${ri>=3?62:55}%,${ri>=3?50:62}%)"/></radialGradient><rect x="-60" y="-60" width="350" height="380" fill="url(#g§)"/>`;
     for(let i=0;i<6;i++)deco+=`<circle cx="${f(rng()*W)}" cy="${f(rng()*H*.8)}" r="${f(10+rng()*34)}" fill="#fff" opacity="${f(.12+rng()*.2)}"/>`;
     if(ri>=1)for(let i=-3;i<10;i++)deco+=`<path d="M${i*36-48},${H+80}L${i*36+168},-80" stroke="#fff" stroke-width="12" opacity="${ri>=3?.18:.34}"/><path d="M${i*36-30},${H+80}L${i*36+186},-80" stroke="hsl(${h},55%,48%)" stroke-width="3" opacity=".16"/>`;
@@ -484,7 +566,9 @@ function artTpl(c,sil){
       for(let i=0;i<16;i++)deco+=`<path d="M${cx},95L${f(cx+Math.cos(i/16*6.283)*260)},${f(95+Math.sin(i/16*6.283)*260)}L${f(cx+Math.cos((i+.45)/16*6.283)*260)},${f(95+Math.sin((i+.45)/16*6.283)*260)}Z" fill="url(#ry§)"/>`;
       deco+=`<circle cx="${cx}" cy="100" r="58" fill="#fff" opacity=".45"/>`}
     if(ri>=2)for(let i=0;i<(ri>=3?9:5);i++)deco+=`<path d="${star4(18+rng()*194,14+rng()*120,4+rng()*7)}" fill="${ri>=3?'#fff':'#ffe9a6'}" stroke="${ri>=3?`hsl(${h},60%,60%)`:'#d9a83a'}" stroke-width=".8" opacity=".95"/>`}
-  if(!sil){bg+=`<radialGradient id="vg§" cx=".5" cy=".45" r=".72"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="${ri===4?'#000':`hsl(${h},55%,28%)`}" stop-opacity="${ri===4?.6:.32}"/></radialGradient>`;deco+=`<rect x="-80" y="-80" width="${W+160}" height="${H+160}" fill="url(#vg§)"/>`}
+  if(P2&&!sil){const SP=['#ff8fb8','#ffd36e','#7fd8c4','#8fb4ff','#c79bff','#fff'];
+    for(let i=0;i<22;i++){const x=rng()*W,y=-10+rng()*(H+40),a=rng()*180;deco+=`<rect x="${f(x-5)}" y="${f(y-1.6)}" width="10" height="3.2" rx="1.6" fill="${ri===4?'#ffd36e':SP[i%SP.length]}" opacity="${ri===4?.55:.75}" transform="rotate(${f(a)} ${f(x)} ${f(y)})"/>`}}
+  if(!sil){bg+=`<radialGradient id="vg§\" cx=".5" cy=".45" r=".72"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="${ri===4?'#000':`hsl(${h},55%,28%)`}" stop-opacity="${ri===4?.6:.32}"/></radialGradient>`;deco+=`<rect x="-80" y="-80" width="${W+160}" height="${H+160}" fill="url(#vg§)"/>`}
   // パーツ（体の後ろ）
   const ex=rx*.6;let back='',front='';
   const S2=`fill="${body}" stroke="${stk}" stroke-width="3" stroke-linejoin="round"`;
@@ -501,13 +585,56 @@ function artTpl(c,sil){
   if(type==='crest')for(let i=-1;i<=1;i++)back+=`<path d="M${f(cx+i*12-6)},${f(yT+10)}Q${f(cx+i*16)},${f(yT-30+Math.abs(i)*8)} ${f(cx+i*22+6)},${f(yT-20+Math.abs(i)*10)}Q${f(cx+i*10)},${f(yT-2)} ${f(cx+i*12+6)},${f(yT+10)}Z" fill="${sil?body:'#ffb05c'}" stroke="${stk}" stroke-width="2.5"/>`;
   if(type==='curl'){burn(rng,16);back+=`<path d="${scallop(cx,cy-6,rx+6,ry+5,16,5)}" fill="${sil?body:'#fff8ee'}" stroke="${stk}" stroke-width="3"/>`;}
   if(type==='drop')back+=`<path d="M${f(cx)},${f(yT-26)}Q${f(cx+10)},${f(yT-6)} ${f(cx+18)},${f(yT+12)}L${f(cx-18)},${f(yT+12)}Q${f(cx-10)},${f(yT-6)} ${f(cx)},${f(yT-26)}Z" ${S2}/>`;
-  if(ri>=2&&!sil&&type!=='wing')for(const s of[-1,1])back+=`<path d="M${f(cx+s*(rx-6))},${f(cy-4)}Q${f(cx+s*(rx+40))},${f(cy-40)} ${f(cx+s*(rx+34))},${f(cy+14)}Q${f(cx+s*(rx+18))},${f(cy+4)} ${f(cx+s*(rx-4))},${f(cy+14)}Z" fill="#fff" opacity="${ri>=3?.85:.6}" stroke="${ri===4?'#ffd36e':'#fff'}" stroke-width="2"/>`;
+  let inner='',fore='';
+  if(P2){const C=x=>sil?'#aeb5c3':x,fa=`hsl(${FL.h},${Math.min(95,FL.s+10)}%,${Math.max(30,FL.l-16)}%)`,lite=`hsl(${FL.h},${FL.s}%,${Math.min(95,FL.l+8)}%)`;
+    const SW3=`stroke="${stk}" stroke-width="3" stroke-linejoin="round"`;
+    const cherry=(x,y,r)=>`<path d="M${f(x)},${f(y-r)}Q${f(x+3)},${f(y-r-12)} ${f(x+10)},${f(y-r-15)}" stroke="${C('#5a8a3a')}" stroke-width="2.5" fill="none"/><circle cx="${f(x)}" cy="${f(y)}" r="${r}" fill="${C('#e8344f')}" ${SW3}/>`+(sil?'':`<circle cx="${f(x-r*.35)}" cy="${f(y-r*.35)}" r="${f(r*.28)}" fill="#fff" opacity=".8"/>`);
+    if(type==='pudding'){back+=`<ellipse cx="${cx}" cy="${f(cy+ry-2)}" rx="${f(rx*1.32)}" ry="13" fill="${C('#ffffff')}" ${SW3}/>`+(sil?'':`<ellipse cx="${cx}" cy="${f(cy+ry-4)}" rx="${f(rx*1.05)}" ry="8" fill="#eef2f8"/>`)+cherry(cx+5,yT-6,9);
+      const yB=yT+ry*.42,n=6;let d=`M${f(cx-rx-6)},${f(yT-6)}L${f(cx+rx+6)},${f(yT-6)}L${f(cx+rx+6)},${f(yB)}`;
+      for(let i=n;i>0;i--){const x0=cx-rx-6+(2*rx+12)*i/n,x1=cx-rx-6+(2*rx+12)*(i-1)/n,dr=(i%2?ry*.2:ry*.06);d+=`Q${f((x0+x1)/2)},${f(yB+dr*2)} ${f(x1)},${f(yB)}`}
+      inner+=`<path d="${d}Z" fill="#b06a2c"/><ellipse cx="${f(cx-rx*.35)}" cy="${f(yT+ry*.16)}" rx="${f(rx*.28)}" ry="5" fill="#e0a15c" opacity=".7"/>`}
+    if(type==='donut'){const yB=yT+ry*.6,n=7,ic=FL.k==='ミルク'?'#fffaf2':fa;let d=`M${f(cx-rx-6)},${f(yT-6)}L${f(cx+rx+6)},${f(yT-6)}L${f(cx+rx+6)},${f(yB)}`;
+      for(let i=n;i>0;i--){const x0=cx-rx-6+(2*rx+12)*i/n,x1=cx-rx-6+(2*rx+12)*(i-1)/n;d+=`Q${f((x0+x1)/2)},${f(yB+(i%2?ry*.22:ry*.08))} ${f(x1)},${f(yB)}`}
+      inner+=`<path d="${d}Z" fill="${ic}" stroke="${stk}" stroke-width="2"/>`;const SP=['#fff','#ffd36e','#7fd8c4','#8fb4ff','#ff8fb8'];
+      for(let i=0;i<11;i++){const x=cx-rx*.75+rng()*rx*1.5,y=yT+5+rng()*ry*.45,a=rng()*180;inner+=`<rect x="${f(x-4)}" y="${f(y-1.4)}" width="8" height="2.8" rx="1.4" fill="${SP[i%5]}" transform="rotate(${f(a)} ${f(x)} ${f(y)})"/>`}}
+    if(type==='muffin'){back+=`<ellipse cx="${cx}" cy="${f(yT+4)}" rx="${f(rx*.62)}" ry="14" fill="${C('#fffaf2')}" ${SW3}/><ellipse cx="${cx}" cy="${f(yT-9)}" rx="${f(rx*.42)}" ry="11" fill="${C('#fffaf2')}" ${SW3}/><path d="M${f(cx-10)},${f(yT-16)}Q${cx},${f(yT-34)} ${f(cx+6)},${f(yT-30)}Q${f(cx+2)},${f(yT-22)} ${f(cx+10)},${f(yT-16)}Z" fill="${C('#fffaf2')}" ${SW3}/>`;
+      const wc=`hsl(${(FL.h+180)%360},55%,84%)`,ty=cy+ry*.38,by=cy+ry+6;
+      fore+=`<path d="M${f(cx-rx*1.02)},${f(ty)}L${f(cx+rx*1.02)},${f(ty)}L${f(cx+rx*.74)},${f(by)}L${f(cx-rx*.74)},${f(by)}Z" fill="${C(wc)}" ${SW3}/>`;
+      if(!sil)for(let i=1;i<7;i++){const t=i/7;fore+=`<path d="M${f(cx-rx*1.02+rx*2.04*t)},${f(ty+2)}L${f(cx-rx*.74+rx*1.48*t)},${f(by-2)}" stroke="#fff" stroke-width="2.5" opacity=".75"/>`}
+      if(!sil)for(let i=0;i<4;i++)inner+=`<circle cx="${f(cx-rx*.6+rx*1.2*rng())}" cy="${f(yT+6+rng()*ry*.35)}" r="${f(3+rng()*2)}" fill="${fa}"/>`}
+    if(type==='softcream'){const cy0=cy+ry*.42,cb=cy+ry+40;back+=`<path d="M${f(cx-rx*.66)},${f(cy0)}L${f(cx+rx*.66)},${f(cy0)}L${cx},${f(cb)}Z" fill="${C('#e2a356')}" ${SW3}/>`;
+      if(!sil)for(let i=-3;i<=3;i++)back+=`<path d="M${f(cx+i*12-30)},${f(cy0)}L${f(cx+i*12+30)},${f(cb-6)}M${f(cx+i*12+30)},${f(cy0)}L${f(cx+i*12-30)},${f(cb-6)}" stroke="#b87a34" stroke-width="2" opacity=".55" clip-path="url(#cn§)"/>`;
+      if(!sil)back=`<clipPath id="cn§"><path d="M${f(cx-rx*.66)},${f(cy0)}L${f(cx+rx*.66)},${f(cy0)}L${cx},${f(cb)}Z"/></clipPath>`+back;
+      back+=`<ellipse cx="${cx}" cy="${f(yT+4)}" rx="${f(rx*.55)}" ry="14" fill="${body}" ${SW3}/><path d="M${f(cx-rx*.3)},${f(yT-4)}Q${f(cx-6)},${f(yT-28)} ${f(cx+10)},${f(yT-24)}Q${f(cx+4)},${f(yT-14)} ${f(cx+rx*.3)},${f(yT-4)}Z" fill="${body}" ${SW3}/>`;
+      inner+=`<path d="M${f(cx-rx)},${f(yT+ry*.34)}Q${cx},${f(yT+ry*.5)} ${f(cx+rx)},${f(yT+ry*.3)}M${f(cx-rx)},${f(cy+ry*.55)}Q${cx},${f(cy+ry*.72)} ${f(cx+rx)},${f(cy+ry*.5)}" stroke="${stk}" stroke-width="2.4" fill="none" opacity=".35"/>`}
+    if(type==='macaron'){const t=cy+ry*.3,b=cy+ry*.56;let d=`M${f(cx-rx-4)},${f(t)}`;for(let i=0;i<10;i++){const x0=cx-rx-4+(2*rx+8)*i/10,x1=cx-rx-4+(2*rx+8)*(i+1)/10;d+=`Q${f((x0+x1)/2)},${f(t-5)} ${f(x1)},${f(t)}`}
+      d+=`L${f(cx+rx+4)},${f(b)}`;for(let i=10;i>0;i--){const x0=cx-rx-4+(2*rx+8)*i/10,x1=cx-rx-4+(2*rx+8)*(i-1)/10;d+=`Q${f((x0+x1)/2)},${f(b+5)} ${f(x1)},${f(b)}`}
+      inner+=`<path d="${d}Z" fill="#fffaf0" stroke="${stk}" stroke-width="2.2"/><path d="M${f(cx-rx)},${f(b+7)}L${f(cx+rx)},${f(b+7)}" stroke="${stk}" stroke-width="2.5" stroke-dasharray="3 4" opacity=".45"/>`}
+    if(type==='shortcake'){back+=`<ellipse cx="${cx}" cy="${f(yT+2)}" rx="22" ry="11" fill="${C('#ffffff')}" ${SW3}/><path d="M${cx},${f(yT+2)}C${f(cx-22)},${f(yT-6)} ${f(cx-18)},${f(yT-34)} ${cx},${f(yT-30)}C${f(cx+18)},${f(yT-34)} ${f(cx+22)},${f(yT-6)} ${cx},${f(yT+2)}Z" fill="${C('#ef3d5a')}" ${SW3}/>`;
+      if(!sil){for(const[a,b2]of[[-6,-20],[5,-18],[-1,-10],[8,-8],[-9,-8]])back+=`<ellipse cx="${f(cx+a)}" cy="${f(yT+b2)}" rx="1.3" ry="2" fill="#ffe08a"/>`;back+=`<path d="M${f(cx-9)},${f(yT-30)}L${cx},${f(yT-38)}L${f(cx+9)},${f(yT-30)}L${cx},${f(yT-27)}Z" fill="#5fae4a" stroke="${stk}" stroke-width="2"/>`}
+      const yB=yT+ry*.2;let d=`M${f(cx-rx-6)},${f(yT-6)}L${f(cx+rx+6)},${f(yT-6)}L${f(cx+rx+6)},${f(yB)}`;for(let i=6;i>0;i--){const x0=cx-rx-6+(2*rx+12)*i/6,x1=cx-rx-6+(2*rx+12)*(i-1)/6;d+=`Q${f((x0+x1)/2)},${f(yB+8)} ${f(x1)},${f(yB)}`}
+      inner+=`<path d="${d}Z" fill="#fffdf8" stroke="${stk}" stroke-width="2"/><rect x="${f(cx-rx-4)}" y="${f(cy+ry*.36)}" width="${f(rx*2+8)}" height="${f(ry*.2)}" fill="#fffdf8" stroke="${stk}" stroke-width="2"/>`;
+      for(let i=0;i<4;i++){const x=cx-rx*.66+rx*.44*i;inner+=`<path d="M${f(x-8)},${f(cy+ry*.46)}A8,7 0 0 1 ${f(x+8)},${f(cy+ry*.46)}Z" fill="#ef3d5a"/>`}}
+    if(type==='candy'){for(const s of[-1,1]){const x0=cx+s*(rx*.86),x1=cx+s*(rx+30);back+=`<path d="M${f(x0)},${f(cy-6)}L${f(x1)},${f(cy-26)}Q${f(x1+s*6)},${f(cy)} ${f(x1)},${f(cy+26)}L${f(x0)},${f(cy+6)}Z" fill="${C(lite)}" ${SW3}/>`;
+        if(!sil)back+=`<path d="M${f(x0+s*8)},${f(cy-6)}L${f(x1-s*4)},${f(cy-18)}M${f(x0+s*8)},${f(cy+6)}L${f(x1-s*4)},${f(cy+18)}" stroke="${stk}" stroke-width="1.8" opacity=".45"/>`}
+      for(let i=-4;i<5;i++)inner+=`<path d="M${f(cx+i*22-40)},${f(cy+ry+10)}L${f(cx+i*22+40)},${f(yT-10)}" stroke="#fff" stroke-width="8" opacity=".3"/>`}
+    if(type==='cookie'){const cc=`hsl(${FL.h},${FL.s}%,${Math.max(22,FL.l-42)}%)`,eY0=cy-ry*.12;let k=0;
+      for(let t=0;t<40&&k<9;t++){const a=rng()*6.283,r=Math.sqrt(rng())*.86,x=cx+Math.cos(a)*rx*r,y=cy+Math.sin(a)*ry*r;if(Math.abs(x-cx)<rx*.62&&y>eY0-16&&y<eY0+22)continue;
+        const z=3+rng()*3;inner+=`<path d="M${f(x-z)},${f(y)}L${f(x-z*.3)},${f(y-z)}L${f(x+z)},${f(y-z*.4)}L${f(x+z*.6)},${f(y+z*.8)}L${f(x-z*.5)},${f(y+z)}Z" fill="${cc}"/>`;k++}}
+    if(type==='dango'){back+=`<rect x="${f(cx-3.5)}" y="${f(yT-50)}" width="7" height="${f(cy+ry+32-(yT-50))}" rx="3.5" fill="${C('#d9a66a')}" ${SW3}/><circle cx="${cx}" cy="${f(yT-20)}" r="24" fill="${C(FL.k==='いちご'||FL.k==='もも'?'#ffffff':'#ffc4d6')}" ${SW3}/>`;
+      if(!sil)back+=`<ellipse cx="${f(cx-8)}" cy="${f(yT-28)}" rx="7" ry="4" fill="#fff" opacity=".7" transform="rotate(-25 ${f(cx-8)} ${f(yT-28)})"/>`}
+    if(type==='cotton'){back+=`<rect x="${f(cx-3)}" y="${f(cy+ry-10)}" width="6" height="44" rx="3" fill="${C('#f3e3c3')}" ${SW3}/><path d="${scallop(cx,cy-4,rx+16,ry+12,18,6)}" fill="${C(lite)}" stroke="${stk}" stroke-width="3"/>`;
+      if(!sil)for(let i=0;i<5;i++){const a=-2.6+i*.55;back+=`<path d="M${f(cx+Math.cos(a)*(rx+6)-6)},${f(cy-4+Math.sin(a)*(ry+4))}q6,-6 12,0" stroke="#fff" stroke-width="2.5" fill="none" opacity=".8"/>`}}
+  }
+  if(ri>=2&&!sil&&type!=='wing'&&type!=='candy')for(const s of[-1,1])back+=`<path d="M${f(cx+s*(rx-6))},${f(cy-4)}Q${f(cx+s*(rx+40))},${f(cy-40)} ${f(cx+s*(rx+34))},${f(cy+14)}Q${f(cx+s*(rx+18))},${f(cy+4)} ${f(cx+s*(rx-4))},${f(cy+14)}Z" fill="#fff" opacity="${ri>=3?.85:.6}" stroke="${ri===4?'#ffd36e':'#fff'}" stroke-width="2"/>`;
   // 体
   burn(rng,9);const bd=mochi(cx,cy,rx,ry);
-  g+=`<ellipse cx="${cx}" cy="${f(cy+ry+8)}" rx="${f(rx*.9)}" ry="7" fill="#000" opacity="${sil?.06:.14}"/>`;
+  const shY=P2?({softcream:44,dango:36,cotton:40,pudding:12}[type]||8):8;
+  g+=`<ellipse cx="${cx}" cy="${f(cy+ry+shY)}" rx="${f(rx*(P2&&type==='pudding'?1.3:.9))}" ry="7" fill="#000" opacity="${sil?.06:.14}"/>`;
   g+=back+`<path d="${bd}" fill="${body}" stroke="${stk}" stroke-width="3.2"/>`;
   if(!sil){
-    g+=`<ellipse cx="${cx}" cy="${f(cy+ry*.38)}" rx="${f(rx*.55)}" ry="${f(ry*.42)}" fill="hsl(${h},80%,90%)" opacity=".85"/>`;
+    g+=`<ellipse cx="${cx}" cy="${f(cy+ry*.38)}" rx="${f(rx*.55)}" ry="${f(ry*.42)}" fill="${P2?`hsl(${BO[0]},${BO[1]}%,${Math.min(95,BO[2]+12)}%)`:`hsl(${h},80%,90%)`}" opacity=".85"/>`;
+    if(inner)g+=`<clipPath id="cl§"><path d="${bd}"/></clipPath><g clip-path="url(#cl§)">${inner}</g><path d="${bd}" fill="none" stroke="${stk}" stroke-width="3.2"/>`;
     g+=`<ellipse cx="${f(cx-rx*.35)}" cy="${f(cy-ry*.55)}" rx="${f(rx*.22)}" ry="${f(ry*.12)}" fill="#fff" opacity=".55" transform="rotate(-25 ${f(cx-rx*.35)} ${f(cy-ry*.55)})"/>`;
     const eY=cy-ry*.12,eX=rx*.32,es=Math.floor(rng()*3),big=type==='eyes'?1.35:1;
     for(const s of[-1,1]){const x=cx+s*eX;
@@ -519,7 +646,9 @@ function artTpl(c,sil){
     if(ri>=3)front+=`<path d="M${cx},${f(yT+6)}l7,9 -7,9 -7,-9Z" fill="${ri===4?'#ffd36e':'#fff'}" stroke="${ri===4?'#8a5f12':stk}" stroke-width="2"/>`;
     g+=front;
   }else g+=`<text x="${cx}" y="${f(cy+10)}" text-anchor="middle" font-size="34" font-weight="800" fill="#c9ced9" font-family="sans-serif">?</text>`;
-  const defs=sil?'':`<radialGradient id="b§" cx=".4" cy=".3" r=".8"><stop offset="0" stop-color="hsl(${h},75%,${ri===4?72:78}%)"/><stop offset="1" stop-color="hsl(${h},60%,${ri===4?48:58}%)"/></radialGradient>`;
+  if(P2)g+=fore;
+  const defs=sil?'':P2?`<radialGradient id="b§" cx=".4" cy=".3" r=".8"><stop offset="0" stop-color="hsl(${BO[0]},${BO[1]}%,${BO[2]}%)"/><stop offset="1" stop-color="hsl(${BO[0]},${Math.max(20,BO[1]-8)}%,${BO[2]-18}%)"/></radialGradient>`
+    :`<radialGradient id="b§" cx=".4" cy=".3" r=".8"><stop offset="0" stop-color="hsl(${h},75%,${ri===4?72:78}%)"/><stop offset="1" stop-color="hsl(${h},60%,${ri===4?48:58}%)"/></radialGradient>`;
   return artCache[key]=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -18 230 274" preserveAspectRatio="xMidYMid slice"><defs>${defs}</defs>${bg}${deco}${g}</svg>`;
 }
 let uid=0,useImg=true;
@@ -536,11 +665,17 @@ function cardHTML(c,o={}){
   return `<div class="${cls}" data-id="${c.id}"${o.style?` style="${o.style}"`:''}><div class="fr">
    <div class="tp"><span class="nm">${own?c.name:'？？？'}</span><span class="rb">${c.rarity}</span></div>
    <div class="art">${own&&useImg&&!c.imgBad?`<img src="${c.file}" alt=""${o.lazy?' loading="lazy" decoding="async"':''} data-cid="${c.id}">`:art(c,!own)}</div>
-   <div class="bt"><span>${c.code}</span><span>${own?ELEM[c.el].k+'属性':''}</span></div></div>
+   <div class="bt"><span>${c.code}</span><span>${own?c.tag:''}</span></div></div>
    ${own&&c.ri>=2?'<div class="holo"></div>':''}${o.isNew?'<div class="new">NEW</div>':''}${o.count?`<div class="cnt">×${o.count}</div>`:''}</div>`;
 }
 const PRISM=`<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="pz1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8f9bff"/><stop offset="1" stop-color="#5a3fd0"/></linearGradient><linearGradient id="pz2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff7eb3"/><stop offset=".33" stop-color="#ffd36e"/><stop offset=".66" stop-color="#6ee7c4"/><stop offset="1" stop-color="#7e9bff"/></linearGradient></defs><path d="M50 10L88 78H12Z" fill="url(#pz1)"/><path d="M50 10L88 78L50 64Z" fill="#fff" opacity=".22"/><path d="M50 10L12 78L50 64Z" fill="#fff" opacity=".42"/><path d="M12 78H88L50 64Z" fill="#2c1d80" opacity=".35"/><path d="M50 50L98 56L98 70Z" fill="url(#pz2)" opacity=".9"/><path d="M2 44L50 50" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>`;
-const packHTML=()=>`<div class="pack"><div class="irid"></div><div class="shine"></div><div class="pin">${PRISM}<b>PRISMA</b><small>BOOSTER PACK</small><i>10 CARDS</i></div></div>`;
+const CANDY=`<svg viewBox="0 0 100 100" overflow="visible" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="cz1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffa3cc"/><stop offset="1" stop-color="#d63a86"/></linearGradient><linearGradient id="cz2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff7eb3"/><stop offset=".33" stop-color="#ffd36e"/><stop offset=".66" stop-color="#6ee7c4"/><stop offset="1" stop-color="#7e9bff"/></linearGradient></defs>`
+ +`<path d="M-6 40L8 48" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M94 52L122 56L122 76Z" fill="url(#cz2)" opacity=".9"/>`
+ +`<g transform="translate(50 50) scale(1.12) translate(-50 -50)"><path d="M30 50L8 34L8 66Z" fill="url(#cz1)"/><path d="M30 50L8 34L8 50Z" fill="#fff" opacity=".42"/><path d="M30 50L8 66L8 50Z" fill="#7a1048" opacity=".3"/>`
+ +`<path d="M70 50L92 34L92 66Z" fill="url(#cz1)"/><path d="M70 50L92 34L92 50Z" fill="#fff" opacity=".22"/><path d="M70 50L92 66L92 50Z" fill="#7a1048" opacity=".35"/>`
+ +`<path d="M50 24L72 37L72 63L50 76L28 63L28 37Z" fill="url(#cz1)"/><path d="M50 24L28 37L50 50Z" fill="#fff" opacity=".42"/><path d="M50 24L72 37L50 50Z" fill="#fff" opacity=".22"/><path d="M28 37L28 63L50 50Z" fill="#fff" opacity=".3"/><path d="M72 37L72 63L50 50Z" fill="#7a1048" opacity=".12"/><path d="M28 63L50 76L72 63L50 50Z" fill="#7a1048" opacity=".35"/></g></svg>`;
+const packHTML=(p=0)=>p===1?`<div class="pack p-sw"><div class="irid"></div><div class="shine"></div><div class="pin">${CANDY}<b>PRISMA</b><small>SWEETS PACK</small><i>10 CARDS</i></div></div>`
+  :`<div class="pack"><div class="irid"></div><div class="shine"></div><div class="pin">${PRISM}<b>PRISMA</b><small>BOOSTER PACK</small><i>10 CARDS</i></div></div>`;
 
 /* ================= サウンド（WebAudio合成） ================= */
 const AU={ctx:null,
@@ -588,7 +723,7 @@ window.addEventListener('pageshow',()=>AU.unlock());
 /* ================= 画面制御 ================= */
 const $=id=>document.getElementById(id);
 function go(name){document.querySelectorAll('.screen').forEach(s=>s.classList.toggle('on',s.id===name));
-  if(name==='home')renderHome();if(name==='dex')renderDex()}
+  if(name==='home'){renderHome();$('packCar').scrollLeft=curPack*$('packCar').clientWidth}if(name==='dex'){dexPack=curPack;renderDex()}}
 function toast(t){const e=$('toast');e.textContent=t;e.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove('on'),1800)}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(b){AU.play('tap');go(b.dataset.go)}
   const x=e.target.closest('[data-close]');if(x)x.closest('.modal').classList.remove('on')});
@@ -597,19 +732,31 @@ document.querySelectorAll('.modal').forEach(m=>m.addEventListener('click',e=>{if
 // タイトル
 $('prismLogo').outerHTML=PRISM.replace('<svg ','<svg id="prismLogo" style="width:110px;height:110px" ');
 (function floaters(){let h='';for(let i=0;i<9;i++){h+=`<div class="cb" style="left:${(i*11+Math.random()*6)%96-6}%;animation-duration:${16+Math.random()*12}s;animation-delay:${-Math.random()*24}s;--r0:${Math.random()*40-20}deg;--r1:${Math.random()*80-40}deg"><div style="position:relative;aspect-ratio:63/88"><div class="cback">${PRISM}</div></div></div>`}$('floaters').innerHTML=h})();
+$('ver').textContent=PACKS.length>1?`全${PACKS.length}パック · ${CARDS.length}種 · 何度でも無料で開封`:`全${CARDS.length}種 · 何度でも無料で開封`;
 $('startBtn').onclick=()=>{AU.init();AU.play('tap');go('home')};
 $('settingBtn').onclick=()=>{AU.init();AU.play('tap');openSettings()};
 $('toTitle').onclick=()=>{AU.play('tap');go('title')};
 
 // ホーム
-$('packBtn').innerHTML=packHTML();
-function renderHome(){const n=ownedTotal();$('dexCount').textContent=`${n} / ${CARDS.length} 種`;$('dexMeter').style.width=(n/CARDS.length*100)+'%';
+let curPack=Math.min(Math.max(0,S.pack|0),PACKS.length-1);
+$('packCar').innerHTML=PACKS.map((P,i)=>`<div class="slide"><div class="packWrap" data-p="${i}" role="button" aria-label="${P.title}を開封">${packHTML(i)}<span class="pRib" hidden>NEW</span><span class="urGlint" aria-hidden="true">${'<i></i>'.repeat(7)}</span></div></div>`).join('');
+function scrollToPack(i,smooth){const car=$('packCar');i=Math.max(0,Math.min(PACKS.length-1,i));car.scrollTo({left:i*car.clientWidth,behavior:smooth?'smooth':'auto'});setPack(i)}
+function setPack(i){if(i===curPack)return;curPack=i;S.pack=i;save();renderHome()}
+let carT=0;$('packCar').addEventListener('scroll',()=>{clearTimeout(carT);carT=setTimeout(()=>{const car=$('packCar');if(car.clientWidth)setPack(Math.round(car.scrollLeft/car.clientWidth))},90)},{passive:true});
+$('packCar').addEventListener('click',e=>{const w=e.target.closest('.packWrap');if(!w)return;AU.init();openPack(+w.dataset.p)});
+$('pPrev').onclick=()=>{AU.play('tap');scrollToPack(curPack-1,true)};$('pNext').onclick=()=>{AU.play('tap');scrollToPack(curPack+1,true)};
+window.addEventListener('resize',()=>{if($('home').classList.contains('on'))$('packCar').scrollLeft=curPack*$('packCar').clientWidth});
+function renderHome(){const P=PACKS[curPack],n=ownedPack(curPack),C=ceilOf(curPack);
+  $('ceil').innerHTML=C.t>0?`<span class="urNext">次回UR確定！</span><div class="cbar"><div style="width:100%"></div></div>`
+    :`UR確定まで あと <b>${(CEIL-C.n).toLocaleString()}</b> 枚<div class="cbar"><div style="width:${C.n/CEIL*100}%"></div></div>`;
+  document.querySelectorAll('#packCar .packWrap').forEach(w=>w.classList.toggle('ur',ceilOf(+w.dataset.p).t>0));$('dexCount').textContent=PACKS.length>1?`${P.short}  ${n} / ${P.total} 種`:`${n} / ${P.total} 種`;$('dexMeter').style.width=(n/P.total*100)+'%';
+  $('pPrev').disabled=curPack===0;$('pNext').disabled=curPack===PACKS.length-1;
+  document.querySelectorAll('#packCar .packWrap').forEach(w=>{w.querySelector('.pRib').hidden=ownedPack(+w.dataset.p)>0||+w.dataset.p===0});
   $('homeSub').textContent=S.totalCards?`累計 ${S.totalCards.toLocaleString()} 枚`:'';
   const fast=S.mode==='fast',sb=$('speedBtn');sb.classList.toggle('fast',fast);
   sb.innerHTML=`<svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>${fast?'高速開封':'通常開封'}`}
 $('speedBtn').onclick=()=>{S.mode=S.mode==='fast'?'normal':'fast';save();AU.play('tap');renderHome();toast(S.mode==='fast'?'高速開封：演出を省略します':'通常開封：1枚ずつ演出します')};
 $('dexBtn').onclick=()=>{AU.play('tap');go('dex')};
-$('packBtn').onclick=()=>{AU.init();openPack()};
 
 /* ================= 開封演出 ================= */
 let busy=false,tapRes=null,skipping=false;
@@ -628,14 +775,14 @@ async function urSequence(){
   const L=$('oLayer');const el=document.createElement('div');el.className='urT';el.innerHTML='<div class="dot"></div><h3>ULTRA RARE</h3><p>確定</p>';
   $('open').appendChild(el);AU.play('urIn');await waitTap(3000);flash();el.remove();
 }
-async function openPack(){
+async function openPack(pk=curPack,guar=false){
   if(busy)return;busy=true;skipping=false;
-  const res=pull10();renderHome();
+  const res=pull10(pk,guar);renderHome();
   const ready=Promise.race([Promise.all(res.map(r=>preload(r.c))),sleep(4000)]);
   const fast=S.mode==='fast',max=Math.max(...res.map(r=>r.c.ri)),hasUR=max===4;
   const O=$('open'),L=$('oLayer');O.classList.add('on');setBg(-1);$('counter').textContent='';$('skipBtn').style.display=fast?'none':'';
   // パック
-  L.className='layer';L.innerHTML=`<div class="glow" id="glow" style="--g:${GLOW[Math.max(0,max-1)]}"></div><div class="oPack shake">${packHTML()}</div>`;
+  L.className='layer';L.innerHTML=`<div class="glow" id="glow" style="--g:${GLOW[Math.max(0,max-1)]}"></div><div class="oPack shake">${packHTML(pk)}</div>`;
   AU.play('tap');
   if(!fast&&max>=2){await sleep(150);$('glow').classList.add('on')}
   await waitTap(fast?320:900);
@@ -672,25 +819,27 @@ async function openPack(){
   setBg(-1);$('counter').textContent='';$('skipBtn').style.display='none';
   const nNew=res.filter(r=>r.isNew).length,HG=['','','#ffd36e','conic-gradient(#ff9ad5,#9ab8ff,#9affe1,#fff19a,#ff9ad5)','#ffcf5a'];
   L.className='layer results';
-  L.innerHTML=`<div class="resTitle">RESULT<small>${nNew?`NEW ${nNew}枚`:'NEWなし'} · 図鑑 ${ownedTotal()} / ${CARDS.length}</small></div>
+  L.innerHTML=`<div class="resTitle">${res.guar?'UR確定ガチャ ':''}RESULT<small>${nNew?`NEW ${nNew}枚`:'NEWなし'} · 図鑑 ${ownedPack(pk)} / ${PACKS[pk].total}</small></div>
    <div class="resGrid">${order.map((r,k)=>cardHTML(r.c,{isNew:r.isNew,cls:r.c.ri>=2?'hi':'',style:`animation-delay:${k*45}ms;--hg:${HG[r.c.ri]}`})).join('')}</div>
-   <div class="resBtns"><button class="rb2" id="homeBack">ホームにもどる</button><button class="rb2 pri" id="again">もう1回開封</button></div>`;
+   <div class="resBtns${res.gained?' one':''}"><button class="rb2" id="homeBack">ホームにもどる</button>${res.gained?'':'<button class="rb2 pri" id="again">もう1回開封</button>'}</div>`;
   AU.play('result');
   skipping=false;
-  const choice=await new Promise(r=>{$('homeBack').onclick=()=>r('home');$('again').onclick=()=>r('again');setTimeout(()=>{tapRes=()=>r('home')},500)});
+  const choice=await new Promise(r=>{$('homeBack').onclick=()=>r('home');if($('again'))$('again').onclick=()=>r('again');setTimeout(()=>{tapRes=()=>r('home')},500)});
   tapRes=null;AU.play('tap');O.classList.remove('on');L.innerHTML='';busy=false;renderHome();
-  if(choice==='again')openPack();
+  if(choice==='again')openPack(pk);
 }
 
 /* ================= 図鑑 ================= */
-let tab=0;
+let tab=0,dexPack=0;
 function renderDex(){
-  const n=ownedTotal();$('dexTot').innerHTML=`${n} / ${CARDS.length}<small>収集率 ${(n/CARDS.length*100).toFixed(1)}%</small>`;
-  $('dexStats').innerHTML=`<span>累計開封 <b>${S.totalCards.toLocaleString()}</b> 枚</span><span>10連 <b>${S.totalPacks.toLocaleString()}</b> 回</span>`;
-  $('tabs').innerHTML=RAR.map((r,i)=>`<button class="tab${i===tab?' on':''}" data-r="${r.k}" data-i="${i}"><b>${r.k}</b><span>${ownedCount(i)}/${r.count}</span></button>`).join('');
-  const list=BY_R[tab],all=ownedCount(tab)===list.length;
+  const P=PACKS[dexPack],n=ownedPack(dexPack);$('dexTot').innerHTML=`${n} / ${P.total}<small>収集率 ${(n/P.total*100).toFixed(1)}%</small>`;
+  $('pseg').hidden=PACKS.length<2;$('pseg').innerHTML=PACKS.map((Q,i)=>`<button class="${i===dexPack?'on':''}" data-p="${i}" aria-pressed="${i===dexPack}">${i===1?CANDY:PRISM}<span>${Q.short}<small>${ownedPack(i)} / ${Q.total}</small></span></button>`).join('');
+  $('dexStats').innerHTML=`<span>全パック <b>${ownedTotal()}</b> / ${CARDS.length} 種</span><span>累計開封 <b>${S.totalCards.toLocaleString()}</b> 枚</span><span>10連 <b>${S.totalPacks.toLocaleString()}</b> 回</span>`;
+  $('tabs').innerHTML=RAR.map((r,i)=>`<button class="tab${i===tab?' on':''}" data-r="${r.k}" data-i="${i}"><b>${r.k}</b><span>${ownedCount(dexPack,i)}/${P.counts[i]}</span></button>`).join('');
+  const list=BY_P[dexPack][tab],all=ownedCount(dexPack,tab)===list.length;
   $('grid').innerHTML=(all?`<div class="done">★ ${RAR[tab].k} コンプリート！</div>`:'')+list.map(c=>{const o=owned(c.id);return cardHTML(c,{own:!!o,count:o?o.n:0,lazy:true})}).join('');
 }
+$('pseg').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;dexPack=+b.dataset.p;AU.play('tap');renderDex();$('grid').scrollTop=0});
 $('tabs').addEventListener('click',e=>{const t=e.target.closest('.tab');if(!t)return;tab=+t.dataset.i;AU.play('tap');renderDex();$('grid').scrollTop=0});
 $('grid').addEventListener('click',e=>{const c=e.target.closest('.card');if(!c)return;const id=+c.dataset.id;
   if(!owned(id)){toast('まだ入手していないカードです');return}AU.play('tap');openDetail(id)});
@@ -734,9 +883,9 @@ async function makeShare(c){
   const ax=cxp+28,ay=cyp+92,aw=cw-56,ah=520;x.save();rr(x,ax,ay,aw,ah,22);x.clip();
   const sc=Math.max(aw/iw,ah/ih);x.drawImage(img,ax+(aw-iw*sc)/2,ay+(ah-ih*sc)/2,iw*sc,ih*sc);x.restore();
   x.fillStyle=tc;x.globalAlpha=.75;x.font='700 24px Outfit,sans-serif';x.fillText(c.code,cxp+30,cyp+ch-40);
-  x.textAlign='right';x.font='700 24px "M PLUS Rounded 1c",sans-serif';x.fillText(ELEM[c.el].k+'属性',cxp+cw-30,cyp+ch-40);x.globalAlpha=1;
+  x.textAlign='right';x.font='700 24px "M PLUS Rounded 1c",sans-serif';x.fillText(c.tag,cxp+cw-30,cyp+ch-40);x.globalAlpha=1;
   x.textAlign='center';x.fillStyle=c.ri===4?'#e8c46a':'#1d2335';x.font='800 30px "M PLUS Rounded 1c",sans-serif';x.fillText(`${c.name}　【${RAR[c.ri].label}】`,W/2,cyp+ch+80,W-60);
-  x.fillStyle=c.ri===4?'#a8925a':'#7d869c';x.font='700 22px Outfit,sans-serif';x.fillText('PRISMA  CARD COLLECTION',W/2,cyp+ch+130);
+  x.fillStyle=c.ri===4?'#a8925a':'#7d869c';x.font='700 22px Outfit,sans-serif';x.fillText(PACKS[c.pk].foot,W/2,cyp+ch+130);
   return new Promise(r=>cv.toBlob(b=>{shareBlob=b;r(cv.toDataURL('image/png'))},'image/png'));
 }
 $('shareBtn').onclick=async()=>{if(!cur)return;AU.play('tap');const url=await makeShare(cur);$('shareImg').src=url;$('shareModal').classList.add('on')};
@@ -747,7 +896,7 @@ $('shareNative').onclick=async()=>{AU.play('tap');
     throw 0}catch(e){if(e&&e.name==='AbortError')return;toast('この環境では共有できません。画像を長押しして保存してください')}};
 
 /* ================= 設定 ================= */
-$('rateT').innerHTML=RAR.map(r=>`<tr><td><b>${r.k}</b>　${r.count}種</td><td>${(r.w/100).toFixed(2)}%</td><td style="color:var(--sub)">1種あたり ${(r.w/100/r.count).toFixed(r.k==='UR'?3:r.k==='SSR'?4:2)}%</td></tr>`).join('');
+$('rateT').innerHTML=PACKS.map(P=>(PACKS.length>1?`<tr class="ph"><td colspan="3">${P.title}（${P.total}種）</td></tr>`:'')+RAR.map((r,i)=>{const n=P.counts[i],v=r.w/100/n;return `<tr><td><b>${r.k}</b>　${n}種</td><td>${(r.w/100).toFixed(2)}%</td><td style="color:var(--sub)">1種あたり ${Number(v.toPrecision(3))}%</td></tr>`}).join('')).join('');
 function syncSet(){$('bgm').value=S.bgm;$('se').value=S.se;$('bgmV').textContent=S.bgm;$('seV').textContent=S.se;
   $('modeSeg').querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.m===S.mode));$('urSw').classList.toggle('on',S.urFast)}
 function openSettings(){syncSet();$('setModal').classList.add('on')}
@@ -766,7 +915,7 @@ async function zip(u8,mode){if(typeof CompressionStream==='undefined')return nul
 const sum=t=>{let h=7;for(let i=0;i<t.length;i++)h=(h*31+t.charCodeAt(i))>>>0;return h.toString(36).slice(-4).padStart(4,'0')};
 async function makeCode(){
   const cards=Object.entries(S.cards).map(([id,o])=>[+id,o.n,Math.floor(o.first/1000)]);
-  const json=JSON.stringify({v:1,c:cards,tc:S.totalCards,tp:S.totalPacks,at:Math.floor(Date.now()/1000)});
+  const json=JSON.stringify({v:1,c:cards,tc:S.totalCards,tp:S.totalPacks,ce:S.ceil||{},at:Math.floor(Date.now()/1000)});
   const raw=new TextEncoder().encode(json);let z=null;try{z=await zip(raw,'c')}catch(e){}
   const body=(z?'z':'j')+b64e(z||raw);return MV+body+'.'+sum(body)}
 async function readCode(t){
@@ -776,7 +925,9 @@ async function readCode(t){
   let u8;try{u8=b64d(body.slice(1));if(body[0]==='z'){u8=await zip(u8,'d');if(!u8)throw 0}}catch(e){throw 'このブラウザではコードを読み込めませんでした'}
   const d=JSON.parse(new TextDecoder().decode(u8));if(!d||d.v!==1||!Array.isArray(d.c))throw '対応していないデータです';
   const cards={};for(const[id,n,f]of d.c){if(!(id>=1&&id<=CARDS.length)||!(n>=1))throw 'データの中身が正しくありません';cards[id]={n:Math.floor(n),first:f*1000}}
-  return {cards,totalCards:Math.max(0,d.tc|0),totalPacks:Math.max(0,d.tp|0),at:d.at}}
+  const ceil={};if(d.ce&&typeof d.ce==='object')for(const k in d.ce){const p=+k,v=d.ce[k];if(p>=0&&p<PACKS.length&&v)ceil[p]={n:Math.min(CEIL-10,Math.max(0,v.n|0)),t:Math.max(0,v.t|0)}}
+  if(d.ce===undefined&&(d.tc|0)>=1000)ceil[0]={n:0,t:1};
+  return {cards,ceil,totalCards:Math.max(0,d.tc|0),totalPacks:Math.max(0,d.tp|0),at:d.at}}
 $('moveBtn').onclick=async()=>{AU.play('tap');$('inCode').value='';$('inErr').textContent='';$('outCode').value='作成中…';$('moveModal').classList.add('on');
   const code=await makeCode();$('outCode').value=code;
   $('outInfo').textContent=`図鑑 ${ownedTotal()} / ${CARDS.length} 種・累計 ${S.totalPacks.toLocaleString()} 回開封のデータです（${code.length}文字）。`};
@@ -787,16 +938,16 @@ $('loadCode').onclick=async()=>{AU.play('tap');$('inErr').textContent='';let d;
   try{d=await readCode($('inCode').value)}catch(e){$('inErr').textContent=typeof e==='string'?e:'コードを読み込めませんでした';return}
   const n=Object.keys(d.cards).length,when=d.at?new Date(d.at*1000):null;
   if(!await ask('このデータで復元しますか？',`図鑑 ${n} 種・累計 ${d.totalPacks} 回開封のデータです${when?`（${when.getMonth()+1}/${when.getDate()} ${String(when.getHours()).padStart(2,'0')}:${String(when.getMinutes()).padStart(2,'0')} 発行）`:''}。この端末の ${ownedTotal()} 種のデータは上書きされ、元に戻せません。`,'復元する'))return;
-  S.cards=d.cards;S.totalCards=d.totalCards;S.totalPacks=d.totalPacks;save();
+  S.cards=d.cards;S.ceil=d.ceil;S.ceilInit=1;S.totalCards=d.totalCards;S.totalPacks=d.totalPacks;save();
   $('moveModal').classList.remove('on');$('setModal').classList.remove('on');toast('データを復元しました')};
 
 $('resetBtn').onclick=async()=>{AU.play('tap');
   if(!await ask('データを初期化しますか？','カードの所持情報・開封記録など、すべてのゲームデータが消去されます。','次へ'))return;
   if(!await ask('本当に初期化しますか？',`所持中の ${ownedTotal()} 種のカードと ${S.totalPacks} 回分の開封記録は元に戻せません。`,'初期化する'))return;
-  const keep={bgm:S.bgm,se:S.se};S=DEF();S.bgm=keep.bgm;S.se=keep.se;
+  const keep={bgm:S.bgm,se:S.se};S=DEF();S.bgm=keep.bgm;S.se=keep.se;S.ceilInit=1;
   try{localStorage.removeItem(KEY)}catch(e){}save();syncSet();toast('データを初期化しました')};
 
-window.__prisma={drawOne,RAR,CARDS,artTpl,ELEM,CRE,AU};
+window.__prisma={drawOne,RAR,CARDS,artTpl,ELEM,CRE,AU,PACKS,FLV,SWT};
 }
 </script>
 </body>
