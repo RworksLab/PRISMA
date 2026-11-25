@@ -263,6 +263,7 @@ button:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
 .resGrid .card.hi::before{content:"";position:absolute;inset:-6%;border-radius:12%;z-index:-1;background:var(--hg);filter:blur(8px);opacity:.9;animation:pulse 1.6s ease-in-out infinite}
 @keyframes pop{from{transform:scale(.4) translateY(20px);opacity:0}}
 .resBtns{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;max-width:380px;margin-top:6px}
+.resBtns.one{grid-template-columns:1fr;max-width:240px}
 .rb2{height:52px;border-radius:999px;background:rgba(255,255,255,.14);color:#fff;font-weight:800;font-size:15px;backdrop-filter:blur(6px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}
 .rb2.pri{background:linear-gradient(100deg,#5a63ff,#9b5cff);box-shadow:0 10px 24px -10px rgba(90,99,255,.8)}
 .rb2:active{transform:scale(.96)}
@@ -740,7 +741,7 @@ $('packCar').addEventListener('click',e=>{const w=e.target.closest('.packWrap');
 $('pPrev').onclick=()=>{AU.play('tap');scrollToPack(curPack-1,true)};$('pNext').onclick=()=>{AU.play('tap');scrollToPack(curPack+1,true)};
 window.addEventListener('resize',()=>{if($('home').classList.contains('on'))$('packCar').scrollLeft=curPack*$('packCar').clientWidth});
 function renderHome(){const P=PACKS[curPack],n=ownedPack(curPack),C=ceilOf(curPack);
-  $('ceil').innerHTML=C.t>0?`<span class="urNext">★ 次の10連は UR確定！</span><div class="cbar"><div style="width:100%"></div></div>`
+  $('ceil').innerHTML=C.t>0?`<span class="urNext">10連は UR確定！</span><div class="cbar"><div style="width:100%"></div></div>`
     :`UR確定まで あと <b>${(CEIL-C.n).toLocaleString()}</b> 枚<div class="cbar"><div style="width:${C.n/CEIL*100}%"></div></div>`;
   document.querySelectorAll('#packCar .packWrap').forEach(w=>w.classList.toggle('ur',ceilOf(+w.dataset.p).t>0));$('dexCount').textContent=`${P.short}  ${n} / ${P.total} 種`;$('dexMeter').style.width=(n/P.total*100)+'%';
   $('pPrev').disabled=curPack===0;$('pNext').disabled=curPack===PACKS.length-1;
@@ -812,12 +813,12 @@ async function openPack(pk=curPack,guar=false){
   setBg(-1);$('counter').textContent='';$('skipBtn').style.display='none';
   const nNew=res.filter(r=>r.isNew).length,HG=['','','#ffd36e','conic-gradient(#ff9ad5,#9ab8ff,#9affe1,#fff19a,#ff9ad5)','#ffcf5a'];
   L.className='layer results';
-  L.innerHTML=`<div class="resTitle">${res.guar?'UR確定ガチャ ':''}RESULT<small>${nNew?`NEW ${nNew}枚`:'NEWなし'} · 図鑑 ${ownedPack(pk)} / ${PACKS[pk].total}</small>${res.gained?`<small style="color:#f8e08e">★ 天井到達！次の10連は UR確定</small>`:''}</div>
+  L.innerHTML=`<div class="resTitle">${res.guar?'UR確定ガチャ ':''}RESULT<small>${nNew?`NEW ${nNew}枚`:'NEWなし'} · 図鑑 ${ownedPack(pk)} / ${PACKS[pk].total}</small></div>
    <div class="resGrid">${order.map((r,k)=>cardHTML(r.c,{isNew:r.isNew,cls:r.c.ri>=2?'hi':'',style:`animation-delay:${k*45}ms;--hg:${HG[r.c.ri]}`})).join('')}</div>
-   <div class="resBtns"><button class="rb2" id="homeBack">ホームにもどる</button><button class="rb2 pri" id="again">もう1回開封</button></div>`;
+   <div class="resBtns${res.gained?' one':''}"><button class="rb2" id="homeBack">ホームにもどる</button>${res.gained?'':'<button class="rb2 pri" id="again">もう1回開封</button>'}</div>`;
   AU.play('result');
   skipping=false;
-  const choice=await new Promise(r=>{$('homeBack').onclick=()=>r('home');$('again').onclick=()=>r('again');setTimeout(()=>{tapRes=()=>r('home')},500)});
+  const choice=await new Promise(r=>{$('homeBack').onclick=()=>r('home');if($('again'))$('again').onclick=()=>r('again');setTimeout(()=>{tapRes=()=>r('home')},500)});
   tapRes=null;AU.play('tap');O.classList.remove('on');L.innerHTML='';busy=false;renderHome();
   if(choice==='again')openPack(pk);
 }
