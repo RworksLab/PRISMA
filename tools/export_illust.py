@@ -4,8 +4,8 @@
 使い方（リポジトリのルートで実行）:
     pip install playwright pillow
     python -m playwright install chromium
-    python tools/export_illust.py              # 全295枚を書き出し
-    python tools/export_illust.py N001 UR015   # 指定したIDだけ書き出し
+    python tools/export_illust.py              # 全カードを書き出し
+    python tools/export_illust.py N001 SW-UR005   # 指定したIDだけ書き出し
 
 ※ cards.json を作り直すのは全件書き出しのときだけです（手で編集したカード名は上書きされます）。
 """
@@ -26,9 +26,9 @@ async def main():
         await page.goto((ROOT / "index.html").as_uri())
         await page.wait_for_timeout(500)
         cards = await page.evaluate("""() => { const P = window.__prisma;
-          return P.CARDS.map(c => ({ id: c.code, no: c.id, name: c.name, rarity: c.rarity,
-            element: P.ELEM[c.el].k, motif: P.CRE[c.cr][0],
-            theme: `${P.ELEM[c.el].k}属性 × ${P.CRE[c.cr][0]}`, file: c.file,
+          return P.CARDS.map(c => ({ id: c.code, no: c.id, pack: P.PACKS[c.pk].title, name: c.name, rarity: c.rarity,
+            element: c.elName, motif: c.motif,
+            theme: `${c.tag} × ${c.motif}`, file: c.file,
             svg: P.artTpl(c, false).replaceAll('§', 'a').replace('<svg ', '<svg width="840" height="1000" ') })) }""")
         for c in cards:
             svg = c.pop("svg")
