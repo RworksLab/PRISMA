@@ -387,7 +387,7 @@ input[type=range]{width:100%;height:32px;accent-color:var(--ac)}
     <div class="row"><div class="tg"><div>所持済みのURも演出を表示<small>高速開封・SKIP時の設定です。未取得のSSR・URは常にめくる演出が流れます</small></div><button class="sw" id="urSw" aria-label="UR演出"></button></div></div>
     <div class="row"><label>排出確率</label>
       <table class="rates"><tbody id="rateT"></tbody></table>
-      <div style="font-size:12px;color:var(--sub);margin-top:6px">1枚ずつ独立抽選・確率固定・重複あり。同じレアリティ内は均等。<br>天井：同じパックで1000枚（10連100回）引くごとにUR確定ガチャ1回。確定ガチャは10枚目がUR確定、ほかの9枚は通常の確率です（確定ガチャの枚数は天井に数えません）。</div>
+      <div style="font-size:12px;color:var(--sub);margin-top:6px">1枚ずつ独立抽選・確率固定・重複あり。同じレアリティ内は均等。<br>天井：同じパックでURが出ないまま1000枚（10連100回）引くと、UR確定ガチャ1回。途中でURが出たら天井の枚数は0に戻ります。確定ガチャは10枚目がUR確定、ほかの9枚は通常の確率です（確定ガチャの枚数は天井に数えません）。</div>
     </div>
     <div class="row"><label>データ管理</label><button class="mv" id="moveBtn">データ移行（引き継ぎ）</button><button class="danger" id="resetBtn">データを初期化</button></div>
   </div>
@@ -499,7 +499,7 @@ const ownedCount=(p,ri)=>BY_P[p][ri].filter(c=>S.cards[c.id]).length;
 const ownedPack=p=>CARDS.filter(c=>c.pk===p&&S.cards[c.id]).length;
 const ownedTotal=()=>Object.keys(S.cards).length;
 
-// 天井：パックごとに1000枚引くとUR確定ガチャ1回。確定ガチャの10枚はカウントしない
+// 天井：パックごとに1000枚引くとUR確定ガチャ1回。途中でURが出たら0に戻る。確定ガチャの10枚はカウントしない
 const CEIL=1000;
 const ceilOf=p=>{if(!S.ceil||typeof S.ceil!=='object')S.ceil={};return S.ceil[p]||(S.ceil[p]={n:0,t:0})};
 function pull10(p=0,guar=false){
@@ -507,7 +507,7 @@ function pull10(p=0,guar=false){
   if(guar){if(C.t<1)guar=false;else C.t--}
   for(let i=0;i<10;i++){const ur=BY_P[p][4],c=guar&&i===9?ur[randInt(ur.length)]:drawOne(p);let o=S.cards[c.id];const isNew=!o;
     if(!o)o=S.cards[c.id]={n:0,first:Date.now()};o.n++;res.push({c,isNew})}
-  if(!guar){C.n+=10;while(C.n>=CEIL){C.n-=CEIL;C.t++;gained++}}
+  if(!guar){if(res.some(r=>r.c.ri===4)){res.reset=C.n+10;C.n=0}else{C.n+=10;while(C.n>=CEIL){C.n-=CEIL;C.t++;gained++}}}
   S.totalCards+=10;S.totalPacks++;save();res.gained=gained;res.guar=guar;return res;
 }
 
