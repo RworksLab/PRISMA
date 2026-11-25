@@ -74,10 +74,12 @@ button:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
 .pack .pin i{position:absolute;bottom:28px;font-style:normal;font:700 10px/1 var(--fonte);letter-spacing:.2em;color:#6d70b5;background:rgba(255,255,255,.6);padding:5px 10px;border-radius:99px}
 .packCar{width:100%;display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
 .packCar::-webkit-scrollbar{display:none}
-.slide{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;display:flex;justify-content:center;padding:40px 0 26px}
+.slide{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;display:flex;justify-content:center;padding:40px 0 30px}
 .packInfo{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:-18px}
-.pArrow{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.75);box-shadow:0 0 0 1px var(--line);transition:opacity .2s}
-.pArrow svg{width:18px;height:18px}.pArrow:disabled{opacity:.25;cursor:default}
+.carWrap{position:relative;width:100%}
+.pArrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.8);box-shadow:0 0 0 1px var(--line),0 6px 14px -8px rgba(30,40,80,.4);transition:opacity .2s}
+.pArrow.l{left:max(8px,calc(50% - min(29vw,120px) - 60px))}.pArrow.r{right:max(8px,calc(50% - min(29vw,120px) - 60px))}
+.pArrow svg{width:18px;height:18px}.pArrow:disabled{opacity:0;pointer-events:none}
 .pName{min-width:150px;text-align:center;font-weight:800;font-size:16px;line-height:1.25}
 .pName small{display:block;font:700 12px/1.4 var(--fonte);color:var(--sub)}
 .dots{display:flex;gap:8px;justify-content:center;margin-top:-12px}
@@ -313,9 +315,9 @@ input[type=range]{width:100%;height:32px;accent-color:var(--ac)}
     <button class="chip" id="speedBtn"></button>
   </div>
   <div class="homeMid">
-    <div class="packCar" id="packCar"></div>
-    <div class="packInfo"><button class="pArrow" id="pPrev" aria-label="前のパック"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button><div class="pName" id="pName"></div><button class="pArrow" id="pNext" aria-label="次のパック"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></button></div>
-    <div class="dots" id="dots"></div>
+    <div class="carWrap"><div class="packCar" id="packCar"></div>
+      <button class="pArrow l" id="pPrev" aria-label="前のパック"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="pArrow r" id="pNext" aria-label="次のパック"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></button></div>
     <div class="tapHint">TAP TO OPEN</div>
     <div class="homeSub" id="homeSub"></div>
   </div>
@@ -702,17 +704,14 @@ $('toTitle').onclick=()=>{AU.play('tap');go('title')};
 // ホーム
 let curPack=Math.min(Math.max(0,S.pack|0),PACKS.length-1);
 $('packCar').innerHTML=PACKS.map((P,i)=>`<div class="slide"><div class="packWrap" data-p="${i}" role="button" aria-label="${P.title}を開封">${packHTML(i)}<span class="pRib" hidden>NEW</span></div></div>`).join('');
-$('dots').innerHTML=PACKS.map((P,i)=>`<button class="dot" data-i="${i}" aria-label="${P.title}"></button>`).join('');
 function scrollToPack(i,smooth){const car=$('packCar');i=Math.max(0,Math.min(PACKS.length-1,i));car.scrollTo({left:i*car.clientWidth,behavior:smooth?'smooth':'auto'});setPack(i)}
 function setPack(i){if(i===curPack)return;curPack=i;S.pack=i;save();renderHome()}
 let carT=0;$('packCar').addEventListener('scroll',()=>{clearTimeout(carT);carT=setTimeout(()=>{const car=$('packCar');if(car.clientWidth)setPack(Math.round(car.scrollLeft/car.clientWidth))},90)},{passive:true});
 $('packCar').addEventListener('click',e=>{const w=e.target.closest('.packWrap');if(!w)return;AU.init();openPack(+w.dataset.p)});
 $('pPrev').onclick=()=>{AU.play('tap');scrollToPack(curPack-1,true)};$('pNext').onclick=()=>{AU.play('tap');scrollToPack(curPack+1,true)};
-$('dots').onclick=e=>{const d=e.target.closest('.dot');if(d){AU.play('tap');scrollToPack(+d.dataset.i,true)}};
 window.addEventListener('resize',()=>{if($('home').classList.contains('on'))$('packCar').scrollLeft=curPack*$('packCar').clientWidth});
 function renderHome(){const P=PACKS[curPack],n=ownedPack(curPack);$('dexCount').textContent=`${P.title}  ${n} / ${P.total} 種`;$('dexMeter').style.width=(n/P.total*100)+'%';
-  $('pName').innerHTML=`${P.title}<small>${n} / ${P.total}</small>`;$('pPrev').disabled=curPack===0;$('pNext').disabled=curPack===PACKS.length-1;
-  document.querySelectorAll('#dots .dot').forEach((d,i)=>d.classList.toggle('on',i===curPack));
+  $('pPrev').disabled=curPack===0;$('pNext').disabled=curPack===PACKS.length-1;
   document.querySelectorAll('#packCar .packWrap').forEach(w=>{w.querySelector('.pRib').hidden=ownedPack(+w.dataset.p)>0||+w.dataset.p===0});
   $('homeSub').textContent=S.totalCards?`累計 ${S.totalCards.toLocaleString()} 枚`:'';
   const fast=S.mode==='fast',sb=$('speedBtn');sb.classList.toggle('fast',fast);
